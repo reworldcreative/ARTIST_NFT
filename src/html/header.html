@@ -1,1 +1,56 @@
-<header></header>
+<header class="header">
+    @@include('components/burger.html',{})
+    <div class="header__wrapper">
+        <a href="index.html" class="header__logo">
+            <img src="@img/logo.svg" alt="logo" width="145px" height="30px">
+        </a>
+
+        <nav class="header-navigation">
+            <ul class="header-navigation__list">
+                <li class="header-navigation__item">
+                    <a href="index.html" class="header-navigation__link">Main page</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">
+                        <img src="@img/lock.svg" alt="lock icon" width="14px" height="14px">
+                        NFT
+                    </a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Pictures</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Auction</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Pricing</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Contacts</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__buttons">
+            <select class="languageSelect" name="languageSelect" id="languageSelect">
+                <option value="ENG" selected>ENG</option>
+                <option value="UA">UA</option>
+                <option value="FR">FR</option>
+            </select>
+
+            @@include('components/button.html',{
+            class:"main",
+            text:" Authorization",
+            })
+
+            @@include('components/button.html',{
+            class:"active",
+            text:" Premium access",
+            })
+        </div>
+
+    </div>
+</header>

@@ -1,0 +1,43 @@
+.button {
+  border-radius: 12px;
+  padding: 14px 22px;
+  border: none;
+  background: $frames;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  &__text {
+    background: -webkit-linear-gradient(
+      to bottom right,
+      #68c9ff 0%,
+      #d1b5ff 100%
+    );
+  }
+
+  &.main {
+    .button__text {
+      background: -moz-linear-gradient(
+        to bottom right,
+        #68c9ff 0%,
+        #d1b5ff 80%
+      );
+      background: linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &.active {
+    padding: 14px 18px;
+    // font-size: 13px;
+    background: -moz-linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
+    background: linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: $Main-BG;
+    background: -moz-linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
+    background: -moz-linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
+    background: linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
+  }
+}

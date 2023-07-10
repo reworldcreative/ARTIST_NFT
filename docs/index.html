@@ -4,25 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230709194628">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230710210421">
     <title>Mainpage</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230709194628" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230710210421" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230709194628">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230710210421">
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+    <nav class="burger-menu">
+    <div class="burger-menu__header">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+        </a>
+        <button class="close-button" aria-label="close menu">
+            <img src="img/Close.svg" alt="Close icon" width="18" height="18" aria-hidden="true">
+        </button>
+    </div>
+</nav>
+    <div class="header__wrapper">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+        </a>
+
+        <nav class="header-navigation">
+            <ul class="header-navigation__list">
+                <li class="header-navigation__item">
+                    <a href="index.html" class="header-navigation__link">Main page</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">
+                        <img src="img/lock.svg" alt="lock icon" width="14px" height="14px">
+                        NFT
+                    </a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Pictures</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Auction</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Pricing</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Contacts</a>
+                </li>
+                <li class="header-navigation__item">
+                    <a href="#" class="header-navigation__link">Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__buttons">
+            <select class="languageSelect" name="languageSelect" id="languageSelect">
+                <option value="ENG" selected>ENG</option>
+                <option value="UA">UA</option>
+                <option value="FR">FR</option>
+            </select>
+
+            <button class="button main">
+    <span class="button__text">
+         Authorization
+    </span>
+</button>
+
+            <button class="button active">
+    <span class="button__text">
+         Premium access
+    </span>
+</button>
+        </div>
+
+    </div>
+</header>
 
     <footer></footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230709194628"
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230710210421"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script src="scripts/main.min.js?_v=20230709194628"></script>
+    <script src="scripts/main.min.js?_v=20230710210421"></script>
 </body>
 
 </html>

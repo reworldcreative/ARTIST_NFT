@@ -1,5 +1,6 @@
 @import "fonts";
 @import "rfs/scss.scss";
+@import "normalize";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 // font-family: 'Manrope', sans-serif;
 @import "variables";
@@ -26,3 +27,6 @@
 body {
   background: $Main-BG;
 }
+
+@import "header";
+@import "components/button";

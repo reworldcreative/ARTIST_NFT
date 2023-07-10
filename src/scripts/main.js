@@ -20,3 +20,34 @@ window.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(lazyloadxt);
   };
 });
+
+function checkSize() {
+  if ($(window).width() < 600) {
+    if ($(".header-navigation__list").length > 0) {
+      $(".burger-menu")[0].append($(".header-navigation__list")[0]);
+    }
+  }
+
+  if ($(window).width() > 600) {
+    if ($(".header-navigation__list").length > 0) {
+      $(".header-navigation")[0].append($(".header-navigation__list")[0]);
+    }
+  }
+}
+
+checkSize();
+$(window).resize(function () {
+  checkSize();
+});
+
+$(document).ready(function () {
+  if ($(".burger-menu .close-button").length > 0) {
+    $(".burger-menu .close-button").click(function (event) {
+      $(".burger-menu").toggleClass("active");
+      if ($(".header-navigation__list").length > 0) {
+        $(".header-navigation")[0].append($(".header-navigation__list")[0]);
+      }
+      // stopScroll();
+    });
+  }
+});
