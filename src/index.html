@@ -7,6 +7,57 @@
 <body>
     @@include('html/header.html',{})
 
+    <main>
+        <section class="main-hero">
+            <div class="main-hero__decoration">
+                <img class="main-hero__decoration_text-first" src="@img/decoration/MAKE ART.svg" alt="MAKE ART"
+                    aria-hidden="true" width="375px" height="97px">
+                <img class="main-hero__decoration_text-second" src="@img/decoration/NOT WAR.svg" alt="NOT WAR"
+                    aria-hidden="true" width="360px" height="97px">
+
+                <img class="main-hero__decoration_star" src="@img/decoration/star.svg" alt="star" aria-hidden="true"
+                    width="46px" height="62px">
+
+                <img class="main-hero__decoration_circle-first" src="@img/decoration/circle.svg" alt="star"
+                    aria-hidden="circle" width="25px" height="25px">
+                <img class="main-hero__decoration_circle-second" src="@img/decoration/circle.svg" alt="star"
+                    aria-hidden="circle" width="10px" height="10px">
+
+                <img class="main-hero__decoration_blur" src="@img/blurSpots/blur_1.png" alt="blue" aria-hidden="true"
+                    width="360px" height="700px">
+            </div>
+            <div class="main-hero__wrapper">
+                <div class="section-row">
+                    <div class="section-col main-hero__first-col">
+                        @@include('html/components/socialsLinks.html',{})
+                        <div class="section-text__container">
+                            <h1 class="big-title">We are here to inspire and share art</h1>
+                            <p class="section__text">Indulgence announcing uncommonly met she continuing two unpleasing
+                                terminated</p>
+                        </div>
+
+                        <div class="main-hero__buttons">
+                            @@include('html/components/button.html',{
+                            class:"active premium",
+                            text:"Premium access",
+                            })
+                            @@include('html/components/button.html',{
+                            class:"main",
+                            text:"Discover",
+                            })
+                        </div>
+                    </div>
+                    <div class="section-col">
+                        <div class="main-hero__image">
+                            <img src="@img/main-hero.png" alt="woman with paint" width="662px" height="585px">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
     @@include('html/footer.html',{})
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"

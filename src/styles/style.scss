@@ -30,3 +30,96 @@ body {
 
 @import "header";
 @import "components/button";
+@import "components/socialsLinks";
+@import "main";
+
+.big-title {
+  font-family: "Proxima Nova", sans-serif;
+  // font-size: 64px;
+  @include font-size(64px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: -1.5px;
+  margin: 0px;
+  color: $Text;
+}
+.section-text__container {
+  margin-top: 23px;
+  display: grid;
+  gap: 16px;
+  max-width: 475px;
+}
+
+.section {
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-col {
+    // max-width: 50%;
+    flex: 1;
+  }
+  &__text {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: $Text;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section {
+    &-col {
+      max-width: 50%;
+    }
+
+    &__text {
+      max-width: fit-content;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    &-row {
+      display: grid;
+      gap: 32px;
+    }
+    &-col {
+      flex: auto;
+      max-width: 100%;
+    }
+  }
+  .section-text {
+    &__container {
+      max-width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .big-title {
+    line-height: 40px;
+    max-width: 80%;
+  }
+
+  .section-text__container {
+    gap: 8px;
+    margin: 0px;
+  }
+
+  .section__text {
+    line-height: 24px;
+    letter-spacing: -0.6px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .section-text__container {
+    max-width: 100%;
+  }
+}

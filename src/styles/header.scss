@@ -147,6 +147,8 @@
 
 @media screen and (max-width: 1200px) {
   .header {
+    width: fit-content;
+    margin: 0px auto;
     &__wrapper {
       flex-wrap: wrap;
       gap: 20px;
@@ -167,12 +169,18 @@
 
     &__buttons {
       margin: 0px;
+      flex: 1;
+      justify-content: end;
     }
   }
 }
 
 @media screen and (max-width: 600px) {
   .header {
+    width: 100%;
+    .header-navigation {
+      position: absolute;
+    }
     &__wrapper {
       padding: 17px 20px 17px 23px;
       justify-content: space-between;

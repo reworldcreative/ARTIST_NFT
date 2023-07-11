@@ -8,7 +8,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  cursor: pointer;
+
+  &__image {
+    display: none;
+  }
   &__text {
+    letter-spacing: -0.3px;
     background: -webkit-linear-gradient(
       to bottom right,
       #68c9ff 0%,
@@ -30,8 +36,9 @@
   }
 
   &.active {
-    padding: 14px 18px;
+    // padding: 14px 18px;
     // font-size: 13px;
+    padding: 14px 22px;
     background: -moz-linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
     background: linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
     -webkit-background-clip: border-box;
@@ -39,5 +46,31 @@
     background: -moz-linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
     background: -moz-linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
     background: linear-gradient(to bottom right, #68c9ff 0%, #d1b5ff 80%);
+  }
+
+  &.premium {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .button {
+      &__image {
+        display: block;
+        filter: invert(80%) sepia(200%) saturate(140%) hue-rotate(169deg)
+          brightness(50%) contrast(90%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    &__text {
+      font-size: 15px;
+    }
+
+    &__image {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
