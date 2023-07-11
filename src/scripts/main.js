@@ -41,13 +41,34 @@ $(window).resize(function () {
 });
 
 $(document).ready(function () {
+  var currentUrl = window.location.href;
+  var menuItems = document.querySelectorAll(".header-navigation__item");
+  menuItems.forEach(function (item) {
+    var link = item.querySelector(".header-navigation__link");
+
+    if (link.href === currentUrl) {
+      // item.classList.add("active");
+    }
+  });
+
+  function stopScroll() {
+    if ($(".burger-menu").hasClass("active")) {
+      $("body").css("overflow", "hidden");
+    } else {
+      $("body").css("overflow", "auto");
+    }
+  }
   if ($(".burger-menu .close-button").length > 0) {
     $(".burger-menu .close-button").click(function (event) {
       $(".burger-menu").toggleClass("active");
-      if ($(".header-navigation__list").length > 0) {
-        $(".header-navigation")[0].append($(".header-navigation__list")[0]);
-      }
-      // stopScroll();
+      stopScroll();
+    });
+  }
+
+  if ($(".burger-button").length > 0) {
+    $(".burger-button").click(function (event) {
+      $(".burger-menu").toggleClass("active");
+      stopScroll();
     });
   }
 });

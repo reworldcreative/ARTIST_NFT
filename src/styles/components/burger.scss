@@ -2,23 +2,24 @@
   z-index: 10;
   position: absolute;
   background: $Main-BG;
-  padding: 9px 15px;
+  padding: 15px;
   width: 100vw;
+  height: 100vh;
   box-sizing: border-box;
   top: 0px;
-
-  //   display: none;
+  display: none;
 
   &.active {
     display: block;
+    animation: showBurger 200ms ease-in-out;
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-
     position: relative;
+    height: fit-content;
+    margin-bottom: 20px;
   }
 
   .close-button {
@@ -30,5 +31,40 @@
       filter: invert(90%) sepia(11%) saturate(220%) hue-rotate(170deg)
         brightness(92%) contrast(90%);
     }
+  }
+}
+
+.burger-button {
+  border: none;
+  background: none;
+  display: none;
+  cursor: pointer;
+  position: relative;
+  width: 14px;
+  height: 15px;
+  padding: 0px;
+  &__line {
+    width: 14px;
+    height: 1.5px;
+    margin-bottom: 3px;
+    background-color: $Text;
+    justify-self: end;
+    border-radius: 10px;
+    &:first-child {
+      width: 7px;
+    }
+    &:last-child {
+      width: 10px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@keyframes showBurger {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

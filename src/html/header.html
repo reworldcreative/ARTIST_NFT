@@ -1,5 +1,5 @@
+@@include('components/burger.html',{})
 <header class="header">
-    @@include('components/burger.html',{})
     <div class="header__wrapper">
         <a href="index.html" class="header__logo">
             <img src="@img/logo.svg" alt="logo" width="145px" height="30px">
@@ -50,6 +50,16 @@
             class:"active",
             text:" Premium access",
             })
+        </div>
+
+        <div class="small-menu">
+            @@include('components/smallPemiumButton.html',{})
+
+            <button class="burger-button" aria-label="open burger menu">
+                <span class="burger-button__line" aria-hidden="true"></span>
+                <span class="burger-button__line" aria-hidden="true"></span>
+                <span class="burger-button__line" aria-hidden="true"></span>
+            </button>
         </div>
 
     </div>
