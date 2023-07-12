@@ -242,6 +242,7 @@
 }
 
 .biography {
+  position: relative;
   &__wrapper {
     margin: 75px auto 65.5px;
     display: flex;
@@ -298,6 +299,25 @@
       margin-top: 10px;
     }
   }
+
+  &__decoration {
+    img {
+      position: absolute;
+    }
+    &_blur {
+      top: -100px;
+    }
+
+    &_star {
+      left: 5.4%;
+      top: 21%;
+    }
+
+    &_circle {
+      left: 7%;
+      top: 50%;
+    }
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -319,6 +339,16 @@
 
     .section__text {
       max-width: initial;
+    }
+
+    &__decoration {
+      &_star {
+        display: none;
+      }
+
+      &_circle {
+        display: none;
+      }
     }
   }
 }
@@ -394,6 +424,14 @@
 
     &__date {
       max-width: 150px;
+    }
+
+    &__decoration {
+      &_blur {
+        left: auto;
+        right: 0px;
+        transform: rotate(180deg);
+      }
     }
   }
 }
