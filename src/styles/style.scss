@@ -31,6 +31,7 @@ body {
 @import "header";
 @import "components/button";
 @import "components/socialsLinks";
+@import "components/badge";
 @import "main";
 
 .big-title {
@@ -40,15 +41,49 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 65px;
-  letter-spacing: -1.5px;
+  letter-spacing: 0.5px;
   margin: 0px;
   color: $Text;
+}
+
+.small-title {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26.5px;
+  letter-spacing: 2px;
+  margin: 0px;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(104, 201, 255, 1) 0%,
+    rgba(209, 181, 255, 1) 20%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(104, 201, 255, 1) 0%,
+    rgba(209, 181, 255, 1) 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section-text__container {
   margin-top: 23px;
   display: grid;
   gap: 16px;
   max-width: 475px;
+}
+
+.section-title {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49.5px;
+
+  letter-spacing: 0.3px;
+  margin: 0px;
+  color: $Text;
 }
 
 .section {
@@ -104,7 +139,18 @@ body {
 @media screen and (max-width: 600px) {
   .big-title {
     line-height: 40px;
+    letter-spacing: 0px;
     max-width: 80%;
+  }
+
+  .small-title {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    line-height: 34px;
   }
 
   .section-text__container {
@@ -114,7 +160,7 @@ body {
 
   .section__text {
     line-height: 24px;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.5px;
   }
 }
 

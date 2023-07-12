@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230711211624">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230712195754">
     <title>Main page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230711211624" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230712195754" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230711211624">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230712195754">
 </head>
 
 <body>
     <nav class="burger-menu">
     <div class="burger-menu__header">
-        <a href="index.html" class="header__logo">
-            <img src="img/logo.svg" alt="logo" width="145px" height="30px">
-        </a>
+        <a href="index.html" class="header__logo @@closs">
+    <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+</a>
         <button class="close-button" aria-label="close menu">
             <img src="img/Close.svg" alt="Close icon" width="18" height="18" aria-hidden="true">
         </button>
@@ -27,9 +27,10 @@
 </nav>
 <header class="header">
     <div class="header__wrapper">
-        <a href="index.html" class="header__logo">
-            <img src="img/logo.svg" alt="logo" width="145px" height="30px">
-        </a>
+
+        <a href="index.html" class="header__logo @@closs">
+    <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+</a>
 
         <nav class="header-navigation">
             <ul class="header-navigation__list">
@@ -173,14 +174,93 @@
 
             </div>
         </section>
+
+        <section class="biography">
+            <div class="biography__wrapper">
+                <div class="section-row">
+                    <div class="section-col">
+                        <div class="biography__slider card__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/BIOGRAPHY/BIOGRAPHY_1.jpg" alt="fasion woman" width="445px"
+                                        height="570px">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/BIOGRAPHY/BIOGRAPHY_2.jpg" alt="fasion woman" width="445px"
+                                        height="570px">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/BIOGRAPHY/BIOGRAPHY_3.jpg" alt="fasion woman" width="445px"
+                                        height="570px">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="section-col">
+                        <div class="biography__container">
+                            <div class="biography__top">
+                                <p class="small-title">BIOGRAPHY</p>
+                                <h2 class="section-title">Perchen Arts. Biography</h2>
+                            </div>
+
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. <br>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.<br>
+                                Turpis egestes maecenas pharetra convallis posuere morbi leo urna molestie at. Diam in
+                                arcu curcus euismod quis viverra nibh cras. In ante metus dictum at tempor commodo
+                                ullamcorper. Ultrices eros in curcus turpis massa.
+                            </p>
+
+
+                            <ul class="biography__dates swiper">
+                                <div class="swiper-wrapper">
+                                    <li class="biography__date swiper-slide">
+                                        <div class="badge">
+    2007
+</div>
+                                        <p class="section__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                    </li>
+                                    <li class="biography__date swiper-slide">
+                                        <div class="badge">
+    2014
+</div>
+                                        <p class="section__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                    </li>
+                                    <li class="biography__date swiper-slide">
+                                        <div class="badge">
+    2019
+</div>
+                                        <p class="section__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                    </li>
+                                </div>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer></footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230711211624"
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230712195754"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script src="scripts/main.min.js?_v=20230711211624"></script>
+    <script src="scripts/main.min.js?_v=20230712195754"></script>
 </body>
 
 </html>

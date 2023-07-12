@@ -56,6 +56,85 @@
 
             </div>
         </section>
+
+        <section class="biography">
+            <div class="biography__wrapper">
+                <div class="section-row">
+                    <div class="section-col">
+                        <div class="biography__slider card__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="@img/BIOGRAPHY/BIOGRAPHY_1.jpg" alt="fasion woman" width="445px"
+                                        height="570px">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/BIOGRAPHY/BIOGRAPHY_2.jpg" alt="fasion woman" width="445px"
+                                        height="570px">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/BIOGRAPHY/BIOGRAPHY_3.jpg" alt="fasion woman" width="445px"
+                                        height="570px">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="section-col">
+                        <div class="biography__container">
+                            <div class="biography__top">
+                                <p class="small-title">BIOGRAPHY</p>
+                                <h2 class="section-title">Perchen Arts. Biography</h2>
+                            </div>
+
+                            <p class="section__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. <br>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.<br>
+                                Turpis egestes maecenas pharetra convallis posuere morbi leo urna molestie at. Diam in
+                                arcu curcus euismod quis viverra nibh cras. In ante metus dictum at tempor commodo
+                                ullamcorper. Ultrices eros in curcus turpis massa.
+                            </p>
+
+
+                            <ul class="biography__dates swiper">
+                                <div class="swiper-wrapper">
+                                    <li class="biography__date swiper-slide">
+                                        @@include('html/components/badge.html',{
+                                        text:"2007",
+                                        })
+                                        <p class="section__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                    </li>
+                                    <li class="biography__date swiper-slide">
+                                        @@include('html/components/badge.html',{
+                                        text:"2014",
+                                        })
+                                        <p class="section__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                    </li>
+                                    <li class="biography__date swiper-slide">
+                                        @@include('html/components/badge.html',{
+                                        text:"2019",
+                                        })
+                                        <p class="section__text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                    </li>
+                                </div>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     @@include('html/footer.html',{})
