@@ -356,7 +356,7 @@
 @media screen and (max-width: 700px) {
   .biography {
     &__wrapper {
-      margin: 20px auto;
+      margin: 20px auto 31px;
     }
 
     .section-row {
@@ -436,6 +436,19 @@
   }
 }
 
+@media screen and (max-width: 350px) {
+  .biography {
+    &__slider {
+      max-width: 60vw;
+      height: auto;
+
+      .swiper-slide {
+        height: 70vh;
+      }
+    }
+  }
+}
+
 .premium-banner {
   &__wrapper {
     position: relative;
@@ -454,7 +467,7 @@
     box-sizing: border-box;
     max-width: 1140px;
     margin: 0px auto;
-
+    margin-bottom: 11px;
     overflow: hidden;
   }
 
@@ -488,8 +501,8 @@
 
     &_ellipse {
       position: absolute;
-      right: 0px;
-      top: 0px;
+      right: -160px;
+      top: -16px;
       z-index: 0;
     }
 
@@ -505,6 +518,116 @@
       right: 260px;
       top: -20px;
       z-index: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .premium-banner {
+    &__wrapper {
+      max-width: 100%;
+      margin: 0px 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .premium-banner {
+    &__wrapper {
+      display: grid;
+      gap: 27px;
+      justify-content: center;
+      padding: 32px 26px 64px;
+    }
+
+    &__jewelry {
+      display: grid;
+      justify-content: center;
+
+      &_ellipse {
+        right: auto;
+        top: auto;
+        bottom: -270px;
+      }
+
+      &_first {
+        right: -55px;
+      }
+
+      &_second {
+        right: auto;
+        top: auto;
+        left: -70px;
+        bottom: 0px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .premium-banner {
+    &__wrapper {
+      gap: 18px;
+      margin-bottom: 25px;
+    }
+    &__container {
+      max-width: fit-content;
+      gap: 0px;
+    }
+
+    &__crown {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 4px;
+    }
+
+    .section-title {
+      margin-bottom: 8px;
+    }
+
+    .section__text {
+      letter-spacing: -0.4px;
+    }
+
+    .button {
+      margin-top: 24px;
+      padding: 12px 28px;
+
+      &__text {
+        font-size: 15px;
+        line-height: 26.5px;
+      }
+    }
+
+    &__jewelry {
+      &_main {
+        width: 222px;
+        height: 161px;
+        top: 0px;
+        transform: rotate(353deg);
+      }
+
+      &_ellipse {
+        right: -35px;
+        top: auto;
+        bottom: -230px;
+        width: 415px;
+        height: 410px;
+      }
+
+      &_first {
+        width: 205px;
+        height: 125px;
+      }
+
+      &_second {
+        left: -100px;
+        bottom: 10px;
+        width: 205px;
+        height: 125px;
+        transform: rotate(28deg);
+      }
     }
   }
 }

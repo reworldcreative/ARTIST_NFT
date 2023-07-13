@@ -60,7 +60,7 @@ function loadCSS(url) {
 function checkSize() {
   if ($(window).width() < 600) {
     if ($(".header-navigation__list").length > 0) {
-      $(".burger-menu")[0].append($(".header-navigation__list")[0]);
+      $(".burger-menu__header")[0].after($(".header-navigation__list")[0]);
     }
   }
 
