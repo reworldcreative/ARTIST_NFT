@@ -45,13 +45,13 @@
     width: fit-content;
     border-radius: 24px;
     background: url("../img/main-hero-bg.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: contain;
+    background-repeat: no-repeat !important;
+    background-position: right top !important;
+    background-size: contain !important;
     padding-top: 48px;
-    max-height: 92%;
+    max-height: 92% !important;
 
-    img {
+    &_img {
       border-radius: 24px;
     }
   }
@@ -109,11 +109,11 @@
     }
     &__image {
       width: auto;
-      max-height: 40vw;
+      max-height: 40vw !important;
       justify-content: end;
       display: flex;
 
-      img {
+      &_img {
         max-height: inherit;
         max-width: fit-content;
       }
@@ -125,12 +125,12 @@
   .main-hero {
     &__image {
       justify-content: center;
-      background-position: center;
-      background-size: cover;
+      background-position: center !important;
+      background-size: cover !important;
       padding: 0px;
-      max-height: 90vw;
+      max-height: 90vw !important;
 
-      img {
+      &_img {
         margin-top: -30px;
         width: fit-content;
         max-width: fit-content;
@@ -184,8 +184,8 @@
     &__image {
       max-width: 75%;
       padding-left: 50px;
-      max-height: 82vw;
-      img {
+      max-height: 82vw !important;
+      &_img {
         max-width: fit-content;
         max-height: 349px;
         margin-top: -43px;
@@ -225,7 +225,7 @@
   .main-hero {
     &__image {
       max-width: 100%;
-      img {
+      &_img {
         max-width: inherit;
         height: auto;
       }
@@ -244,7 +244,7 @@
 .biography {
   position: relative;
   &__wrapper {
-    margin: 75px auto 65.5px;
+    margin: 75px auto 75px;
     display: flex;
     justify-content: center;
   }
@@ -432,6 +432,79 @@
         right: 0px;
         transform: rotate(180deg);
       }
+    }
+  }
+}
+
+.premium-banner {
+  &__wrapper {
+    position: relative;
+    // padding: 83px 110px;
+    padding: 83px 90px 83px 110px;
+    border-radius: 24px;
+    background: linear-gradient(
+      130deg,
+      #6880ff 0%,
+      #3ca7f4 55.2%,
+      #8c45ff 99.47%
+    );
+
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 1140px;
+    margin: 0px auto;
+
+    overflow: hidden;
+  }
+
+  &__container {
+    max-width: 444px;
+    display: grid;
+    gap: 12px;
+
+    .button {
+      width: fit-content;
+      padding: 18px 37px;
+
+      &__text {
+        font-size: 18px;
+        line-height: 26.5px;
+      }
+    }
+
+    img {
+      filter: invert(40%) sepia(141%) saturate(690%) hue-rotate(170deg)
+        brightness(440%) contrast(90%);
+    }
+  }
+
+  &__jewelry {
+    &_main {
+      top: 10px;
+      z-index: 2;
+      position: relative;
+    }
+
+    &_ellipse {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: 0;
+    }
+
+    &_first {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      z-index: 0;
+    }
+
+    &_second {
+      position: absolute;
+      right: 260px;
+      top: -20px;
+      z-index: 0;
     }
   }
 }
