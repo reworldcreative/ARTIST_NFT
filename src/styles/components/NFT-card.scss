@@ -1,0 +1,99 @@
+.NFT-Card {
+  width: fit-content;
+  border-radius: 12px;
+  background: $frames;
+  box-sizing: border-box;
+  max-width: -webkit-fill-available;
+
+  &__top {
+    padding: 19px 20px;
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 48px 0px;
+
+    &.purple {
+      background-color: #7e51ff;
+    }
+
+    &.blue {
+      background-color: #86a8ff;
+    }
+
+    &.yellow {
+      background-color: #c5ff98;
+    }
+
+    &_ellipse {
+      position: absolute;
+      // width: 100%;
+      // left: 0px;
+      // top: 90px;
+      width: 105%;
+      left: -13px;
+      top: 85px;
+      filter: brightness(0.5);
+      z-index: 1;
+    }
+
+    &_img {
+      position: relative;
+      z-index: 2;
+      bottom: -5px;
+      height: auto;
+    }
+  }
+
+  &__container {
+    padding: 16px 21px 17px 24px;
+  }
+
+  &__title {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: $Text;
+    margin: 0px;
+    margin-top: 3px;
+  }
+
+  &__text {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0px;
+    color: $Secondary;
+    max-width: 257px;
+  }
+
+  &__bottom {
+    margin-top: 20px;
+    border-top: 1px solid rgba(252, 255, 255, 0.05);
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128.846%;
+    letter-spacing: 0.3px;
+    color: $Text;
+    margin: 0px;
+  }
+
+  .button {
+    padding: 14px 30px;
+  }
+}

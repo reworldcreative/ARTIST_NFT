@@ -44,6 +44,50 @@ window.addEventListener("DOMContentLoaded", function () {
         },
       });
     }
+
+    if ($(".NFT-slider").length > 0) {
+      const NFTslider = new Swiper(".NFT-slider", {
+        // slidesPerView: 4,
+        // spaceBetween: 30,
+        // centeredSlides: true,
+        loop: true,
+
+        breakpoints: {
+          300: {
+            slidesPerView: 1.27,
+            spaceBetween: 16,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          800: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+          },
+          1000: {
+            slidesPerView: 3.3,
+            spaceBetween: 30,
+            centeredSlides: true,
+          },
+          1200: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+            centeredSlides: true,
+          },
+          1300: {
+            slidesPerView: 3.7,
+            spaceBetween: 30,
+            centeredSlides: true,
+          },
+          1400: {
+            slidesPerView: 3.87,
+            spaceBetween: 30,
+            centeredSlides: true,
+          },
+        },
+      });
+    }
   };
 
   document.body.appendChild(swiperScript);

@@ -1,0 +1,24 @@
+<article class="NFT-Card">
+    <p class="NFT-Card__top small-title">NFT</p>
+    <div class="NFT-Card__image @@color">
+        <img class="NFT-Card__image_img" src="@@image" alt="NFT image" width="254px" height="334px">
+        <img class="NFT-Card__image_ellipse" src="@img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
+            height="505px">
+    </div>
+
+    <div class="NFT-Card__container">
+        <h3 class="NFT-Card__title">@@title</h3>
+        <p class="NFT-Card__text">@@text</p>
+
+        <div class="NFT-Card__bottom">
+            <p class="NFT-Card__price">@@price</p>
+
+            @@include('button.html',{
+            class:"active buyButton",
+            text:"Buy now",
+            })
+        </div>
+    </div>
+
+
+</article>
