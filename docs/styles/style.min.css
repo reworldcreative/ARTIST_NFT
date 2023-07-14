@@ -1668,6 +1668,26 @@ a:visited {
     line-height: 147.222%;
   }
 }
+html,
+body {
+  font-family: "ProximaNova";
+  background: #1d1f21;
+  color: #fcffff;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 400;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 2560px;
@@ -1706,7 +1726,7 @@ a:visited {
 
 .slide-forum,
 .questions__input,
-.item-question,
+.item-blog,
 .asking,
 .forum-stat {
   background: #212426;
@@ -1929,7 +1949,7 @@ a:visited {
   height: 24px;
 }
 .blog__search-btn {
-  right: 12px;
+  right: -55px;
   padding: 14px 22px;
   border-radius: 12px;
 }
@@ -2005,6 +2025,21 @@ a:visited {
 .item-blog .blog__search-btn {
   width: 88px;
   right: 8px;
+}
+
+.blog__input {
+  background: #212426;
+  border-radius: 12px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
 }
 
 .big-title {

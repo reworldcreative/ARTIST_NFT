@@ -1,3 +1,21 @@
+html,
+body {
+  font-family: 'ProximaNova';
+  background: #1d1f21;
+  color: #fcffff;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 400;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+ul li {
+  list-style: none;
+}
 .wrapper {
   margin: 0 auto;
   max-width: 2560px;
@@ -35,7 +53,7 @@
 
 .slide-forum,
 .questions__input,
-.item-question,
+.item-blog,
 .asking,
 .forum-stat {
   background: #212426;
@@ -260,7 +278,8 @@
     height: 24px;
   }
   &__search-btn {
-    right: 12px;
+    // right: 12px;
+    right: -55px;
     padding: 14px 22px;
     border-radius: 12px;
   }
@@ -338,4 +357,16 @@
     width: 88px;
     right: 8px;
   }
+}
+.blog__input {
+  background: #212426;
+  border-radius: 12px;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
 }
