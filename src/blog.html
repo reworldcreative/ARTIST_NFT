@@ -227,8 +227,8 @@
                       wonder spirit houses.
                     </div>
 
-                    <div class="slide-forum__buttons">
-                      <a href="#" class="slide-forum__btn btn btn_dark" id="answer_1">
+                    <div class="slide-forum__buttons mb16">
+                      <a href="#" class="slide-forum__btn btn btn_dark">
                         <span>View answers (23)</span>
                       </a>
                       <a href="#" class="slide-forum__btn-answer btn">
@@ -236,9 +236,86 @@
                         <span>Answer</span>
                       </a>
                     </div>
+
+                    <p class="item-blog__input-title form__input-title">Your answer</p>
+                    <form action="#" class="blog__search-wrap _answer">
+                      <input
+                        type="text"
+                        aria-label="Search"
+                        name="Your answer"
+                        class="blog__input item-blog__input"
+                        placeholder="Your name"
+                      />
+                      <button type="submit" class="blog__search-btn btn btn_dark" aria-label="Search">
+                        <span>Send</span>
+                      </button>
+                    </form>
                   </div>
                 </li>
               </ul>
+            </div>
+            <div class="blog__forms">
+              <div class="blog__asking asking">
+                <h2 class="asking__subtitle subtitle">
+                  <span>ASKING</span>
+                </h2>
+                <h2 class="asking__title">Let your question here</h2>
+                <form action="@" class="asking__form">
+                  <div class="form__input-wrap">
+                    <p class="form__input-title">Your name</p>
+                    <input
+                      type="text"
+                      class="asking__input form__input"
+                      name="Your name"
+                      aria-label="Your name"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="form__input-wrap">
+                    <p class="form__input-title">Your question</p>
+                    <textarea
+                      class="asking__input form__input form__input_text"
+                      maxlength="99999"
+                      name="Question"
+                      aria-label="send-question"
+                      placeholder="Your question"
+                    ></textarea>
+                  </div>
+
+                  <button class="asking__btn btn btn_light" type="submit" aria-label="send-question">
+                    Make a question
+                  </button>
+                </form>
+              </div>
+              <div class="questions__stat forum-stat">
+                <div class="forum-stat__head">
+                  <div class="forum-stat__icon-wrap">
+                    <img src="@img/blog/schedule.svg" alt="icon" class="forum-stat__icon" />
+                  </div>
+                  <h3 class="forum-stat__subtitle subtitle">
+                    <span>STATS</span>
+                  </h3>
+                </div>
+
+                <ul class="forum-stat__list">
+                  <li class="forum-stat__item">
+                    <h3 class="forum-stat__item-title">TOTAL QUESTIONS</h3>
+                    <p class="forum-stat__item-num">10 999</p>
+                  </li>
+                  <li class="forum-stat__item">
+                    <h3 class="forum-stat__item-title">ANSWERS</h3>
+                    <p class="forum-stat__item-num">209 821</p>
+                  </li>
+                  <li class="forum-stat__item">
+                    <h3 class="forum-stat__item-title">ANSWERED</h3>
+                    <p class="forum-stat__item-num">4 560</p>
+                  </li>
+                  <li class="forum-stat__item">
+                    <h3 class="forum-stat__item-title">UNANSWERED</h3>
+                    <p class="forum-stat__item-num">8 320</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
