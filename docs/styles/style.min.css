@@ -1869,6 +1869,144 @@ a:visited {
   box-shadow: 0 0 5px #fff;
 }
 
+.blog {
+  background: #1d1f21;
+  margin-bottom: 39px;
+}
+.blog .container {
+  max-width: 1171px;
+  padding: 0 15px 0 30px;
+}
+.blog__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.blog__body {
+  width: 100%;
+  max-width: 730px;
+}
+.blog__forms {
+  width: 100%;
+  max-width: 365px;
+}
+.blog__search-wrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+.blog__input {
+  font-family: "Manrope";
+  display: block;
+  width: 100%;
+  border: 1px solid #525960;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 8px 11px 8px 60px;
+  color: #c8d2dc;
+  line-height: 19px;
+  transition: all 0.2s;
+}
+.blog__input::placeholder {
+  line-height: 19px;
+  color: #c8d2dc;
+  color: #c8d2dc;
+}
+.blog__input:hover {
+  box-shadow: 0 0 5px #525960;
+}
+.blog__input:focus {
+  border-color: #989fff;
+}
+.blog__search-icon, .blog__search-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.blog__search-icon {
+  left: 23px;
+  width: 24px;
+  height: 24px;
+}
+.blog__search-btn {
+  right: 12px;
+  padding: 14px 22px;
+  border-radius: 12px;
+}
+
+.item-blog {
+  position: relative;
+  padding: 29px 39px 30px 111px;
+  margin: 0px 0 17px 0;
+}
+.item-blog:last-child {
+  margin: 0;
+}
+.item-blog__avatar-wrap {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 54px;
+  top: 30px;
+  bottom: auto;
+  transform: translate(0);
+}
+.item-blog__avatar {
+  aspect-ratio: 1/1;
+}
+.item-blog__header {
+  display: flex;
+  justify-content: space-between;
+}
+.item-blog__title {
+  margin-bottom: 11px;
+}
+.item-blog__date {
+  margin: 0;
+  transform: translateY(9px);
+}
+.item-blog__text {
+  margin-bottom: 16px;
+}
+.item-blog__nav {
+  position: absolute;
+  top: 19px;
+  left: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  line-height: 19px;
+}
+.item-blog__up, .item-blog__down {
+  width: 16px;
+  height: 20px;
+}
+.item-blog__answers {
+  padding: 0 0 0 18px;
+  margin-bottom: 31px;
+  border-left: 1px solid #525960;
+}
+.item-blog__answers .slide-forum__name {
+  margin-bottom: 6px;
+}
+.item-blog__answer {
+  max-width: 522px;
+}
+.item-blog__input {
+  font-family: "ProximaNova";
+  border: 0;
+  background: #2c2f33;
+  border-radius: 9px;
+  padding: 21px 100px 22px 32px;
+  font-size: 16px;
+  line-height: 21px;
+}
+.item-blog .blog__search-btn {
+  width: 88px;
+  right: 8px;
+}
+
 .big-title {
   font-family: "Proxima Nova", sans-serif;
   font-size: calc(1.525rem + 3.3vw);
