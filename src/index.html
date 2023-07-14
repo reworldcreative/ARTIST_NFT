@@ -49,7 +49,8 @@
                     </div>
                     <div class="section-col">
                         <div class="main-hero__image">
-                            <img src="@img/main-hero.png" alt="woman with paint" width="662px" height="585px">
+                            <img class="main-hero__image_img" src="@img/main-hero.png" alt="woman with paint"
+                                width="662px" height="585px">
                         </div>
                     </div>
                 </div>
@@ -145,6 +146,110 @@
                 </div>
             </div>
         </section>
+
+        <section class="premium-banner">
+            <div class="premium-banner__wrapper">
+                <div class="premium-banner__container">
+                    <img class="premium-banner__crown" src="@img/crown.svg" alt="crown" width="45px" height="45px">
+                    <h2 class="section-title">Get the premium access</h2>
+                    <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam</p>
+
+                    @@include('html/components/button.html',{
+                    class:"main",
+                    text:"Go to plans",
+                    })
+                </div>
+
+                <div class="premium-banner__jewelry">
+                    <img class="premium-banner__jewelry_ellipse" src="@img/jewelry/Ellipse_2.svg" alt="Ellipse"
+                        width="512px" height="505px">
+                    <img class="premium-banner__jewelry_main" src="@img/jewelry/jewelry_1.png" alt="jewelry"
+                        width="350px" height="275px">
+                    <img class="premium-banner__jewelry_first" src="@img/jewelry/jewelry_2.png" alt="jewelry"
+                        width="270px" height="200px">
+                    <img class="premium-banner__jewelry_second" src="@img/jewelry/jewelry_3.png" alt="jewelry"
+                        width="180px" height="130px">
+                </div>
+            </div>
+        </section>
+
+        <section class="mainNFT-List">
+            <div class="mainNFT-List__wrapper">
+                <div class="NFT-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            @@include('html/components/NFT-Card.html',{
+                            image:"@img/nft-item.png",
+                            color:"purple",
+                            title:"Title of picture or NFT",
+                            price:"$100 322",
+                            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor",
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include('html/components/NFT-Card.html',{
+                            image:"@img/nft-item.png",
+                            color:"yellow",
+                            title:"Title of picture or NFT",
+                            price:"$100 322",
+                            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor",
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/components/NFT-Card.html',{
+                            image:"@img/nft-item.png",
+                            color:"blue",
+                            title:"Title of picture or NFT",
+                            price:"$100 322",
+                            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor",
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/components/NFT-Card.html',{
+                            image:"@img/nft-item.png",
+                            color:"purple",
+                            title:"Title of picture or NFT",
+                            price:"$100 322",
+                            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor",
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/components/NFT-Card.html',{
+                            image:"@img/nft-item.png",
+                            color:"yellow",
+                            title:"Title of picture or NFT",
+                            price:"$100 322",
+                            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor",
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/components/NFT-Card.html',{
+                            image:"@img/nft-item.png",
+                            color:"purple",
+                            title:"Title of picture or NFT",
+                            price:"$100 322",
+                            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor",
+                            })
+                        </div>
+                        <div class="swiper-slide">
+                            @@include('html/components/NFT-Card.html',{
+                            image:"@img/nft-item.png",
+                            color:"yellow",
+                            title:"Title of picture or NFT",
+                            price:"$100 322",
+                            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor",
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        @@include('html/components/contactSection.html',{})
     </main>
 
     @@include('html/footer.html',{})

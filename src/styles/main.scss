@@ -45,13 +45,13 @@
     width: fit-content;
     border-radius: 24px;
     background: url("../img/main-hero-bg.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: contain;
+    background-repeat: no-repeat !important;
+    background-position: right top !important;
+    background-size: contain !important;
     padding-top: 48px;
-    max-height: 92%;
+    max-height: 92% !important;
 
-    img {
+    &_img {
       border-radius: 24px;
     }
   }
@@ -109,11 +109,11 @@
     }
     &__image {
       width: auto;
-      max-height: 40vw;
+      max-height: 40vw !important;
       justify-content: end;
       display: flex;
 
-      img {
+      &_img {
         max-height: inherit;
         max-width: fit-content;
       }
@@ -125,12 +125,12 @@
   .main-hero {
     &__image {
       justify-content: center;
-      background-position: center;
-      background-size: cover;
+      background-position: center !important;
+      background-size: cover !important;
       padding: 0px;
-      max-height: 90vw;
+      max-height: 90vw !important;
 
-      img {
+      &_img {
         margin-top: -30px;
         width: fit-content;
         max-width: fit-content;
@@ -184,8 +184,8 @@
     &__image {
       max-width: 75%;
       padding-left: 50px;
-      max-height: 82vw;
-      img {
+      max-height: 82vw !important;
+      &_img {
         max-width: fit-content;
         max-height: 349px;
         margin-top: -43px;
@@ -225,7 +225,7 @@
   .main-hero {
     &__image {
       max-width: 100%;
-      img {
+      &_img {
         max-width: inherit;
         height: auto;
       }
@@ -244,7 +244,7 @@
 .biography {
   position: relative;
   &__wrapper {
-    margin: 75px auto 65.5px;
+    margin: 75px auto 75px;
     display: flex;
     justify-content: center;
   }
@@ -356,7 +356,7 @@
 @media screen and (max-width: 700px) {
   .biography {
     &__wrapper {
-      margin: 20px auto;
+      margin: 20px auto 31px;
     }
 
     .section-row {
@@ -431,6 +431,324 @@
         left: auto;
         right: 0px;
         transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .biography {
+    &__slider {
+      max-width: 60vw;
+      height: auto;
+
+      .swiper-slide {
+        height: 70vh;
+      }
+    }
+  }
+}
+
+.premium-banner {
+  &__wrapper {
+    position: relative;
+    // padding: 83px 110px;
+    padding: 83px 90px 83px 110px;
+    border-radius: 24px;
+    background: linear-gradient(
+      130deg,
+      #6880ff 0%,
+      #3ca7f4 55.2%,
+      #8c45ff 99.47%
+    );
+
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 1140px;
+    margin: 0px auto;
+    margin-bottom: 11px;
+    overflow: hidden;
+  }
+
+  &__container {
+    max-width: 444px;
+    display: grid;
+    gap: 12px;
+
+    .button {
+      width: fit-content;
+      padding: 18px 37px;
+
+      &__text {
+        font-size: 18px;
+        line-height: 26.5px;
+      }
+    }
+
+    img {
+      filter: invert(40%) sepia(141%) saturate(690%) hue-rotate(170deg)
+        brightness(440%) contrast(90%);
+    }
+  }
+
+  &__jewelry {
+    &_main {
+      top: 10px;
+      z-index: 2;
+      position: relative;
+    }
+
+    &_ellipse {
+      position: absolute;
+      right: -160px;
+      top: -16px;
+      z-index: 0;
+    }
+
+    &_first {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      z-index: 0;
+    }
+
+    &_second {
+      position: absolute;
+      right: 260px;
+      top: -20px;
+      z-index: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .premium-banner {
+    &__wrapper {
+      max-width: 100%;
+      margin: 0px 15px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .premium-banner {
+    &__wrapper {
+      display: grid;
+      gap: 27px;
+      justify-content: center;
+      padding: 32px 26px 64px;
+    }
+
+    &__jewelry {
+      display: grid;
+      justify-content: center;
+
+      &_ellipse {
+        right: auto;
+        top: auto;
+        bottom: -270px;
+      }
+
+      &_first {
+        right: -55px;
+      }
+
+      &_second {
+        right: auto;
+        top: auto;
+        left: -70px;
+        bottom: 0px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .premium-banner {
+    &__wrapper {
+      gap: 18px;
+      margin-bottom: 25px;
+    }
+    &__container {
+      max-width: fit-content;
+      gap: 0px;
+    }
+
+    &__crown {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 4px;
+    }
+
+    .section-title {
+      margin-bottom: 8px;
+    }
+
+    .section__text {
+      letter-spacing: -0.4px;
+    }
+
+    .button {
+      margin-top: 24px;
+      padding: 12px 28px;
+
+      &__text {
+        font-size: 15px;
+        line-height: 26.5px;
+      }
+    }
+
+    &__jewelry {
+      &_main {
+        width: 222px;
+        height: 161px;
+        top: 0px;
+        transform: rotate(353deg);
+      }
+
+      &_ellipse {
+        right: -35px;
+        top: auto;
+        bottom: -230px;
+        width: 415px;
+        height: 410px;
+      }
+
+      &_first {
+        width: 205px;
+        height: 125px;
+      }
+
+      &_second {
+        left: -100px;
+        bottom: 10px;
+        width: 205px;
+        height: 125px;
+        transform: rotate(28deg);
+      }
+    }
+  }
+}
+
+.mainNFT-List {
+  &__wrapper {
+    margin-bottom: 24px;
+  }
+
+  .NFT-slider {
+    overflow-y: visible;
+    overflow-x: clip;
+  }
+
+  .swiper-slide {
+    max-width: fit-content;
+    opacity: 0.3;
+  }
+  .swiper-slide-active {
+    margin-top: -31px;
+  }
+
+  .swiper-slide-active,
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainNFT-List {
+    .NFT-Card {
+      width: auto;
+      &__image {
+        &_img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mainNFT-List {
+    .NFT-slider {
+      padding-left: 15px;
+    }
+
+    .swiper-slide-active {
+      margin-top: 0px;
+    }
+
+    .swiper-slide {
+      opacity: 1;
+    }
+
+    .NFT-Card {
+      &__price {
+        font-size: 22px;
+        line-height: 152.273%;
+      }
+
+      &__top {
+        font-size: 14px;
+        line-height: 189.286%;
+        letter-spacing: 1.4px;
+      }
+
+      &__text {
+        max-width: fit-content;
+      }
+
+      .button {
+        padding: 10px 20px;
+        &__text {
+          font-size: 14px;
+          line-height: 142.857%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mainNFT-List {
+    .NFT-Card {
+      display: grid;
+      padding: 12px 14px 15px 13px;
+      &__top {
+        order: 2;
+        padding: 0px;
+      }
+
+      &__title {
+        margin-top: 0px;
+        letter-spacing: -0.7px;
+        line-height: 28px;
+      }
+
+      &__text {
+        letter-spacing: -0.9px;
+      }
+
+      &__image {
+        border-radius: 12px;
+        order: 1;
+        margin-bottom: 8px;
+        padding: 15px 34.7px 0px;
+      }
+
+      &__container {
+        order: 3;
+        padding: 0px;
+      }
+
+      &__bottom {
+        margin-top: 10px;
+        padding-top: 12px;
+        padding-right: 5px;
       }
     }
   }
