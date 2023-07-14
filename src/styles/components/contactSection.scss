@@ -177,7 +177,7 @@
 @media screen and (max-width: 600px) {
   .contacts {
     &__wrapper {
-      margin: 12px auto;
+      margin: 12px auto 35px;
       padding: 0px 15px;
     }
 
@@ -235,6 +235,14 @@
         font-size: 18px;
         line-height: 147.222%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contacts {
+    &__agree_text {
+      flex-wrap: wrap;
     }
   }
 }

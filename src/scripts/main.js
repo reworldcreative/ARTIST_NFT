@@ -102,15 +102,29 @@ function loadCSS(url) {
 }
 
 function checkSize() {
-  if ($(window).width() < 600) {
+  if ($(window).width() <= 600) {
     if ($(".header-navigation__list").length > 0) {
       $(".burger-menu__header")[0].after($(".header-navigation__list")[0]);
+    }
+
+    if ($(".footer__top").length > 0) {
+      $(".footer__top .logo")[0].after(
+        $(".footer__container .socialsLinks")[0]
+      );
+
+      $(".footer__container")[0].after($(".footer__links")[0]);
     }
   }
 
   if ($(window).width() > 600) {
     if ($(".header-navigation__list").length > 0) {
       $(".header-navigation")[0].append($(".header-navigation__list")[0]);
+    }
+
+    if ($(".footer__top").length > 0) {
+      $(".footer__top .logo")[0].after($(".footer__links")[0]);
+
+      $(".footer__container")[0].append($(".footer .socialsLinks")[0]);
     }
   }
 
