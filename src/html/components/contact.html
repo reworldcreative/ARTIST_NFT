@@ -1,0 +1,66 @@
+<div class="contact">
+  <div class="container container_contacts">
+    <h2 class="contact__subtitle subtitle">
+      <span>CONTACT ME</span>
+    </h2>
+    <h2 class="contact__title title-small">Want to apply your work or an question appeared?</h2>
+    <form action="#" class="contact__form form" id="send-question">
+      <div class="form__wrapper">
+        <div class="form__input-wrap">
+          <p class="form__input-title">Name</p>
+          <input
+            type="text"
+            class="form__input"
+            name="Name"
+            aria-label="send-question"
+            placeholder="Your name"
+            tabindex="1"
+          />
+        </div>
+        <div class="form__input-wrap">
+          <p class="form__input-title">Mail</p>
+          <input
+            type="email"
+            class="form__input"
+            name="Mail"
+            aria-label="send-question"
+            placeholder="Your mail"
+            tabindex="2"
+          />
+        </div>
+        <div class="form__input-wrap">
+          <p class="form__input-title">Your question</p>
+          <textarea
+            class="form__input form__input_text"
+            maxlength="99999"
+            name="Question"
+            axaria-label="send-question"
+            placeholder="Your question"
+            tabindex="3"
+          ></textarea>
+        </div>
+
+        <button class="form__btn btn btn_light" type="submit" aria-label="send-question">Send message</button>
+
+        <div class="form__checkbox-wrap">
+          <input
+            id="checkbox"
+            type="checkbox"
+            class="form__input-checkbox"
+            name="Question"
+            aria-label="send-question"
+            placeholder="Your question"
+            tabindex="3"
+            hidden
+          />
+          <label for="checkbox" class="form__custom-check">
+            <span
+              >I agree with <a href="#" class="form__link">Privacy Policy</a> and
+              <a href="#" class="form__link">Terms of use</a></span
+            >
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
