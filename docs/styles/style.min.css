@@ -2307,6 +2307,357 @@ button {
     display: none;
   }
 }
+.wrapper_arts {
+  background: url(../img/main/blur-b_arts.png) 0 20px no-repeat;
+}
+
+.arts-hero__title {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 65px;
+}
+
+.arts-hero__text {
+  max-width: 271px;
+  margin-bottom: 40px;
+}
+
+img {
+  vertical-align: top;
+}
+
+.main-page {
+  padding: 54px 0 54px;
+  margin-bottom: 20px;
+}
+.main-page .container {
+  max-width: 1237px;
+  padding: 0 15px 0 64px;
+}
+.main-page .arts-hero__row {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main-page .arts-hero__body {
+  margin: 45px 29px 0 0;
+  width: 100%;
+  max-width: 540px;
+  flex-shrink: 1;
+}
+.main-page .arts-hero__title {
+  max-width: 495px;
+}
+.main-page .arts-hero__text {
+  max-width: 100%;
+}
+.main-page .arts-hero__image-wrap {
+  max-width: 543.5px;
+  width: 100%;
+}
+.main-page .arts-hero__image {
+  aspect-ratio: 543.5/519.8;
+}
+.main-page .arts-hero__bubble {
+  left: 43.8%;
+  bottom: 18.4%;
+}
+.main-page .arts-hero__star_1 {
+  bottom: 19.4%;
+  left: 47.7%;
+}
+.main-page .arts-hero__star_2 {
+  right: 113px;
+  top: 39.1%;
+}
+.main-page .text-bg_1 {
+  top: 40px;
+  left: -105px;
+}
+.main-page .text-bg_2 {
+  bottom: 21px;
+  left: 32.2%;
+}
+
+.main-benefits__subtitle, .main-benefits__title {
+  text-align: center;
+}
+.main-benefits__title {
+  margin-bottom: 32px;
+}
+.main-benefits__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 63px;
+}
+.main-benefits__item {
+  background: #212426;
+  border-radius: 12px;
+  padding: 18px 23px 32px 19px;
+}
+.main-benefits__icon-wrap {
+  background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+  padding: 12px 0px 0px 10px;
+  border-radius: 12px;
+  margin-bottom: 9px;
+  width: 35px;
+  height: 35px;
+}
+.main-benefits__icon {
+  width: 23.28px;
+  height: 22.18px;
+}
+.main-benefits__item-title {
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.main-benefits__item-text {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+}
+
+.title-small {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+@media (max-width: 1220px) {
+  .main-page {
+    padding: 126px 0 54px;
+  }
+  .main-page .container {
+    max-width: 1140px;
+    padding: 0 15px;
+  }
+  .main-page .arts-hero__row {
+    align-items: center;
+  }
+  .main-page .text-bg_1 {
+    top: 69px;
+    left: 81px;
+  }
+}
+@media (max-width: 767px) {
+  .main-page {
+    padding: 126px 0 20px;
+  }
+  .main-page .arts-hero__row {
+    align-items: flex-start;
+  }
+  .main-page .arts-hero__body {
+    max-width: 100%;
+    margin: 0 0 54px;
+  }
+  .main-page .arts-hero__title {
+    max-width: 296px;
+  }
+  .main-page .arts-hero__text {
+    margin-bottom: 33px;
+  }
+  .main-page .arts-hero__image-wrap {
+    max-width: 345px;
+  }
+  .main-page .arts-hero__star_1 {
+    bottom: 51%;
+    left: 1px;
+  }
+  .main-page .arts-hero__star_2 {
+    right: 38px;
+    top: 44.1%;
+  }
+  .main-page .arts-hero__bubble {
+    left: 27.8%;
+    bottom: 49.6%;
+  }
+  .main-page .text-bg_1 {
+    display: block;
+    top: 69px;
+    left: 81px;
+  }
+  .main-page .text-bg_2 {
+    display: block;
+    top: 586px;
+    bottom: auto;
+    left: -21%;
+  }
+  .main-benefits__title, .main-benefits__subtitle {
+    text-align: left;
+  }
+  .main-benefits__title {
+    max-width: 276px;
+    margin-bottom: 29px;
+  }
+  .main-benefits__list {
+    grid-template-columns: repeat(auto-fit, minmax(167px, 1fr));
+    gap: 20px 11px;
+    margin-bottom: 24px;
+  }
+  .main-benefits__item {
+    padding: 10px 10px 11px;
+  }
+  .main-benefits__icon-wrap {
+    width: 36px;
+    height: 36px;
+    padding: 10.5px 10.5px 11.25px;
+    margin-bottom: 7px;
+  }
+  .main-benefits__icon {
+    width: 15px;
+    height: 14.3px;
+  }
+  .main-benefits__item-title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .main-benefits__item-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+.arts-hero__btn {
+  font-size: 18px;
+  line-height: 26px;
+  gap: 8px;
+}
+
+.arts-hero__btn {
+  width: 209px;
+  padding: 18px 10px 19px;
+}
+
+.text-bg {
+  position: absolute;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 97px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(252, 255, 255, 0.2);
+}
+
+.main-page .text-bg_1 {
+  top: 40px;
+  left: -105px;
+}
+
+.main-page .text-bg_2 {
+  bottom: 500px;
+  left: 32.2%;
+}
+
+.star {
+  position: absolute;
+}
+
+.arts-hero__star_1 {
+  bottom: 36.3%;
+  left: 44.5%;
+  transform: rotate(12deg);
+}
+
+.main-page .arts-hero__star_1 {
+  bottom: 55%;
+  left: 47.7%;
+}
+
+.arts-hero__star_2 {
+  width: 33.19px;
+  height: 44.73px;
+  right: 112px;
+  top: 35.1%;
+  transform: rotate(-17deg);
+}
+
+.main-page .arts-hero__star_2 {
+  right: 113px;
+  top: 32%;
+}
+
+.contact {
+  margin-bottom: 91px;
+}
+
+.contact__title,
+.contact__subtitle {
+  text-align: center;
+}
+
+.contact__title {
+  margin: 0 auto 7px;
+  max-width: 540px;
+}
+
+.form__wrapper {
+  margin: 0 auto;
+  max-width: 410px;
+}
+
+.form__input_text {
+  resize: none;
+  height: 182px;
+}
+
+.form__btn {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 18px 20px 19px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__input-radio,
+.form__input-checkbox {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+.form__custom-check {
+  display: block;
+  color: #c8d2dc;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form__custom-check::before,
+.form__custom-radio::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #525960;
+  border-radius: 7px;
+  flex-shrink: 0;
+  margin: 0 10px 0 0;
+  position: relative;
+}
+
+.form__link {
+  display: inline-block;
+  font-weight: 600;
+  color: #86a8ff;
+  margin: 0 5px;
+  text-decoration: underline;
+}
+
 .big-title {
   font-family: "Proxima Nova", sans-serif;
   font-size: calc(1.525rem + 3.3vw);
