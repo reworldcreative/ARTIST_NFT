@@ -4,6 +4,21 @@
 
   width: 351px;
 
+  &__image {
+    overflow: hidden;
+    border-radius: inherit;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    picture {
+      width: 100%;
+    }
+    &_img {
+      width: 100%;
+      border-radius: inherit;
+    }
+  }
+
   &.wide {
     width: 730px;
     .gallery-Item {
@@ -19,18 +34,6 @@
       &__price {
         margin-top: 8px;
       }
-    }
-  }
-
-  &__image {
-    overflow: hidden;
-    border-radius: inherit;
-    height: 420px;
-    display: flex;
-    align-items: center;
-    &_img {
-      width: 100%;
-      border-radius: inherit;
     }
   }
 
