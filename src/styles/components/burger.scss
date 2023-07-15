@@ -4,7 +4,7 @@
   background: $Main-BG;
   padding: 15px;
   width: 100vw;
-  height: 100vh;
+  height: 101vh;
   box-sizing: border-box;
   top: 0px;
   display: none;
@@ -31,6 +31,11 @@
       filter: invert(90%) sepia(11%) saturate(220%) hue-rotate(170deg)
         brightness(92%) contrast(90%);
     }
+  }
+
+  .socialsLinks {
+    position: absolute;
+    bottom: 30px;
   }
 }
 

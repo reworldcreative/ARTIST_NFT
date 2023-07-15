@@ -106,17 +106,3 @@
     }
   }
 }
-
-@media screen and (max-width: 340px) {
-  .footer {
-    &__top {
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-
-      .logo {
-        margin: 0px;
-      }
-    }
-  }
-}
