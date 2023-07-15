@@ -13,6 +13,20 @@
   &__image {
     display: none;
   }
+
+  &__arrow {
+    display: none;
+  }
+
+  &.arrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    .button__arrow {
+      display: block;
+    }
+  }
+
   &__text {
     letter-spacing: 0.3px;
     background: -webkit-linear-gradient(
