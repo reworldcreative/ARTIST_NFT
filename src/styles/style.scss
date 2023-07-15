@@ -28,28 +28,14 @@ body {
   background: $Main-BG;
 }
 
-<<<<<<< HEAD
 @import 'header';
-@import 'footer';
 @import 'components/button';
 @import 'components/socialsLinks';
 @import 'components/badge';
 @import 'main';
+@import 'footer';
 @import 'components/NFT-card';
 @import 'components/contactSection';
-@import 'pages/style.blog';
-@import 'pages/style.main';
-@import 'components/contact';
-=======
-@import "header";
-@import "components/button";
-@import "components/socialsLinks";
-@import "components/badge";
-@import "main";
-@import "footer";
-@import "components/NFT-card";
-@import "components/contactSection";
->>>>>>> main
 
 .big-title {
   font-family: 'Proxima Nova', sans-serif;
