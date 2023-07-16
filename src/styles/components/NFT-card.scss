@@ -109,3 +109,11 @@
     padding: 14px 30px;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .NFT-Card {
+    &__bottom {
+      flex-wrap: wrap;
+    }
+  }
+}

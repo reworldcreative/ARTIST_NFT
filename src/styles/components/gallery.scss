@@ -279,7 +279,7 @@
     height: 412px;
     &.wide {
       width: 100%;
-      height: 199px;
+      height: 240px;
     }
 
     &__image {
@@ -299,6 +299,21 @@
 
     &__list {
       gap: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gallery-Item {
+    &.wide {
+      height: 199px;
+    }
+
+    &__buttons {
+      margin: 20px auto 0px;
+      .button {
+        padding: 10px 0px;
+      }
     }
   }
 }

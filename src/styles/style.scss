@@ -42,6 +42,7 @@ body {
 
 @import "inspire";
 @import "components/gallery";
+@import "customClothes";
 
 .big-title {
   font-family: "Proxima Nova", sans-serif;
@@ -176,5 +177,17 @@ body {
 @media screen and (max-width: 370px) {
   .section-text__container {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .section-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .big-title {
+    font-size: 30px;
+    line-height: 30px;
   }
 }

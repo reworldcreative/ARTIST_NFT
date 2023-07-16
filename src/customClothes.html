@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Custom page"
+})
+
+<body>
+    @@include('html/header.html',{})
+
+    <main>
+        <section class="custom-hero">
+            <div class="custom-hero__decoration">
+                <img class="custom-hero__decoration_text-first" src="@img/decoration/CUTOM BY YOUR OWN.png"
+                    alt="CUTOM BY YOUR OWN" width="850px" height="60px">
+                <img class="custom-hero__decoration_text-second" src="@img/decoration/UNIQUE CLOTHES.png"
+                    alt="UNIQUE CLOTHES" width="673px" height="60px">
+
+                <img class="custom-hero__decoration_star" src="@img/decoration/star.svg" alt="star" aria-hidden="true"
+                    width="46px" height="62px">
+
+                <img class="custom-hero__decoration_circle-first" src="@img/decoration/circle.svg" alt="star"
+                    aria-hidden="circle" width="25px" height="25px">
+                <img class="custom-hero__decoration_star-second" src="@img/decoration/star.svg" alt="star"
+                    aria-hidden="true" width="33px" height="44.7px">
+
+                <img class="custom-hero__decoration_blur" src="@img/blurSpots/blur_1.png" alt="blue" aria-hidden="true"
+                    width="360px" height="800px">
+            </div>
+            <div class="custom-hero__wrapper">
+                <div class="section-row">
+                    <div class="section-col custom-hero__first-col">
+                        <div class="section-text__container">
+                            <h1 class="big-title">Are you ready to get custom clothes? </h1>
+                            <p class="section__text">Indulgence announcing uncommonly met she continuing two unpleasing
+                                terminated</p>
+                        </div>
+
+                        <div class="custom-hero__buttons">
+                            @@include('html/components/button.html',{
+                            class:"active premium",
+                            image:"@img/bag.svg",
+                            text:"Get custom now",
+                            })
+                        </div>
+                    </div>
+                    <div class="section-col custom-hero__second-col">
+                        <div class="custom-hero__slider card__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide custom-hero__slide">
+                                    <img class="custom-hero__slide_image" src="@img/customClothes/customClothes_1.jpg"
+                                        alt="fasion cloth" width="561px" height="561px">
+                                </div>
+                                <div class="swiper-slide custom-hero__slide">
+                                    <img class="custom-hero__slide_image" src="@img/customClothes/customClothes_2.jpg"
+                                        alt="fasion cloth" width="561px" height="561px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('html/footer.html',{})
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

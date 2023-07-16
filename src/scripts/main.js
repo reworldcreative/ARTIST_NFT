@@ -25,6 +25,9 @@ window.addEventListener("DOMContentLoaded", function () {
         effect: "cards",
         grabCursor: true,
       });
+
+      // vertical - вертикальна зміна слайдів
+      // cardSlider.changeDirection("vertical");
     }
 
     if ($(".biography__dates").length > 0) {
@@ -33,6 +36,10 @@ window.addEventListener("DOMContentLoaded", function () {
         // spaceBetween: 30,
 
         breakpoints: {
+          100: {
+            slidesPerView: 1.4,
+            spaceBetween: 5,
+          },
           300: {
             slidesPerView: 2,
             spaceBetween: 5,
@@ -53,6 +60,10 @@ window.addEventListener("DOMContentLoaded", function () {
         loop: true,
 
         breakpoints: {
+          100: {
+            slidesPerView: 1.1,
+            spaceBetween: 10,
+          },
           300: {
             slidesPerView: 1.27,
             spaceBetween: 16,
