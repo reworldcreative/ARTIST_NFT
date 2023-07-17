@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   &__wrapper {
-    margin: 63px auto 91px;
+    margin: 62px auto 92px;
   }
 
   .section-title {
@@ -40,6 +40,7 @@
       font-weight: 400;
       line-height: 150%;
       color: $Secondary;
+      height: auto;
     }
 
     &__input {

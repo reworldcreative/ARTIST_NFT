@@ -97,6 +97,10 @@
       opacity: 0.7;
     }
   }
+
+  &__gallery {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -273,5 +277,217 @@
     &__wrapper {
       margin: 15px 15px 40px;
     }
+  }
+}
+
+.input-container__lable {
+  width: auto;
+}
+
+.customClothes__customizer {
+  .contacts__wrapper {
+    margin: 65px auto 35px;
+  }
+
+  .contacts__agree {
+    margin-top: -6px;
+  }
+
+  &_select {
+    padding: 20px 20px 20px 32px;
+    width: auto;
+    height: 64px;
+    background: $frames;
+    border: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+
+    color: $Text;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+
+    appearance: none;
+    background-image: url("../img/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 1.6rem top 50%;
+    background-size: 0.65rem auto;
+
+    option {
+      color: $Text;
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 21px;
+    }
+
+    &:after {
+      top: 0px !important;
+    }
+
+    &:focus {
+      outline: 1px solid #68c9ff;
+    }
+  }
+
+  &_form {
+    margin-top: 32px;
+    gap: 26px;
+
+    .input-container__textarea {
+      height: 170px;
+    }
+  }
+}
+
+#customClothes {
+  .footer {
+    .socialsLinks {
+      margin-right: 18px;
+    }
+
+    .logo {
+      margin-left: 5px;
+    }
+  }
+}
+
+$colors: (
+  red: #ca3838,
+  orange: #eb8032,
+  yellow: #ffda57,
+  green: #79ce60,
+  downy: #60ceb4,
+  blue: #41d4f4,
+  ultramarine: #4153f4,
+  purple: #6541f4,
+  baffodil: #b041f4,
+  pink: #c45297,
+  marron: #a14051,
+  white: #fff,
+  grey: #cfcfcf,
+  cafe: #4a3221,
+  black: #000,
+);
+
+input[type="radio"] {
+  display: none;
+  &:checked + label {
+    span {
+      transform: scale(1.25);
+    }
+    @each $name, $value in $colors {
+      .#{"" + $name} {
+        border: 2px solid darken($value, 25%);
+      }
+    }
+  }
+}
+
+label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: -10.2px;
+
+  cursor: pointer;
+  &:hover {
+    span {
+      border: none;
+      transform: scale(1.25);
+    }
+  }
+  span {
+    border-radius: 50px;
+    border: 5px solid $Main-BG;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+    @each $name, $value in $colors {
+      &.#{"" + $name} {
+        background: $value;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .customClothes {
+    &__customizer {
+      .contacts__agree {
+        margin-top: 0px;
+      }
+      .contacts__wrapper {
+        margin: 57px auto 25px;
+      }
+
+      &_form {
+        margin-top: 15px;
+        gap: 15px;
+
+        .input-container {
+          &__textarea {
+            height: 188px;
+          }
+          &:nth-child(2) {
+            order: 3;
+          }
+
+          &:nth-child(4) {
+            order: 4;
+          }
+        }
+
+        .button {
+          order: 5;
+        }
+
+        .contacts__agree {
+          order: 6;
+        }
+      }
+    }
+  }
+
+  #customClothes__customizer_colors {
+    // width: 80%;
+    display: inline-flex;
+    gap: 15px 0px;
+    flex-wrap: wrap;
+    max-width: 80%;
+
+    label {
+      display: inline-flex;
+      width: 39px;
+      height: 40px;
+
+      margin-right: -15.2px;
+
+      span {
+        width: inherit;
+        height: initial;
+      }
+    }
+  }
+
+  #customClothes {
+    .footer {
+      .logo {
+        margin-left: 8px;
+      }
+      .socialsLinks {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #customClothes__customizer_colors {
+    max-width: 95%;
   }
 }

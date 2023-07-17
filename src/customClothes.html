@@ -4,7 +4,7 @@
 "title":"Custom page"
 })
 
-<body>
+<body id="customClothes">
     @@include('html/header.html',{})
 
     <main>
@@ -58,6 +58,126 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        @@include('html/components/gallery.html',{
+        class:"custom-hero__gallery"
+        })
+
+        <section class="contacts customClothes__customizer">
+            <div class="contacts__decoration">
+                <img class="contacts__decoration_box" src="@img/decoration/decoration-box.png" alt="box" width="600px"
+                    height="600px">
+
+                <img class="contacts__decoration_jewelry-first" src="@img/jewelry/jewelry_4.png" alt="jewelry"
+                    width="350px" height="380px">
+                <img class="contacts__decoration_jewelry-second" src="@img/jewelry/jewelry_5.png" alt="jewelry"
+                    width="230px" height="230px">
+                <img class="contacts__decoration_jewelry-third" src="@img/jewelry/jewelry_5_2.png" alt="jewelry"
+                    width="170px" height="170px">
+            </div>
+            <div class="contacts__wrapper">
+                <p class="small-title">CUSTOM BY YOUR OWN</p>
+                <h2 class="section-title">Want to get your own?</h2>
+                <form action="" class="contacts__form customClothes__customizer_form">
+                    <div class="input-container">
+                        <label class="input-container__lable" for="customClothes__customizer_type">Type of item</label>
+                        <select class="customClothes__customizer_select" name="customClothes__customizer_type"
+                            id="customClothes__customizer_type">
+                            <option value="T-SHIRT" selected>T-SHIRT</option>
+                            <option value="V-neck">V-neck</option>
+                            <option value="pocket T-shirt">pocket T-shirt</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-container__lable" for="customClothes__customizer_colors">Color</label>
+                        <div name="customClothes__customizer_colors" id="customClothes__customizer_colors">
+                            <input type="radio" name="color" id="red" />
+                            <label for="red"><span class="red"></span></label>
+
+                            <input type="radio" name="color" id="orange" />
+                            <label for="orange"><span class="orange"></span></label>
+
+                            <input type="radio" name="color" id="yellow" />
+                            <label for="yellow"><span class="yellow"></span></label>
+
+                            <input type="radio" name="color" id="green" />
+                            <label for="green"><span class="green"></span></label>
+
+
+                            <input type="radio" name="color" id="downy" />
+                            <label for="downy"><span class="downy"></span></label>
+
+                            <input type="radio" name="color" id="blue" />
+                            <label for="blue"><span class="blue"></span></label>
+
+                            <input type="radio" name="color" id="ultramarine" />
+                            <label for="ultramarine"><span class="ultramarine"></span></label>
+
+                            <input type="radio" name="color" id="purple" />
+                            <label for="purple"><span class="purple"></span></label>
+
+                            <input type="radio" name="color" id="baffodil" />
+                            <label for="baffodil"><span class="baffodil"></span></label>
+
+                            <input type="radio" name="color" id="pink" />
+                            <label for="pink"><span class="pink"></span></label>
+
+                            <input type="radio" name="color" id="marron" />
+                            <label for="marron"><span class="marron"></span></label>
+
+                            <input type="radio" name="color" id="white" />
+                            <label for="white"><span class="white"></span></label>
+
+                            <input type="radio" name="color" id="grey" />
+                            <label for="grey"><span class="grey"></span></label>
+
+                            <input type="radio" name="color" id="cafe" />
+                            <label for="cafe"><span class="cafe"></span></label>
+
+                            <input type="radio" name="color" id="black" />
+                            <label for="black"><span class="black"></span></label>
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-container__lable" for="customClothes__customizer_sizes">Size</label>
+                        <select class="customClothes__customizer_select" name="customClothes__customizer_sizes"
+                            id="customClothes__customizer_sizes">
+                            <option value="S">L (80 cm)</option>
+                            <option value="M">M (85 cm)</option>
+                            <option value="L">L (90 cm)</option>
+                            <option value="XL" selected>XL (99-99-99)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-container__lable" for="Custom-Comment">Your comment</label>
+                        <textarea class="input-container__input input-container__textarea" name="Custom-Comment"
+                            id="Custom-Comment" cols="30" rows="7" placeholder="Comment"></textarea>
+                    </div>
+
+                    @@include('html/components/button.html',{
+                    class:"active",
+                    text:"Send message",
+                    })
+
+
+                    <div class="contacts__agree">
+                        <label class="contacts__checkbox">
+                            <input type="checkbox" id="agree" name="agree">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="contacts__agree_text input-container__lable">
+                            <span>I agree with </span>
+                            <a class="input-container__link" href="#">Privacy Policy</a>
+                            <span> and </span>
+                            <a class="input-container__link" href="#">Terms of use</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
