@@ -10,6 +10,7 @@
     <main>
         <section class="main-hero">
             <div class="main-hero__decoration">
+
                 <img class="main-hero__decoration_text-first" src="@img/decoration/MAKE ART.svg" alt="MAKE ART"
                     aria-hidden="true" width="375px" height="97px">
                 <img class="main-hero__decoration_text-second" src="@img/decoration/NOT WAR.svg" alt="NOT WAR"
@@ -18,13 +19,16 @@
                 <img class="main-hero__decoration_star" src="@img/decoration/star.svg" alt="star" aria-hidden="true"
                     width="46px" height="62px">
 
-                <img class="main-hero__decoration_circle-first" src="@img/decoration/circle.svg" alt="star"
-                    aria-hidden="circle" width="25px" height="25px">
-                <img class="main-hero__decoration_circle-second" src="@img/decoration/circle.svg" alt="star"
-                    aria-hidden="circle" width="10px" height="10px">
+                <img class="main-hero__decoration_circle-first" src="@img/decoration/circle.svg" alt="circle"
+                    aria-hidden="true" width="25px" height="25px">
+                <img class="main-hero__decoration_circle-second" src="@img/decoration/circle.svg" alt="circle"
+                    aria-hidden="true" width="10px" height="10px">
 
-                <img class="main-hero__decoration_blur" src="@img/blurSpots/blur_1.png" alt="blue" aria-hidden="true"
-                    width="360px" height="700px">
+                <picture>
+                    <source srcset="@img/blurSpots/blur_1.webp" type="image/webp">
+                    <img class="main-hero__decoration_blur" src="@img/blurSpots/blur_1.png" alt="blue"
+                        aria-hidden="true" width="360px" height="700px">
+                </picture>
             </div>
             <div class="main-hero__wrapper">
                 <div class="section-row">
@@ -50,8 +54,11 @@
                     </div>
                     <div class="section-col">
                         <div class="main-hero__image">
-                            <img class="main-hero__image_img" src="@img/main-hero.png" alt="woman with paint"
-                                width="662px" height="585px">
+                            <picture>
+                                <source srcset="@img/main-hero.webp" type="image/webp">
+                                <img class="main-hero__image_img" src="@img/main-hero.png" width="662px" height="585px"
+                                    alt="woman with paint">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -60,14 +67,16 @@
 
         <section class="biography">
             <div class="biography__decoration">
-                <img class="biography__decoration_blur" src="@img/blurSpots/blur_1.png" alt="blue" aria-hidden="true"
-                    width="360px" height="700px">
-
+                <picture>
+                    <source srcset="@img/blurSpots/blur_1.webp" type="image/webp">
+                    <img class="biography__decoration_blur" src="@img/blurSpots/blur_1.png" alt="blue"
+                        aria-hidden="true" width="360px" height="700px">
+                </picture>
                 <img class="biography__decoration_star" src="@img/decoration/star.svg" alt="star" aria-hidden="true"
                     width="46px" height="62px">
 
-                <img class="biography__decoration_circle" src="@img/decoration/circle.svg" alt="star"
-                    aria-hidden="circle" width="25px" height="25px">
+                <img class="biography__decoration_circle" src="@img/decoration/circle.svg" alt="circle"
+                    aria-hidden="true" width="25px" height="25px">
             </div>
             <div class="biography__wrapper">
                 <div class="section-row">
@@ -75,16 +84,25 @@
                         <div class="biography__slider card__slider swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="@img/BIOGRAPHY/BIOGRAPHY_1.jpg" alt="fasion woman" width="445px"
-                                        height="570px">
+                                    <picture>
+                                        <source srcset="@img/BIOGRAPHY/BIOGRAPHY_1.webp" type="image/webp">
+                                        <img src="@img/BIOGRAPHY/BIOGRAPHY_1.jpg" width="445px" height="570px"
+                                            alt="fasion woman">
+                                    </picture>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@img/BIOGRAPHY/BIOGRAPHY_2.jpg" alt="fasion woman" width="445px"
-                                        height="570px">
+                                    <picture>
+                                        <source srcset="@img/BIOGRAPHY/BIOGRAPHY_2.webp" type="image/webp">
+                                        <img src="@img/BIOGRAPHY/BIOGRAPHY_2.jpg" width="445px" height="570px"
+                                            alt="fasion woman">
+                                    </picture>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@img/BIOGRAPHY/BIOGRAPHY_3.jpg" alt="fasion woman" width="445px"
-                                        height="570px">
+                                    <picture>
+                                        <source srcset="@img/BIOGRAPHY/BIOGRAPHY_3.webp" type="image/webp">
+                                        <img src="@img/BIOGRAPHY/BIOGRAPHY_3.jpg" width="445px" height="570px"
+                                            alt="fasion woman">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -163,12 +181,22 @@
                 <div class="premium-banner__jewelry">
                     <img class="premium-banner__jewelry_ellipse" src="@img/jewelry/Ellipse_2.svg" alt="Ellipse"
                         width="512px" height="505px">
-                    <img class="premium-banner__jewelry_main" src="@img/jewelry/jewelry_1.png" alt="jewelry"
-                        width="350px" height="275px">
-                    <img class="premium-banner__jewelry_first" src="@img/jewelry/jewelry_2.png" alt="jewelry"
-                        width="270px" height="200px">
-                    <img class="premium-banner__jewelry_second" src="@img/jewelry/jewelry_3.png" alt="jewelry"
-                        width="180px" height="130px">
+                    <picture>
+                        <source srcset="@img/jewelry/jewelry_1.webp" type="image/webp">
+                        <img class="premium-banner__jewelry_main" src="@img/jewelry/jewelry_1.png" width="350px"
+                            height="275px" alt="jewelry">
+                    </picture>
+                    <picture>
+                        <source srcset="@img/jewelry/jewelry_2.webp" type="image/webp">
+                        <img class="premium-banner__jewelry_first" src="@img/jewelry/jewelry_2.png" width="270px"
+                            height="200px" alt="jewelry">
+                    </picture>
+                    <picture>
+                        <source srcset="@img/jewelry/jewelry_3.webp" type="image/webp">
+                        <img class="premium-banner__jewelry_second" src="@img/jewelry/jewelry_3.png" alt="jewelry"
+                            width="180px" height="130px">
+                    </picture>
+
                 </div>
             </div>
         </section>

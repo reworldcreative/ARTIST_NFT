@@ -1,7 +1,6 @@
 import * as functions from "./modules/functions.js";
 
 functions.isWebp();
-
 window.addEventListener("DOMContentLoaded", function () {
   loadCSS("https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css");
   loadCSS(
