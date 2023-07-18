@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Main page"
+})
+
+<body>
+    @@include('html/header.html',{})
+
+    <main>
+        <section class="productPage-information">
+            <div class="productPage-information__wrapper">
+                @@include('html/components/Breadcrumbs.html', {
+                startLink:"index.html",
+                startText:"Main page",
+                prevLink:"",
+                show:"show",
+                prevText:"NFT",
+                current:"Name of product",
+                })
+
+                <div class="productPage-information__container">
+                    <div class="section-row">
+                        <div class="section-col section-col__first">
+                            <div class="productPage-information__image">
+                                <!-- <picture>
+                                    <source srcset="@img/nft-item.webp" type="image/webp">
+                                    <img class="productPage-information__image_img" src="@img/nft-item.png" alt="NFT image"
+                                    width="390px" height="500px">
+                                </picture> -->
+                                <img class="productPage-information__image_img" src="@img/nft-item.png" alt="NFT image"
+                                    width="390px" height="500px">
+                                <img class="productPage-information__image_ellipse" src="@img/jewelry/Ellipse_2.svg"
+                                    alt="Ellipse" width="572px" height="572px">
+                            </div>
+                        </div>
+                        <div class="section-col section-col__second">
+                            <p class="small-title">NFT</p>
+                            <h1 class="section-title">Title of picture or NFT</h1>
+                            <p class="section__text">Kindness to he horrible reserved ye. Effect twenty indeed beyond
+                                for not had county. The
+                                use him without greatly can private. Increasing it unpleasant no of contrasted no
+                                continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire
+                                inhabiting.
+                                <br><br>
+                                If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance
+                                defective.
+                            </p>
+
+                            <div class="productPage-information__buy-container">
+                                <div class="productPage-information__price-container">
+                                    <h2 class="productPage-information__price">$100 322</h2>
+                                    @@include('html/components/button.html',{
+                                    class:"active premium",
+                                    image:"@img/Money.svg",
+                                    text:"Buy now",
+                                    })
+                                </div>
+
+                                <p class="productPage-information__info">
+                                    You can purchase Art or NFT using popular system of payment. We accepting PayPal,
+                                    Visa/Mastercard. Any crypto currency
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        @@include('html/components/contactSection.html',{})
+    </main>
+
+    @@include('html/footer.html',{})
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="scripts/main.min.js"></script>
+</body>
+
+</html>
