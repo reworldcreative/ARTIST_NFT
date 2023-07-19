@@ -45,6 +45,7 @@ body {
 @import "components/gallery";
 @import "customClothes";
 @import "productPage";
+@import "components/paymentPopUp";
 
 .big-title {
   font-family: "Proxima Nova", sans-serif;
@@ -115,6 +116,48 @@ body {
     line-height: 28px;
     color: $Text;
     margin: 0px;
+  }
+}
+
+.input-container {
+  display: grid;
+  gap: 7px;
+  &__lable {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: $Secondary;
+    height: auto;
+  }
+
+  &__input {
+    border-radius: 9px;
+    background: $frames;
+    padding: 21px 32px 22px;
+    border: none;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 131.25%;
+    color: $Secondary;
+    resize: none;
+
+    &::placeholder {
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 131.25%;
+      color: $Secondary;
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline: 1px solid #68c9ff;
+    }
   }
 }
 
