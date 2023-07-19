@@ -187,4 +187,37 @@ $(document).ready(function () {
       stopScroll();
     });
   }
+
+  const playButton = document.getElementById("play-btn");
+  const videoPlaceholder = document.getElementById("video-placeholder");
+  const videoHUD = document.getElementById("video-HUD");
+
+  function loadAndPlayVideo() {
+    const youtubeUrl = playButton.dataset.youtubeButton;
+    const iframe = document.createElement("iframe");
+    iframe.setAttribute("width", "100%");
+    iframe.setAttribute("height", "100%");
+    iframe.setAttribute("src", youtubeUrl);
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "true");
+
+    videoPlaceholder.replaceWith(iframe);
+    playButton.style.display = "none";
+    // videoHUD.style.display = "none";
+
+    // Автоматичний запуск відео
+    // iframe.addEventListener("load", function () {
+    //   iframe.contentWindow.postMessage(
+    //     '{"event":"command","func":"playVideo","args":""}',
+    //     "*"
+    //   );
+    // });
+  }
+
+  if ($("#play-btn").length > 0) {
+    $("#play-btn").click(function (event) {
+      console.log("click");
+      loadAndPlayVideo();
+    });
+  }
 });

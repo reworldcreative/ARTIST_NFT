@@ -251,3 +251,16 @@
     }
   }
 }
+
+@media screen and (max-width: 250px) {
+  .contacts {
+    .input-container {
+      max-width: 100%;
+
+      &__input {
+        width: 100%;
+        max-width: fit-content;
+      }
+    }
+  }
+}

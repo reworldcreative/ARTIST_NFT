@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230718202633">
-    <title>Main page</title>
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230719192242">
+    <title>product page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230718202633" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230719192242" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230718202633">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230719192242">
 </head>
 
-<body>
+<body id="productPage">
     <nav class="burger-menu">
     <div class="burger-menu__header">
         <a href="index.html" class="logo ">
@@ -153,6 +153,11 @@
                     <div class="section-row">
                         <div class="section-col section-col__first">
                             <div class="productPage-information__image">
+                                <!-- <picture>
+                                    <source srcset="img/nft-item.webp" type="image/webp">
+                                    <img class="productPage-information__image_img" src="img/nft-item.png" alt="NFT image"
+                                    width="390px" height="500px">
+                                </picture> -->
                                 <img class="productPage-information__image_img" src="img/nft-item.png" alt="NFT image"
                                     width="390px" height="500px">
                                 <img class="productPage-information__image_ellipse" src="img/jewelry/Ellipse_2.svg"
@@ -196,6 +201,63 @@
             </div>
         </section>
 
+        <section class="productPage-proccess">
+            <div class="productPage-proccess__wrapper">
+                <div class="productPage-proccess__top">
+                    <img src="img/video.svg" alt="video" width="25px" height="25px">
+                    <h2 class="small-title">PROCCESS</h2>
+                </div>
+
+                <!-- NoPremium -->
+                <div class="productPage-proccess__video">
+                    <div class="video__container">
+                        <div class="productPage-proccess__video_preloader" id="video-placeholder">
+                            <picture><source srcset="img/gallery/galleryItem.webp" type="image/webp"><img src="img/gallery/galleryItem.jpg" alt="video_preloader" width="1045px" height="590px"></picture>
+                        </div>
+                        <button class="play-button" id="play-btn" aria-label="Play video"
+                            data-youtube-button="https://www.youtube.com/embed/UU5i1hPGbH0">
+                            <img src="img/play-arrow.svg" alt="play arrow" width="24px" height="26px">
+                        </button>
+                        <div class="productPage-proccess__video_HUD" id="video-HUD">
+                            <div class="productPage-proccess__video-bottom-info">
+                                <div class="productPage-proccess__video-bottom-info_autor">
+                                    <picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="avatar" width="32px" height="32px"></picture>
+                                    <p class="productPage-proccess__video-bottom-info_autorName">Perchen Arts</p>
+                                </div>
+
+                                <div class="productPage-proccess__video-bottom-info_lable">
+                                    <img src="img/crown.svg" alt="crown" width="18px" height="18pxpx">
+                                    <p class="small-title">premium content</p>
+                                </div>
+
+                                <time class="productPage-proccess__video-bottom-info_date"
+                                    datetime="2021-09-10">10/09/2021</time>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-Item__NoPremium">
+                        <div>
+                            <p class="gallery-Item__premium small-title">avalaible for premium</p>
+                            <div class="gallery-Item__locked">
+                                <img class="gallery-Item__locked_icon" src="img/lock.svg" alt="lock icon" width="40px"
+                                    height="40px">
+                                <h2 class="gallery-Item__locked_text">CONTENT LOCKED</h2>
+                            </div>
+                            <button class="button main arrow">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Unlock
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="contacts">
     <div class="contacts__decoration">
@@ -323,10 +385,10 @@
 </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230718202633"
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230719192242"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script src="scripts/main.min.js?_v=20230718202633"></script>
+    <script src="scripts/main.min.js?_v=20230719192242"></script>
 </body>
 
 </html>
