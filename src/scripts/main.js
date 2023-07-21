@@ -220,4 +220,40 @@ $(document).ready(function () {
       loadAndPlayVideo();
     });
   }
+
+  $(".tarifItem").click(function () {
+    $(".tarifItem").removeClass("active");
+    $(".tarifItem .button").removeClass("main");
+    $(".tarifItem .button").addClass("active");
+    $(this).addClass("active");
+    $(this).find(".button").removeClass("active");
+    $(this).find(".button").addClass("main");
+  });
+
+  // Отримуємо всі кнопки табів та вміст табів
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  // Додаємо обробник події кліку на кожну кнопку табу
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Вимикаємо активний стан для всіх кнопок та вмісту табів
+      tabButtons.forEach((btn) => btn.classList.remove("active"));
+      tabContents.forEach((content) => content.classList.remove("active"));
+
+      // Вмикаємо активний стан для поточної кнопки та вмісту табу
+      const tabId = button.getAttribute("data-tab");
+      const activeTab = document.getElementById(tabId);
+
+      button.classList.add("active");
+      activeTab.classList.add("active");
+
+      $(".tarifItem").removeClass("active");
+      $(".tarifItem .button").removeClass("main");
+      $(".tarifItem .button").addClass("active");
+      $(activeTab).find(".tarifItem").addClass("active");
+      $(activeTab).find(".tarifItem").find(".button").removeClass("active");
+      $(activeTab).find(".tarifItem").find(".button").addClass("main");
+    });
+  });
 });
