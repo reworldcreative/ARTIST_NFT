@@ -39,6 +39,7 @@ body {
 @import 'components/registration';
 @import 'components/product';
 
+@import 'pages/style.payment';
 @import 'pages/style.auction';
 @import 'pages/style.blog';
 @import 'pages/style.main';
@@ -176,7 +177,7 @@ body {
     max-width: 410px;
   }
   &__input-wrap {
-    margin-bottom: 15px;
+    margin-bottom: 7px;
   }
   &__small-wrap {
     display: flex;
@@ -264,6 +265,7 @@ body {
     padding: 18px 20px 19px;
     width: 100%;
     margin-bottom: 20px;
+    margin: 16px 0 17px 0px;
   }
   &__custom-check,
   &__custom-radio {
@@ -276,12 +278,12 @@ body {
     cursor: pointer;
     &::before {
       content: '';
-      width: 20px;
-      height: 20px;
+      width: 17px;
+      height: 17px;
       border: 1px solid #525960;
       border-radius: 7px;
       flex-shrink: 0;
-      margin: 0 10px 0 0;
+      margin: 0 11px 0 0;
       position: relative;
     }
   }
@@ -293,7 +295,7 @@ body {
   }
   &__input-checkbox {
     &:checked + label::before {
-      content: url('@img/icons/check.svg');
+      content: url('../img/main/check.svg');
       border-color: #86a8ff;
       box-shadow: 0 0 3px #86a8ff;
     }

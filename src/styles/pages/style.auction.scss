@@ -11,6 +11,20 @@
   line-height: 26px;
   letter-spacing: 0.1em;
 }
+.title-small-2 {
+  display: none;
+}
+@media (max-width: 375px) {
+  .title-small-2 {
+    display: block;
+  }
+  .title-small {
+    display: none;
+  }
+  .breadcrumbs {
+    padding: 30px 0 32px;
+  }
+}
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -311,6 +325,22 @@
     padding: 96px 0 32px;
   }
 }
+@media (max-width: 375px) {
+  .auction__title {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 700;
+  }
+  .breadcrumbs {
+    padding: 30px 0 32px;
+  }
+  .auction__title {
+    margin: 0;
+  }
+  .subtitle {
+    height: 27px;
+  }
+}
 .product__row {
   display: flex;
   align-items: start;
@@ -384,7 +414,8 @@
   }
 }
 
-@media (max-width: 767px) {
+// @media (max-width: 767px) {
+@media (max-width: 1024px) {
   .auction {
     margin-bottom: 16px;
     &__body {
