@@ -256,4 +256,40 @@ $(document).ready(function () {
       $(activeTab).find(".tarifItem").find(".button").addClass("main");
     });
   });
+
+  // Функція для зміни активного стану сторінки
+  function setActivePage(pageNumber) {
+    $(".Nfts-List__pagination_page").removeClass("active");
+    $(`#page${pageNumber}`).addClass("active");
+  }
+
+  // Обробник кліку по сторінці
+  $(".Nfts-List__pagination_page").on("click", function (event) {
+    event.preventDefault();
+    const pageNumber = $(this).attr("id").replace("page", "");
+    setActivePage(pageNumber);
+  });
+
+  // Обробник кліку по стрілці "назад"
+  $("#prevPage").on("click", function (event) {
+    event.preventDefault();
+    const currentPage = parseInt(
+      $(".Nfts-List__pagination_page.active").attr("id").replace("page", "")
+    );
+    if (currentPage > 1) {
+      setActivePage(currentPage - 1);
+    }
+  });
+
+  // Обробник кліку по стрілці "вперед"
+  $("#nextPage").on("click", function (event) {
+    event.preventDefault();
+    const currentPage = parseInt(
+      $(".Nfts-List__pagination_page.active").attr("id").replace("page", "")
+    );
+    const totalPages = parseInt($(".Nfts-List__pagination_page").length);
+    if (currentPage < totalPages) {
+      setActivePage(currentPage + 1);
+    }
+  });
 });

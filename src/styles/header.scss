@@ -143,6 +143,10 @@
   &:after {
     top: 0px !important;
   }
+
+  &:focus {
+    outline: 1px solid #68c9ff;
+  }
 }
 
 @media screen and (max-width: 1200px) {
