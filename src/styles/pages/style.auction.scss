@@ -1,0 +1,464 @@
+.title-small {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 700;
+
+  margin-top: 0;
+  word-spacing: 2px;
+}
+.subtitle {
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px;
+}
+.wrapper_auction {
+  background: url(../img/auction/blur-b_arts.png) 0 20px no-repeat,
+    url(../img/auction/blur-b_auction.png) 100% 20px no-repeat;
+}
+.auction {
+  margin-bottom: 32px;
+  &__row {
+    position: relative;
+  }
+  &__body {
+    width: 100%;
+    max-width: 540px;
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 26px;
+  }
+  &__list-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+  &__info-item {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 24px;
+    border-right: 1px solid #525960;
+    white-space: nowrap;
+    max-width: 180px;
+    &:first-child {
+      padding: 0 24px 0 0;
+    }
+    &:last-child {
+      white-space: normal;
+      padding: 0 0 0 23px;
+      border: 0;
+    }
+  }
+  &__item-price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+  }
+  &__bid-wrap {
+    width: 100%;
+    background: #212426;
+    border-radius: 12px;
+    padding: 22px 42px 21px;
+    position: relative;
+    text-align: center;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 16px;
+      width: 74.62%;
+      border-radius: 0px 0px 8px 8px;
+      background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    }
+  }
+  &__bid-form {
+    margin-bottom: 18px;
+  }
+  &__bid-subtitle {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  &__bid-price {
+    font-size: 26px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  &__input-title {
+    line-height: 21px;
+    color: #c8d2dc;
+    margin-bottom: 7px;
+    text-align: left;
+  }
+  &__input-wrap {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+  }
+  &__input {
+    width: 100%;
+    background: #2c2f33;
+    border-radius: 9px;
+    padding: 21px 32px 22px;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(200, 210, 220, 0.6);
+  }
+  &__btn {
+    width: 100%;
+    max-width: 177px;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 18px 20px 19px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  &__bid-time {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    gap: 11px;
+    max-width: 185px;
+    margin: 0 auto;
+  }
+  &__bid-live {
+    font-weight: 600;
+    font-size: 14px;
+    color: #c8d2dc;
+    margin-bottom: 17px;
+  }
+  &__bid-text {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #c8d2dc;
+    max-width: 345px;
+    margin: 0 auto;
+  }
+
+  &__star {
+    &_1 {
+      top: -24px;
+      left: -61px;
+    }
+    &_2 {
+      right: 68px;
+      top: -26px;
+      width: 24px;
+      height: 33px;
+    }
+  }
+  &__bubble {
+    width: 15px;
+    height: 15px;
+    bottom: 16px;
+    left: -31px;
+  }
+}
+
+.article-auction {
+  &__indicator-title {
+    font-weight: 600;
+    color: #c8d2dc;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  &__indicator {
+    background: #212426;
+    border-radius: 57px;
+    max-width: 540px;
+    height: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 22.96%;
+      border-radius: 57px;
+      background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+  &__article {
+    padding: 32px 21px 24px 30px;
+    background: #212426;
+    border-radius: 12px;
+    max-width: 730px;
+    margin: 0 20px 0 0;
+  }
+  &__title-article {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding: 0px 0 0 16px;
+    margin-bottom: 18px;
+    &::before {
+      content: '';
+      height: 100%;
+      width: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+      border-radius: 34px;
+    }
+  }
+  &__text {
+    margin-bottom: 28px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__banner {
+    border-radius: 12px;
+    background: url('../img/auction/banner-bg.png') center bottom no-repeat,
+      linear-gradient(140.92deg, #6880ff 3.3%, #3ca7f4 52.35%, #8c45ff 92.15%);
+    width: 100%;
+    max-width: 345px;
+    min-width: 280px;
+    height: 514px;
+    padding: 31px 26px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+  }
+  &__title-banner {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 8px;
+  }
+  &__text-banner {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  &__soc {
+    display: flex;
+    gap: 18px;
+  }
+  &__soc-icon {
+    width: 24px;
+    height: 24px;
+  }
+  &__soc-link {
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  &__btn {
+    display: none;
+  }
+}
+.breadcrumbs {
+  padding: 32px 0 24px;
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__link {
+    font-family: 'Manrope';
+    line-height: 19px;
+    text-decoration: none;
+    color: #c8d2dc;
+    &:hover {
+      opacity: 0.7;
+    }
+    &::after {
+      content: url('@img/icons/breacrumbs_arrow.svg');
+      margin: 0 9px;
+    }
+    &:last-child {
+      opacity: 1;
+      cursor: default;
+      pointer-events: none;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .breadcrumbs {
+    padding: 96px 0 32px;
+  }
+}
+.product__row {
+  display: flex;
+  align-items: start;
+}
+.breadcrumbs__link::after {
+  content: url(../img/main/breacrumbs_arrow.svg);
+  margin: 0 9px;
+}
+@media (max-width: 1220px) {
+  .auction {
+    &__list-info {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 31px;
+    }
+    &__info-item {
+      max-width: 100%;
+      width: 100%;
+      padding: 17px 0;
+      white-space: normal;
+      border: 0;
+      border-bottom: 1px solid #525960;
+      display: flex;
+      gap: 10px;
+      &:first-child {
+        padding: 0 0 15px;
+      }
+      &:nth-child(2) {
+        justify-content: space-between;
+      }
+      &:last-child {
+        padding: 16px 0 0;
+      }
+    }
+    &__bid-form {
+      margin-bottom: 21px;
+    }
+    &__bid-wrap {
+      padding: 29px 16px 22px;
+      &::before {
+        height: 10px;
+      }
+    }
+    &__bid-price {
+      margin-bottom: 21px;
+    }
+    &__input-wrap {
+      flex-direction: column;
+      gap: 11px;
+    }
+    &__btn {
+      max-width: 100%;
+      font-size: 15px;
+      line-height: 26px;
+      padding: 12px 15px 13px;
+    }
+    &__bid-time {
+      font-size: 18px;
+      line-height: 22px;
+      max-width: 152px;
+      gap: 9.5px;
+    }
+    &__bid-live {
+      line-height: 25px;
+    }
+    &__bid-text {
+      max-width: 277px;
+      padding: 15px 0 0;
+      border-top: 1px solid #525960;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .auction {
+    margin-bottom: 16px;
+    &__body {
+      max-width: 100%;
+    }
+    &__title {
+      margin-bottom: 13px;
+    }
+    &__info-item {
+      font-size: 15px;
+      line-height: 24px;
+      gap: 8px;
+    }
+    &__item-price {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__bubble,
+    &__star {
+      display: none;
+    }
+  }
+
+  .article-auction {
+    &__article {
+      margin: 0 0 22px 0;
+      padding: 16px 16px;
+    }
+    &__title-article {
+      max-width: 223px;
+      padding: 0px 0 0 15px;
+      margin-bottom: 7px;
+      &::before {
+        height: 75%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &__text {
+      margin-bottom: 24px;
+    }
+    &__indicator-title {
+      margin-bottom: 5px;
+    }
+    &__indicator::before {
+      width: 97px;
+    }
+    &__text-wrap {
+      margin-bottom: 15px;
+    }
+    &__row {
+      flex-direction: column;
+      margin-bottom: 31px;
+    }
+    &__btn {
+      display: block;
+      background: #2c2f33;
+      border-radius: 6px;
+      width: 107px;
+      height: 40px;
+      font-size: 18px;
+      line-height: 24px;
+      padding: 8px;
+    }
+    &__banner {
+      max-width: 100%;
+      background: url(../img/main/banner-bg_m.png) center 125% no-repeat,
+        linear-gradient(140.92deg, #6880ff 3.3%, #3ca7f4 52.35%, #8c45ff 92.15%);
+      height: 368px;
+    }
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px;
+}

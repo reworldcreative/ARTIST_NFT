@@ -1,67 +1,56 @@
 @@include('components/burger.html',{})
 <header class="header">
-    <div class="header__wrapper">
+  <div class="header__wrapper">
+    @@include('components/logo.html',{ class:"header__logo", })
 
-        @@include('components/logo.html',{
-        class:"header__logo",
-        })
+    <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item">
+          <a href="index.html" class="header-navigation__link">Main page</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">
+            <img src="@img/lock.svg" alt="lock icon" width="14px" height="14px" />
+            NFT
+          </a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Pictures</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Auction</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Pricing</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Contacts</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="blog.html" class="header-navigation__link">Blog</a>
+        </li>
+      </ul>
+    </nav>
 
-        <nav class="header-navigation">
-            <ul class="header-navigation__list">
-                <li class="header-navigation__item">
-                    <a href="index.html" class="header-navigation__link">Main page</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="#" class="header-navigation__link">
-                        <img src="@img/lock.svg" alt="lock icon" width="14px" height="14px">
-                        NFT
-                    </a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="#" class="header-navigation__link">Pictures</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="#" class="header-navigation__link">Auction</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="#" class="header-navigation__link">Pricing</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="#" class="header-navigation__link">Contacts</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="#" class="header-navigation__link">Blog</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="header__buttons">
+      <select class="languageSelect" name="languageSelect" id="languageSelect">
+        <option value="ENG" selected>ENG</option>
+        <option value="UA">UA</option>
+        <option value="FR">FR</option>
+      </select>
 
-        <div class="header__buttons">
-            <select class="languageSelect" name="languageSelect" id="languageSelect">
-                <option value="ENG" selected>ENG</option>
-                <option value="UA">UA</option>
-                <option value="FR">FR</option>
-            </select>
-
-            @@include('components/button.html',{
-            class:"main",
-            text:"Authorization",
-            })
-
-            @@include('components/button.html',{
-            class:"active",
-            text:"Premium access",
-            })
-        </div>
-
-        <div class="small-menu">
-            @@include('components/smallPemiumButton.html',{})
-
-            <button class="burger-button" aria-label="open burger menu">
-                <span class="burger-button__line" aria-hidden="true"></span>
-                <span class="burger-button__line" aria-hidden="true"></span>
-                <span class="burger-button__line" aria-hidden="true"></span>
-            </button>
-        </div>
-
+      @@include('components/button.html',{ class:"main", text:"Authorization", }) @@include('components/button.html',{
+      class:"active", text:"Premium access", })
     </div>
+
+    <div class="small-menu">
+      @@include('components/smallPemiumButton.html',{})
+
+      <button class="burger-button" aria-label="open burger menu">
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
 </header>
