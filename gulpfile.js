@@ -267,8 +267,7 @@ function fontsStyle() {
 function serve() {
   connect.server({
     root: buildFolder,
-    livereload: true,
-    port: 8081 // Используйте другой свободный порт, например, 8081
+    livereload: true
   });
 }
 

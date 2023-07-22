@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 @font-face {
   font-family: Proxima Nova;
   font-display: swap;
@@ -2152,6 +2153,1122 @@ body {
   }
   .product__btn {
     max-width: 100%;
+  }
+}
+@font-face {
+  font-family: Proxima Nova;
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Extrabld.woff2") format("woff2"), url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Proxima Nova;
+  font-display: swap;
+  src: url("../fonts/ProximaNova-BoldIt.woff2") format("woff2"), url("../fonts/ProximaNova-BoldIt.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Proxima Nova;
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Proxima Nova;
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Proxima Nova;
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+[class^=i-],
+[class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "iconfonts" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-out:before {
+  content: "\e900";
+}
+
+.i-bag:before {
+  content: "\e901";
+  color: #525960;
+}
+
+.i-orders:before {
+  content: "\e902";
+  color: #525960;
+}
+
+.i-workers:before {
+  content: "\e903";
+  color: #525960;
+}
+
+.i-mess:before {
+  content: "\e904";
+  color: #525960;
+  font-size: 17px;
+}
+
+.i-stat:before {
+  content: "\e905";
+  color: #525960;
+}
+
+.header-user,
+.content-user {
+  background: #1d1f21;
+}
+
+.header-user__container {
+  padding: 0 29px 0 26px;
+}
+.header-user__row {
+  padding: 8px 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-user__link-out {
+  display: flex;
+  align-items: center;
+  line-height: 19px;
+  color: #c8d2dc;
+  gap: 12px;
+}
+.header-user__link-out:hover {
+  color: #fff;
+}
+.header-user__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.content-user {
+  min-height: calc(100vh - 64px);
+  display: grid;
+  grid-template-columns: 245px 1fr;
+}
+.content-user__body {
+  grid-template-columns: 1fr;
+  background: #212426;
+  border-radius: 30px 0px 0px 0px;
+  display: none;
+}
+.content-user__body_chat {
+  grid-template-columns: 345px 1fr;
+}
+.content-user__body_table {
+  height: 100%;
+  padding: 28px 31px 20px 14px;
+  position: relative;
+}
+.content-user__body._active {
+  display: grid;
+}
+
+.user-menu {
+  padding: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-menu__link {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #c8d2dc;
+  padding: 12px 37px 12px 68px;
+  position: relative;
+}
+.user-menu__link span {
+  position: absolute;
+  top: 48%;
+  left: 37px;
+  transform: translateY(-50%);
+}
+.user-menu__link:hover {
+  background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+}
+.user-menu__link._active {
+  color: #fcffff;
+}
+.user-menu__link._active span::before {
+  background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.user-menu__out-link {
+  padding: 17px 0;
+  gap: 10px;
+}
+.user-menu__out-link:hover {
+  gap: 12px;
+}
+.user-menu__out-icon {
+  width: 18px;
+  height: 18px;
+}
+.user-menu__footer {
+  padding: 20px 28px;
+}
+.user-menu__copy {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 12px 0 0;
+  border-top: 1px solid #525960;
+}
+
+.chat__slider {
+  display: none;
+}
+
+.chat-list {
+  border-right: 1px solid rgba(82, 89, 96, 0.3);
+  padding: 32px 29px;
+  height: calc(100vh - 64px);
+  overflow: auto;
+}
+.chat-list__body {
+  flex: 1 1 auto;
+}
+.chat-list__form, .chat-list__slider {
+  display: none;
+}
+.chat-list__title {
+  line-height: 20px;
+  margin: 0 0 39px;
+}
+.chat-list__dialogs-list {
+  height: 100%;
+}
+
+.status {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #1d1f21;
+  border-radius: 100%;
+}
+.status._online {
+  background: #47cd7d;
+}
+.status._offline {
+  background: red;
+}
+
+.item-dialog {
+  background: #1d1f21;
+  border-radius: 14px;
+  padding: 14px 18px 14px 12px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px;
+}
+.item-dialog:last-child {
+  margin: 0;
+}
+.item-dialog__body {
+  width: 100%;
+}
+.item-dialog__image-wrap {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  margin: 0 12px 0 0;
+  position: relative;
+}
+.item-dialog__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
+.item-dialog__status {
+  bottom: 0;
+  right: 3px;
+}
+.item-dialog__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 15px;
+  color: #c8d2dc;
+  margin: 0 0 3px;
+}
+.item-dialog__name {
+  font-weight: 600;
+}
+.item-dialog__time {
+  color: rgba(200, 210, 220, 0.6);
+}
+.item-dialog__mess {
+  max-width: 200px;
+  line-height: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.item-dialog._active {
+  background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+}
+.item-dialog._active .item-dialog__name {
+  background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.item-dialog._active .item-dialog__status {
+  border-color: rgba(82, 89, 96, 0.1);
+}
+
+.dialog {
+  position: relative;
+  overflow: hidden;
+}
+.dialog__header, .dialog__footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.dialog__header {
+  top: 0;
+  padding: 25px 24px 5px;
+  background: #212426;
+}
+.dialog__out-link {
+  display: none;
+}
+.dialog__user, .dialog__user-info {
+  display: flex;
+  align-items: center;
+}
+.dialog__name {
+  margin: 0 26px 0 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+}
+.dialog__status {
+  font-size: 12px;
+  line-height: 15px;
+}
+.dialog__status-icon {
+  position: static;
+  border: 0;
+  margin: 0 6px 0 0;
+}
+.dialog__footer {
+  bottom: 0;
+  padding: 10px 24px 30px;
+  background: #212426;
+}
+.dialog__input-wrap {
+  position: relative;
+}
+.dialog__input {
+  display: block;
+  width: 100%;
+  background: #2c2f33;
+  border-radius: 9px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #c8d2dc;
+  padding: 19px 60px 20px 30px;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+.dialog__input::placeholder {
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(200, 210, 220, 0.6);
+}
+.dialog__input:hover {
+  box-shadow: 0 0 5px #c8d2dc;
+}
+.dialog__input:focus {
+  border-color: #93b2d1;
+}
+.dialog__btn {
+  background: transparent;
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  padding: 5px;
+  transition: all 0.3s;
+}
+.dialog__btn:hover {
+  transform: scale(1.2);
+}
+.dialog__btn-icon {
+  width: 21px;
+  height: 21px;
+}
+
+.main-dialog {
+  flex: 1 1 auto;
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 86px 24px 93px;
+  overflow: auto;
+}
+.main-dialog__time {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(200, 210, 220, 0.6);
+}
+.main-dialog__message {
+  position: relative;
+  background: #2c2f33;
+  border-radius: 8px 8px 0px 8px;
+  padding: 12px 24px;
+  margin: 0 0 28px;
+  max-width: 402px;
+}
+.main-dialog__message:last-child {
+  margin: 0 0 41px;
+}
+.main-dialog__message._image {
+  padding: 12px;
+  margin: 0 0 6px;
+}
+.main-dialog__message._incoming {
+  border-radius: 8px 8px 8px 0px;
+  background: #3626ea;
+  align-self: flex-start;
+  margin: 0 0 29px 29px;
+}
+.main-dialog__message._incoming .main-dialog__time {
+  right: auto;
+  left: -29px;
+}
+.main-dialog__avatar {
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  width: 19px;
+  height: 19px;
+}
+.main-dialog__picture-wrap {
+  width: 224px;
+  height: 224px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main-dialog__picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+.main-dialog__text {
+  line-height: 18px;
+}
+.main-dialog__new-messages {
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(200, 210, 220, 0.6);
+  text-align: center;
+  width: 100%;
+  padding: 3px 0 1px;
+  border-top: 1px solid #2c2f33;
+  border-bottom: 1px solid #2c2f33;
+  margin: 11px 0 20px;
+}
+
+.header-btn {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .content-user {
+    grid-template-columns: 150px 1fr;
+  }
+  .content-user__body_chat {
+    grid-template-columns: 250px 1fr;
+  }
+  .content-user__body_table {
+    padding: 28px 15px 14px;
+    overflow: auto;
+  }
+  .user-menu__link {
+    padding: 12px 15px 12px 40px;
+  }
+  .user-menu__link span {
+    left: 15px;
+  }
+  .user-menu__footer {
+    padding: 20px 25px;
+  }
+  .chat-list {
+    padding: 20px 10px;
+  }
+  .chat-list__title {
+    margin: 0 0 30px 15px;
+  }
+  .item-dialog__mess {
+    max-width: 150px;
+  }
+  .dialog__footer {
+    padding: 10px 10px 30px;
+  }
+  .main-dialog {
+    padding: 86px 10px 93px;
+  }
+}
+@media (max-width: 767px) {
+  .header-btn {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    padding: 10px 9px;
+  }
+  .header-btn__icon {
+    width: 14px;
+    height: 12px;
+  }
+  .header-user {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+  }
+  .header-user__container {
+    padding: 0 15px 0 15px;
+  }
+  .header-user__link-out {
+    display: none;
+  }
+  .content-user {
+    grid-template-columns: 0 1fr;
+  }
+  .content-user__body_chat {
+    background: #1d1f21;
+  }
+  .content-user__body_chat._active {
+    display: flex;
+  }
+  .content-user__body_table {
+    padding: 81px 15px 20px;
+    min-height: 100vh;
+  }
+  .user-menu__out-link {
+    display: flex;
+    padding: 15px 16px;
+  }
+  .user-menu__footer {
+    display: none;
+  }
+  .user-menu__list {
+    padding: 3px 0 10px;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #1d1f21;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+  }
+  .user-menu__list._active {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .user-menu__link {
+    padding: 15px 15px 15px 46px;
+  }
+  .user-menu__link._active::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    right: 17px;
+    top: 48%;
+    background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
+    border-radius: 100%;
+  }
+  .user-menu__link::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 1px;
+    left: 15px;
+    bottom: 0;
+    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+  }
+  .user-menu__link span {
+    top: 50%;
+  }
+  .user-menu__link span::before {
+    font-size: 18px;
+  }
+  .chat-list {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding: 81px 0 17px;
+  }
+  .chat-list__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 10px 15px;
+  }
+  .chat-list__dialogs-list {
+    padding: 0 15px;
+  }
+  .chat-list__form {
+    display: block;
+    position: relative;
+    margin: 0 15px 12px;
+  }
+  .chat-list__input {
+    display: block;
+    width: 100%;
+    background: #212426;
+    border-radius: 12px;
+    line-height: 15px;
+    padding: 18px 20px 19px 48px;
+    color: #c8d2dc;
+  }
+  .chat-list__input::placeholder {
+    color: #c8d2dc;
+  }
+  .chat-list__input:focus {
+    box-shadow: 0 0 5px #93b2d1;
+  }
+  .chat-list__search-icon {
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+  }
+  .chat-list__slider {
+    display: flex;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+  .chat-list__slide {
+    max-width: 90px;
+    text-align: center;
+  }
+  .chat-list__slide-image-wrap {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 8px;
+  }
+  .chat-list__slide-image-wrap .status {
+    width: 15.5px;
+    height: 15.5px;
+    right: 4px;
+  }
+  .chat-list__slide-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+  }
+  .chat-list__slide-name {
+    font-weight: 600;
+    font-size: 12px;
+    color: #c8d2dc;
+    line-height: 15px;
+  }
+  .chat-list__slide-time {
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(200, 210, 220, 0.6);
+  }
+  .item-dialog {
+    background: #2c2f33;
+    overflow: hidden;
+    padding: 14px 12px 14px 12px;
+  }
+  .item-dialog._active {
+    background: #2c2f33;
+  }
+  .item-dialog._active .item-dialog__name {
+    -webkit-text-fill-color: #c8d2dc;
+  }
+  .item-dialog__body {
+    overflow: hidden;
+  }
+  .item-dialog__mess {
+    max-width: 190px;
+    flex: 1 1 80%;
+  }
+  .dialog {
+    position: fixed;
+    right: -100%;
+    top: 64px;
+    width: 100%;
+    height: calc(100vh - 64px);
+    background: #1d1f21;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  .dialog._active {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 8;
+    pointer-events: auto;
+  }
+  .dialog__header {
+    padding: 17px 18px 5px;
+    background: #1d1f21;
+  }
+  .dialog__out-link {
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fcffff;
+    gap: 14px;
+    margin: 0 0 8px;
+  }
+  .dialog__user {
+    padding: 13px 12px;
+    background: #212426;
+    border-radius: 12px;
+  }
+  .dialog__user .item-dialog__image-wrap {
+    margin: 0 22px 0 0;
+    width: 52px;
+    height: 52px;
+  }
+  .dialog__user-info {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .dialog__status-icon {
+    position: absolute;
+    bottom: -1px;
+    right: -3px;
+    width: 13.56px;
+    height: 13.56px;
+    border: 1px solid #212426;
+  }
+  .dialog__status {
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(200, 210, 220, 0.6);
+  }
+  .dialog__footer {
+    padding: 10px 15px 27px;
+  }
+  .dialog__input {
+    padding: 16px 60px 17px 17px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .dialog__input::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .dialog__btn {
+    right: 11px;
+    top: 15px;
+  }
+  .dialog__btn-icon {
+    width: 17.5px;
+    height: 17.5px;
+  }
+  .main-dialog {
+    padding: 149px 15px 93px;
+  }
+  .main-dialog__message {
+    max-width: 87%;
+  }
+  .main-dialog__new-messages {
+    margin: 0px 0 22px;
   }
 }
 .form__input-wrap {
