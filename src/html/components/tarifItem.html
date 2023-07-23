@@ -1,0 +1,45 @@
+<article class="tarifItem @@class">
+    <div class="tarifItem__wrapper">
+        <p class="tarifItem__term">@@termText</p>
+        <img class="tarifItem__image" src="@@image" alt="stalagmite" aria-hidden="true" width="130px" height="167px">
+
+        <div class="tarifItem__termBanner">
+            <h2 class="tarifItem__termBanner_termin">One <span>@@term</span> access</h2>
+            <p class="tarifItem__termBanner_text">Purchasing this access you get</p>
+        </div>
+
+        <ul class="tarifItem__list">
+            <li class="tarifItem__benefit">
+                <img src="@img/Diamond.svg" alt="Diamond" aria-hidden="true" width="24px" height="24px">
+                <p class="tarifItem__text">To purchase item by crypto you have to send money to this wallet. After 5
+                    minute result will sent in
+                    your mail</p>
+            </li>
+            <li class="tarifItem__benefit">
+                <img src="@img/Diamond.svg" alt="Diamond" aria-hidden="true" width="24px" height="24px">
+                <p class="tarifItem__text">To purchase item by crypto you have to send money</p>
+            </li>
+            <li class="tarifItem__benefit">
+                <img src="@img/Diamond.svg" alt="Diamond" aria-hidden="true" width="24px" height="24px">
+                <p class="tarifItem__text">To purchase item by crypto you have to send money to this wallet. After 5
+                    minute result will sent in
+                    your mail</p>
+            </li>
+            <li class="tarifItem__benefit">
+                <img src="@img/Diamond.svg" alt="Diamond" aria-hidden="true" width="24px" height="24px">
+                <p class="tarifItem__text">To purchase item by crypto you have to send money</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tarifItem__priceContainer">
+        @@include('button.html',{
+        class:"@@classBtn",
+        text:"Purchase",
+        link:"#",
+        })
+        <div class="tarifItem__price">
+            @@price
+        </div>
+    </div>
+</article>

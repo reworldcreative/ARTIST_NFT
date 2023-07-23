@@ -60,6 +60,11 @@
     color: $Text;
     margin: 0px;
     margin-top: 3px;
+
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   &__text {
@@ -71,6 +76,13 @@
     margin: 0px;
     color: $Secondary;
     max-width: 257px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__bottom {
@@ -95,5 +107,13 @@
 
   .button {
     padding: 14px 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .NFT-Card {
+    &__bottom {
+      flex-wrap: wrap;
+    }
   }
 }

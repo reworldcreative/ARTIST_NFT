@@ -9,10 +9,26 @@
   font-weight: 700;
   line-height: 20px;
   cursor: pointer;
+  text-decoration: none;
+  width: fit-content;
 
   &__image {
     display: none;
   }
+
+  &__arrow {
+    display: none;
+  }
+
+  &.arrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    .button__arrow {
+      display: block;
+    }
+  }
+
   &__text {
     letter-spacing: 0.3px;
     background: -webkit-linear-gradient(

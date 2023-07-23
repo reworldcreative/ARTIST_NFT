@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   &__wrapper {
-    margin: 63px auto 91px;
+    margin: 62px auto 92px;
   }
 
   .section-title {
@@ -28,6 +28,8 @@
     font-size: 18px;
     line-height: 147.222%;
     padding: 18px 0px;
+    text-align: center;
+    width: 100%;
   }
 
   .input-container {
@@ -40,6 +42,7 @@
       font-weight: 400;
       line-height: 150%;
       color: $Secondary;
+      height: auto;
     }
 
     &__input {
@@ -177,7 +180,7 @@
 @media screen and (max-width: 600px) {
   .contacts {
     &__wrapper {
-      margin: 12px auto;
+      margin: 12px auto 35px;
       padding: 0px 15px;
     }
 
@@ -234,6 +237,31 @@
       &__text {
         font-size: 18px;
         line-height: 147.222%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contacts {
+    &__agree_text {
+      flex-wrap: wrap;
+    }
+
+    .input-container__input {
+      padding: 20px 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .contacts {
+    .input-container {
+      max-width: 100%;
+
+      &__input {
+        width: 100%;
+        max-width: fit-content;
       }
     }
   }

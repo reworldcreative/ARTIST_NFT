@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Custom page"
+})
+
+<body id="customClothes">
+    @@include('html/header.html',{})
+
+    <main>
+        <section class="custom-hero">
+            <div class="custom-hero__decoration">
+                <!-- <picture>
+                    <source srcset="@img/decoration/CUTOM BY YOUR OWN.webp" type="image/webp">
+                    <img class="custom-hero__decoration_text-first" data-src="@img/decoration/CUTOM BY YOUR OWN.png"
+                        aria-hidden="true" alt="CUTOM BY YOUR OWN" width="850px" height="60px">
+                </picture> -->
+                <img class="custom-hero__decoration_text-first" data-src="@img/decoration/CUTOM BY YOUR OWN.png"
+                    aria-hidden="true" alt="CUTOM BY YOUR OWN" width="850px" height="60px">
+                <!-- <picture>
+                    <source srcset="@img/decoration/UNIQUE CLOTHES.webp" type="image/webp">
+                    <img class="custom-hero__decoration_text-second" data-src="@img/decoration/UNIQUE CLOTHES.png"
+                        aria-hidden="true" alt="UNIQUE CLOTHES" width="673px" height="60px">
+                </picture> -->
+                <img class="custom-hero__decoration_text-second" data-src="@img/decoration/UNIQUE CLOTHES.png"
+                    aria-hidden="true" alt="UNIQUE CLOTHES" width="673px" height="60px">
+
+                <img class="custom-hero__decoration_star" data-src="@img/decoration/star.svg" alt="star"
+                    aria-hidden="true" width="46px" height="62px">
+
+                <img class="custom-hero__decoration_circle-first" data-src="@img/decoration/circle.svg" alt="circle"
+                    aria-hidden="true" width="25px" height="25px">
+                <img class="custom-hero__decoration_star-second" data-src="@img/decoration/star.svg" alt="star"
+                    aria-hidden="true" width="33px" height="44.7px">
+
+                <!-- <picture>
+                    <source srcset="@img/blurSpots/blur_1.webp" type="image/webp">
+                    <img class="custom-hero__decoration_blur" data-src="@img/blurSpots/blur_1.png" alt="blue"
+                        aria-hidden="true" width="360px" height="800px">
+                </picture> -->
+                <img class="custom-hero__decoration_blur" data-src="@img/blurSpots/blur_1.png" alt="blue"
+                    aria-hidden="true" width="360px" height="800px">
+
+            </div>
+            <div class="custom-hero__wrapper">
+                <div class="section-row">
+                    <div class="section-col custom-hero__first-col">
+                        <div class="section-text__container">
+                            <h1 class="big-title">Are you ready to get custom clothes? </h1>
+                            <p class="section__text">Indulgence announcing uncommonly met she continuing two unpleasing
+                                terminated</p>
+                        </div>
+
+                        <div class="custom-hero__buttons">
+                            @@include('html/components/button.html',{
+                            class:"active premium",
+                            image:"@img/bag.svg",
+                            text:"Get custom now",
+                            })
+                        </div>
+                    </div>
+                    <div class="section-col custom-hero__second-col">
+                        <div class="custom-hero__slider card__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide custom-hero__slide">
+                                    <!-- <picture>
+                                        <source srcset="@img/customClothes/customClothes_1.webp" type="image/webp">
+                                        <img class="custom-hero__slide_image"
+                                            src="@img/customClothes/customClothes_1.jpg" alt="fasion cloth"
+                                            width="561px" height="561px">
+                                    </picture> -->
+                                    <img class="custom-hero__slide_image" src="@img/customClothes/customClothes_1.jpg"
+                                        alt="fasion cloth" width="561px" height="561px">
+
+                                </div>
+                                <div class="swiper-slide custom-hero__slide">
+                                    <!-- <picture>
+                                        <source srcset="@img/customClothes/customClothes_2.webp" type="image/webp">
+                                        <img class="custom-hero__slide_image"
+                                            src="@img/customClothes/customClothes_2.jpg" alt="fasion cloth"
+                                            width="561px" height="561px">
+                                    </picture> -->
+                                    <img class="custom-hero__slide_image" src="@img/customClothes/customClothes_2.jpg"
+                                        alt="fasion cloth" width="561px" height="561px">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('html/components/gallery.html',{
+        class:"custom-hero__gallery"
+        })
+
+        <section class="contacts customClothes__customizer">
+            <div class="contacts__decoration">
+                <!-- <picture>
+                    <source srcset="@img/decoration/decoration-box.webp" type="image/webp">
+                    <img class="contacts__decoration_box" data-src="@img/decoration/decoration-box.png" alt="box"
+                        width="600px" height="600px">
+                </picture> -->
+                <img class="contacts__decoration_box" data-src="@img/decoration/decoration-box.png" alt="box"
+                    width="600px" height="600px">
+
+                <!-- <picture>
+                    <source srcset="@img/jewelry/jewelry_4.webp" type="image/webp">
+                    <img class="contacts__decoration_jewelry-first" data-src="@img/jewelry/jewelry_4.png" alt="jewelry"
+                        width="350px" height="380px">
+                </picture> -->
+                <img class="contacts__decoration_jewelry-first" data-src="@img/jewelry/jewelry_4.png" alt="jewelry"
+                    width="350px" height="380px">
+                <!-- <picture>
+                    <source srcset="@img/jewelry/jewelry_5.webp" type="image/webp">
+                    <img class="contacts__decoration_jewelry-second" data-src="@img/jewelry/jewelry_5.png" alt="jewelry"
+                        width="230px" height="230px">
+                </picture> -->
+                <img class="contacts__decoration_jewelry-second" data-src="@img/jewelry/jewelry_5.png" alt="jewelry"
+                    width="230px" height="230px">
+                <!-- <picture>
+                    <source srcset="@img/jewelry/jewelry_5_2.webp" type="image/webp">
+                    <img class="contacts__decoration_jewelry-third" data-src="@img/jewelry/jewelry_5_2.png"
+                        alt="jewelry" width="170px" height="170px">
+                </picture> -->
+                <img class="contacts__decoration_jewelry-third" data-src="@img/jewelry/jewelry_5_2.png" alt="jewelry"
+                    width="170px" height="170px">
+
+            </div>
+            <div class="contacts__wrapper">
+                <p class="small-title">CUSTOM BY YOUR OWN</p>
+                <h2 class="section-title">Want to get your own?</h2>
+                <form action="" class="contacts__form customClothes__customizer_form">
+                    <div class="input-container">
+                        <label class="input-container__lable" for="customClothes__customizer_type">Type of item</label>
+                        <select class="customClothes__customizer_select" name="customClothes__customizer_type"
+                            id="customClothes__customizer_type">
+                            <option value="T-SHIRT" selected>T-SHIRT</option>
+                            <option value="V-neck">V-neck</option>
+                            <option value="pocket T-shirt">pocket T-shirt</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-container__lable" for="customClothes__customizer_colors">Color</label>
+                        <div name="customClothes__customizer_colors" id="customClothes__customizer_colors">
+                            <input type="radio" name="color" id="red" />
+                            <label for="red"><span class="red"></span></label>
+
+                            <input type="radio" name="color" id="orange" />
+                            <label for="orange"><span class="orange"></span></label>
+
+                            <input type="radio" name="color" id="yellow" />
+                            <label for="yellow"><span class="yellow"></span></label>
+
+                            <input type="radio" name="color" id="green" />
+                            <label for="green"><span class="green"></span></label>
+
+
+                            <input type="radio" name="color" id="downy" />
+                            <label for="downy"><span class="downy"></span></label>
+
+                            <input type="radio" name="color" id="blue" />
+                            <label for="blue"><span class="blue"></span></label>
+
+                            <input type="radio" name="color" id="ultramarine" />
+                            <label for="ultramarine"><span class="ultramarine"></span></label>
+
+                            <input type="radio" name="color" id="purple" />
+                            <label for="purple"><span class="purple"></span></label>
+
+                            <input type="radio" name="color" id="baffodil" />
+                            <label for="baffodil"><span class="baffodil"></span></label>
+
+                            <input type="radio" name="color" id="pink" />
+                            <label for="pink"><span class="pink"></span></label>
+
+                            <input type="radio" name="color" id="marron" />
+                            <label for="marron"><span class="marron"></span></label>
+
+                            <input type="radio" name="color" id="white" />
+                            <label for="white"><span class="white"></span></label>
+
+                            <input type="radio" name="color" id="grey" />
+                            <label for="grey"><span class="grey"></span></label>
+
+                            <input type="radio" name="color" id="cafe" />
+                            <label for="cafe"><span class="cafe"></span></label>
+
+                            <input type="radio" name="color" id="black" />
+                            <label for="black"><span class="black"></span></label>
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-container__lable" for="customClothes__customizer_sizes">Size</label>
+                        <select class="customClothes__customizer_select" name="customClothes__customizer_sizes"
+                            id="customClothes__customizer_sizes">
+                            <option value="S">L (80 cm)</option>
+                            <option value="M">M (85 cm)</option>
+                            <option value="L">L (90 cm)</option>
+                            <option value="XL" selected>XL (99-99-99)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-container__lable" for="Custom-Comment">Your comment</label>
+                        <textarea class="input-container__input input-container__textarea" name="Custom-Comment"
+                            id="Custom-Comment" cols="30" rows="7" placeholder="Comment"></textarea>
+                    </div>
+
+                    @@include('html/components/button.html',{
+                    class:"active",
+                    text:"Send message",
+                    })
+
+
+                    <div class="contacts__agree">
+                        <label class="contacts__checkbox">
+                            <input type="checkbox" id="agree" name="agree">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="contacts__agree_text input-container__lable">
+                            <span>I agree with </span>
+                            <a class="input-container__link" href="#">Privacy Policy</a>
+                            <span> and </span>
+                            <a class="input-container__link" href="#">Terms of use</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    @@include('html/footer.html',{})
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

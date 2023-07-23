@@ -241,6 +241,18 @@
   }
 }
 
+@media screen and (max-width: 350px) {
+  .main-hero {
+    &__wrapper {
+      padding: 25px 0px 40px;
+    }
+
+    .big-title {
+      max-width: 100%;
+    }
+  }
+}
+
 .biography {
   position: relative;
   &__wrapper {
@@ -303,6 +315,7 @@
   &__decoration {
     img {
       position: absolute;
+      z-index: -1;
     }
     &_blur {
       top: -100px;
@@ -436,7 +449,7 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
   .biography {
     &__slider {
       max-width: 60vw;
@@ -444,7 +457,34 @@
 
       .swiper-slide {
         height: 70vh;
+        height: 230px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .biography {
+    &__wrapper {
+      justify-content: flex-start;
+    }
+
+    &__container {
+      width: 100vw;
+    }
+
+    &__top {
+      width: fit-content;
+      padding-left: 10px;
+    }
+    &__slider {
+      .swiper-slide {
+        height: 60vh;
+      }
+    }
+
+    .section__text {
+      box-sizing: border-box;
     }
   }
 }
@@ -629,6 +669,14 @@
         height: 125px;
         transform: rotate(28deg);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .premium-banner {
+    &__container {
+      padding: 0px 20px;
     }
   }
 }

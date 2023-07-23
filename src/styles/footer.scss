@@ -1,87 +1,174 @@
-html,
-body {
-  font-family: 'ProximaNova';
-  background: #1d1f21;
-  color: #fcffff;
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  font-weight: 400;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-a,
-a:visited {
-  display: block;
-  transition: 0.2s all;
-  text-decoration: none;
-}
-.container {
-  margin: 0 auto;
-  max-width: 1140px;
-  padding: 0 15px;
-  &_big {
-    max-width: 1170px;
-  }
-  //
-}
-.footer {
-  background: #212426;
+// .footer {
+//   background: #212426;
 
-  &__logo {
-    margin: 0 14px 0 0;
-    @media (max-width: 767px) {
-      order: 1;
-      width: 30%;
-      margin: 0;
-    }
-    @media (max-width: 375px) {
-      margin-bottom: 10px;
-    }
+//   &__logo {
+//     margin: 0 14px 0 0;
+//     @media (max-width: 767px) {
+//       order: 1;
+//       width: 30%;
+//       margin: 0;
+//     }
+//     @media (max-width: 375px) {
+//       margin-bottom: 10px;
+//     }
+//   }
+//   &__top,
+//   &__list {
+//     display: flex;
+//     align-items: center;
+//   }
+//   &__top {
+//     padding: 11px 15px 12px 0;
+//     border-bottom: 1px solid rgb(252, 255, 255, 0.05);
+//   }
+//   &__list,
+//   &__soc {
+//     padding: 6px 0 0;
+//   }
+//   &__link {
+//     color: rgba(200, 210, 220, 0.6);
+//     margin: 0 30px 0 0;
+//     font-size: 16px;
+//     line-height: 21px;
+//     &:last-child {
+//       margin: 0;
+//     }
+//     &:hover {
+//       text-shadow: 0 0 1px #fff;
+//     }
+//   }
+//   &__soc {
+//     flex: 1 1 auto;
+//     margin: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//     // margin: 0 0 27px 0;
+//     gap: 18px;
+//     transform: scale(1);
+//   }
+//   &__bottom {
+//     text-align: center;
+//     padding: 10px 0 9px;
+//     font-size: 12px;
+//     line-height: 20px;
+//     color: #c8d2dc;
+//   }
+// }
+.footer {
+  background: $frames;
+  &__wrapper {
+    width: 1140px;
+    padding: 19px 0px 9px;
+    margin: 0px auto;
   }
-  &__top,
-  &__list {
-    display: flex;
-    align-items: center;
+
+  .logo {
+    margin-left: 8px;
   }
+
   &__top {
-    padding: 11px 15px 12px 0;
-    border-bottom: 1px solid rgb(252, 255, 255, 0.05);
-  }
-  &__list,
-  &__soc {
-    padding: 6px 0 0;
-  }
-  &__link {
-    color: rgba(200, 210, 220, 0.6);
-    margin: 0 30px 0 0;
-    font-size: 16px;
-    line-height: 21px;
-    &:last-child {
-      margin: 0;
-    }
-    &:hover {
-      text-shadow: 0 0 1px #fff;
-    }
-  }
-  &__soc {
-    flex: 1 1 auto;
-    margin: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    // margin: 0 0 27px 0;
-    gap: 18px;
-    transform: scale(1);
   }
+
+  .section__text {
+    line-height: 131.25%;
+    text-decoration: none;
+    opacity: 0.6;
+  }
+
+  &__links {
+    display: flex;
+    gap: 30px;
+    margin-left: 21px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 15px;
+  }
+
+  .socialsLinks {
+    margin-right: 15px;
+  }
+
   &__bottom {
+    border-top: 1px solid rgba(252, 255, 255, 0.05);
+    padding-top: 10px;
     text-align: center;
-    padding: 10px 0 9px;
+    font-family: "Proxima Nova", sans-serif;
     font-size: 12px;
-    line-height: 20px;
-    color: #c8d2dc;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.667%;
+    color: $Secondary;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    &__wrapper {
+      width: auto;
+      padding: 29px 15px 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__container {
+      padding: 0px;
+    }
+
+    &__links {
+      margin: 0px;
+      margin-top: 25px;
+      display: grid;
+      gap: 0px;
+
+      .section__text {
+        letter-spacing: 0.1px;
+        &:first-child {
+          padding-bottom: 15px;
+          border-bottom: 1px solid rgba(252, 255, 255, 0.05);
+          max-width: 100%;
+        }
+
+        &:last-child {
+          padding-top: 15px;
+        }
+      }
+    }
+
+    .socialsLinks {
+      margin-right: 0px;
+    }
+
+    &__bottom {
+      border: none;
+      margin-top: 22px;
+      padding: 13px;
+      background: $Main-BG;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer {
+    &__top {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
   }
 }
