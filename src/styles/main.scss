@@ -475,6 +475,10 @@
       .swiper-slide {
         height: 70vh;
         height: 230px;
+
+        img {
+          height: -webkit-fill-available;
+        }
       }
     }
   }
@@ -496,12 +500,23 @@
     }
     &__slider {
       .swiper-slide {
-        height: 60vh;
+        // height: 60vh;
+        height: 250px;
       }
     }
 
     .section__text {
       box-sizing: border-box;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .biography {
+    &__slider {
+      .swiper-slide {
+        height: 200px;
+      }
     }
   }
 }
