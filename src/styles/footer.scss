@@ -57,14 +57,16 @@
 // }
 .footer {
   background: $frames;
+  z-index: 30;
   &__wrapper {
     width: 1140px;
-    padding: 19px 0px 9px;
+    padding: 17px 0px 9px;
     margin: 0px auto;
   }
 
   .logo {
     margin-left: 8px;
+    margin-bottom: 8px;
   }
 
   &__top {
@@ -87,7 +89,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     padding-bottom: 15px;
   }
 
@@ -114,6 +116,10 @@
       width: auto;
       padding: 29px 15px 25px;
     }
+
+    .logo {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -131,7 +137,7 @@
 
     &__links {
       margin: 0px;
-      margin-top: 25px;
+      margin-top: 29px;
       display: grid;
       gap: 0px;
 

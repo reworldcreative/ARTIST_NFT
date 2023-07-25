@@ -8,6 +8,8 @@
     gap: 16px;
     width: 550px;
     margin: 62px auto 38px;
+    z-index: 3;
+    position: relative;
   }
 
   .section__text {
@@ -18,7 +20,7 @@
   &__decoration {
     img {
       position: absolute;
-      z-index: -1;
+      z-index: 0;
     }
 
     &_text-first {
@@ -42,30 +44,30 @@
     }
 
     &_jewelry-second {
-      z-index: -2 !important;
+      z-index: 1 !important;
       right: 20%;
       top: -15px;
     }
 
     &_jewelry-first {
-      z-index: -2 !important;
+      z-index: 1 !important;
       top: 41%;
       right: -75px;
     }
 
     &_jewelry-third {
-      z-index: -2 !important;
+      z-index: 1 !important;
       left: -140px;
       top: 65px;
     }
 
     &_blur {
-      z-index: -3 !important;
+      z-index: 0 !important;
       top: -70%;
     }
 
     &_blur-second {
-      z-index: -3 !important;
+      z-index: 0 !important;
       right: 0px;
       top: -60%;
       transform: rotate(180deg);
@@ -143,6 +145,7 @@
       width: 72%;
       font-size: 36px;
       margin-left: 4px;
+      letter-spacing: 0.1px;
     }
 
     &__decoration {
@@ -231,6 +234,8 @@
   // display: none;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 5;
 }
 
 .tab-header {

@@ -33,7 +33,7 @@
   .Nfts-Top {
     &__wrapper {
       padding: 0px 15px;
-      margin: 23px auto 43px;
+      margin: 23px auto 45px;
     }
     .big-title {
       width: auto;
@@ -118,6 +118,9 @@
     transform: rotate(90deg);
     border: 2px solid $stroke;
     line-height: 24px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:last-child {
       transform: rotate(-90deg);
@@ -284,6 +287,16 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .Nfts-List {
+    .NFT-Card {
+      &__image_img {
+        height: 155px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 360px) {
   .Nfts-List {
     &__pagination {
@@ -292,6 +305,12 @@
         height: 30px;
         font-size: 15px;
         padding: 4px;
+      }
+    }
+
+    .NFT-Card {
+      &__image_img {
+        height: auto;
       }
     }
   }

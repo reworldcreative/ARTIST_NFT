@@ -4,7 +4,7 @@
   &__wrapper {
     display: flex;
     justify-content: center;
-    margin: 62px 0px 65px;
+    margin: 65px 0px 67px;
   }
 
   .section-row {
@@ -19,6 +19,11 @@
       line-height: 147.222%;
       padding: 18px 22px 19px;
     }
+  }
+
+  .button.premium .button__image {
+    filter: invert(0%) sepia(200%) saturate(140%) hue-rotate(169deg)
+      brightness(50%) contrast(90%);
   }
 
   &__first-col {
@@ -59,7 +64,7 @@
   &__decoration {
     img {
       position: absolute;
-      z-index: -1;
+      z-index: 0;
     }
     &_text-first {
       top: 34px;
@@ -107,7 +112,7 @@
   .custom-hero {
     &__wrapper {
       width: auto;
-      margin: 58px 15px 43.7px;
+      margin: 60px 15px 47.7px;
     }
 
     .section-row {
@@ -212,6 +217,7 @@
     .big-title {
       font-size: 36px !important;
       line-height: 40px !important;
+      letter-spacing: 0.3px;
     }
 
     .section-text__container {
@@ -286,7 +292,7 @@
 
 .customClothes__customizer {
   .contacts__wrapper {
-    margin: 65px auto 35px;
+    margin: 65px auto 38px;
   }
 
   .contacts__agree {
@@ -312,8 +318,8 @@
     appearance: none;
     background-image: url("../img/down-arrow.svg");
     background-repeat: no-repeat;
-    background-position: right 1.6rem top 50%;
-    background-size: 0.65rem auto;
+    background-position: right 1.8rem top 50%;
+    background-size: 0.9rem auto;
 
     option {
       color: $Text;
@@ -334,11 +340,16 @@
   }
 
   &_form {
-    margin-top: 32px;
+    margin-top: 30px;
     gap: 26px;
 
     .input-container__textarea {
       height: 170px;
+    }
+
+    .button {
+      margin-top: 1px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -389,7 +400,7 @@ input[type="radio"] {
 
 label {
   display: inline-block;
-  width: 30px;
+  width: 30.5px;
   height: 30px;
   margin-right: -10.2px;
 
@@ -422,7 +433,7 @@ label {
         margin-top: 0px;
       }
       .contacts__wrapper {
-        margin: 57px auto 25px;
+        margin: 22px auto 25px;
       }
 
       &_form {
@@ -444,6 +455,7 @@ label {
 
         .button {
           order: 5;
+          margin-top: -7px;
         }
 
         .contacts__agree {
@@ -459,6 +471,8 @@ label {
     gap: 15px 0px;
     flex-wrap: wrap;
     max-width: 80%;
+    margin-top: -3px;
+    margin-bottom: 3px;
 
     label {
       display: inline-flex;

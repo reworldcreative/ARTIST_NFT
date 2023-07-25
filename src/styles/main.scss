@@ -8,6 +8,12 @@
   }
   .section__text {
     max-width: 270px;
+    letter-spacing: 0.1px;
+  }
+
+  .section-text__container {
+    margin-top: 25px;
+    z-index: 10;
   }
 
   &__buttons {
@@ -49,7 +55,7 @@
     background-position: right top !important;
     background-size: contain !important;
     padding-top: 48px;
-    max-height: 92% !important;
+    max-height: 95% !important;
 
     &_img {
       border-radius: 24px;
@@ -69,7 +75,7 @@
     }
 
     &_text-second {
-      bottom: 50px;
+      bottom: 45px;
       left: 33.7%;
       opacity: 0.2;
     }
@@ -155,6 +161,14 @@
       display: none;
     }
 
+    .section__text {
+      letter-spacing: -0.5px;
+    }
+
+    .section-text__container {
+      margin-top: 2px;
+    }
+
     &__decoration {
       &_text-first {
         left: auto;
@@ -164,8 +178,10 @@
       }
 
       &_star {
-        left: 1.5%;
-        top: 50%;
+        left: 0%;
+        top: 48.5%;
+        width: 30px;
+        height: 40px;
       }
 
       &_circle-first,
@@ -256,7 +272,7 @@
 .biography {
   position: relative;
   &__wrapper {
-    margin: 75px auto 75px;
+    margin: 79px auto 80px;
     display: flex;
     justify-content: center;
   }
@@ -270,6 +286,7 @@
 
     img {
       width: inherit;
+      width: -webkit-fill-available;
     }
   }
 
@@ -512,7 +529,7 @@
   }
 
   &__container {
-    max-width: 444px;
+    max-width: 442px;
     display: grid;
     gap: 12px;
 
@@ -523,6 +540,7 @@
       &__text {
         font-size: 18px;
         line-height: 26.5px;
+        letter-spacing: 0px;
       }
     }
 
@@ -694,6 +712,9 @@
   .swiper-slide {
     max-width: fit-content;
     opacity: 0.3;
+    .NFT-Card__text {
+      margin-top: 3px;
+    }
   }
   .swiper-slide-active {
     margin-top: -31px;
@@ -786,6 +807,10 @@
         order: 1;
         margin-bottom: 8px;
         padding: 15px 34.7px 0px;
+
+        &_img {
+          height: auto;
+        }
       }
 
       &__container {
@@ -797,6 +822,39 @@
         margin-top: 10px;
         padding-top: 12px;
         padding-right: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainNFT-List {
+    .NFT-Card {
+      &__image {
+        &_img {
+          height: 238px;
+        }
+
+        &_ellipse {
+          left: -7px;
+          top: -13px;
+        }
+      }
+    }
+
+    .swiper-slide .NFT-Card__text {
+      margin-top: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mainNFT-List {
+    .NFT-Card {
+      &__image {
+        &_img {
+          height: auto;
+        }
       }
     }
   }

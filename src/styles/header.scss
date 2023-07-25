@@ -1,6 +1,8 @@
 @import "./components/burger";
 @import "./components/smallPemiumButton";
 .header {
+  z-index: 50;
+  position: relative;
   &__wrapper {
     background: $Main-BG;
     padding: 8px 0px;
@@ -10,15 +12,22 @@
   }
 
   &__logo {
-    margin-left: 10px;
-    margin-right: 34px;
+    // margin-left: 10px;
+    // margin-right: 34px;
+    margin-left: 8px;
+    margin-right: 33px;
   }
 
   &__buttons {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-left: 74px;
+    // margin-left: 74px;
+    margin-left: 77px;
+
+    .button__text {
+      letter-spacing: 0.1px;
+    }
   }
 
   &-navigation {
@@ -26,7 +35,8 @@
       display: flex;
       align-items: center;
       list-style: none;
-      gap: 26px;
+      // gap: 26px;
+      gap: 26.4px;
       margin: 0px;
       padding: 0px;
       height: fit-content;
@@ -110,7 +120,7 @@
 }
 
 .languageSelect {
-  padding: 8px 12px;
+  padding: 8px 13px;
   width: 74px;
   height: 35px;
   background: $frames;
@@ -127,7 +137,7 @@
   appearance: none;
   background-image: url("../img/down-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 0.8rem top 50%;
+  background-position: right 1.1rem top 50%;
   background-size: 0.6rem auto;
 
   option {

@@ -164,6 +164,14 @@ function checkSize() {
       );
     }
   }
+
+  $("img").each(function () {
+    // Перевіряємо, чи має атрибут src значення "@@image"
+    if ($(this).attr("src") === "@@image") {
+      // Якщо так, то приховуємо його батьківський елемент <picture>
+      $(this).closest("picture").hide();
+    }
+  });
 }
 
 checkSize();

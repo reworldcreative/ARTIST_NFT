@@ -50,8 +50,8 @@
       content: "";
       position: absolute;
       background: url("../img/main-hero-bg.png");
-      background-size: cover;
-      background-repeat: no-repeat;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
       height: 116%;
       width: 84%;
       top: 28px;
@@ -254,6 +254,7 @@
     .big-title {
       font-size: 36px;
       line-height: 40px;
+      letter-spacing: 0px;
     }
 
     &__image {
@@ -754,7 +755,7 @@
   .School-contacts {
     .contacts {
       &__wrapper {
-        margin: 55px auto 33px;
+        margin: 53px auto 33px;
 
         .button {
           padding: 14px 0px;
@@ -777,6 +778,8 @@
             border-radius: 9px;
             padding: 11px 0px;
             font-size: 18px;
+            margin-top: -5px;
+            margin-bottom: 0px;
           }
         }
       }
@@ -784,6 +787,7 @@
 
     &__tooken {
       margin: 8px 0px 0px;
+      padding: 5px 20px 5px 24px;
     }
   }
 }
