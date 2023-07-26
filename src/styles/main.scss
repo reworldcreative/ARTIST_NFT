@@ -401,6 +401,7 @@
     .swiper-slide {
       img {
         height: inherit;
+        object-fit: contain;
       }
     }
   }
