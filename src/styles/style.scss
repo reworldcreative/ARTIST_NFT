@@ -42,7 +42,7 @@ body {
 @import 'components/nft-orders';
 @import 'components/workers';
 
-// @import 'pages/style.for-client';
+@import 'pages/style.for-client';
 @import 'pages/style.owner';
 @import 'pages/style.payment';
 @import 'pages/style.auction';
@@ -488,3 +488,9 @@ $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(20
 //   color: #525960;
 //   font-size: 17px;
 // }
+@media (max-width: 767px) {
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
