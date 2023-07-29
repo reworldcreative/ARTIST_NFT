@@ -25,16 +25,16 @@
         <div class="header-user__container">
           <div class="header-user__row">
             <a href="" class="header-user__link-logo">
-              <img src="../img/logo.svg" alt="Logo" class="header-user__logo" />
+              <img src="@img/logo.svg" alt="Logo" class="header-user__logo" />
             </a>
 
             <a href="#" class="header-user__link-out">
               <span>Log out</span>
-              <img src="../img/admin/admin-out.svg" alt="icon" class="header-user__icon" />
+              <img src="@img/admin/admin-out.svg" alt="icon" class="header-user__icon" />
             </a>
 
             <div class="header-btn">
-              <img src="../img/admin/admin-menu.svg" alt="menu" class="header-btn__icon" />
+              <img src="@img/admin/admin-menu.svg" alt="menu" class="header-btn__icon" />
             </div>
           </div>
         </div>
@@ -47,24 +47,16 @@
               <span class="i-mess"></span>
               <p>Messages</p>
             </a>
-            <a data-link="#orders" href="#" class="user-menu__link">
-              <span class="i-bag"></span>
-              <p>Orders</p>
-            </a>
-            <a data-link="#nft" href="#" class="user-menu__link">
+            <a data-link="#stat" href="#" class="user-menu__link">
               <span class="i-orders"></span>
-              <p>NFT Orders</p>
-            </a>
-            <a data-link="#workers" href="#" class="user-menu__link">
-              <span class="i-workers"></span>
-              <p>Workers</p>
+              <p>Statistics</p>
             </a>
           </div>
 
           <div class="user-menu__footer">
             <a href="#" data-da=".user-menu__list, 767, 4" class="user-menu__out-link header-user__link-out">
-              <img src="../img/admin/out.svg" alt="icon" class="user-menu__out-icon" />
-              <span>Log out</span>
+              <img src="@img/admin/out.svg" alt="icon" class="user-menu__out-icon" />
+              <span>Log out </span>
             </a>
             <p class="user-menu__copy">All rights reserved © 2022</p>
           </div>
@@ -221,7 +213,7 @@
               </a>
               <div class="dialog__user">
                 <div class="item-dialog__image-wrap dialog-image">
-                  <img loading="lazy" src="@img/adminchat-slide_img1.jpg" alt="Photo" class="item-dialog__image" />
+                  <img loading="lazy" src="@img/admin/chat-slide_img1.jpg" alt="Photo" class="item-dialog__image" />
                 </div>
                 <div class="dialog__user-info">
                   <p class="dialog__name">Ivan Ivanov</p>
@@ -283,14 +275,8 @@
             </div>
           </div>
         </div>
-        <div id="orders" class="content-user__body content-user__body_table">
-          <div class="table-body">@@include('./html/components/admin/orders.html',{})</div>
-        </div>
-        <div id="nft" class="content-user__body content-user__body_table">
-          <div class="table-body">@@include('./html/components/admin/NFTorders.html',{})</div>
-        </div>
-        <div id="workers" class="content-user__body content-user__body_table">
-          <div class="table-body">@@include('./html/components/admin/workers.html',{})</div>
+        <div id="stat" class="content-user__body content-user__body_table">
+          <div class="table-body">@@include('./html/components/admin/statistic.html',{})</div>
         </div>
       </main>
     </div>
