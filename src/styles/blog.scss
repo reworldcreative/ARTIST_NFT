@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'ProximaNova';
+  font-family: 'Proxima Nova';
   background: #1d1f21;
   color: #fcffff;
   height: 100%;
@@ -32,17 +32,23 @@ ul {
   flex-direction: column;
   overflow: hidden;
 }
+.container {
+  margin: 0 150px;
+  max-width: 1140px;
+  padding: 0 15px;
+}
 .forum {
   background: url('../img/blog/forum_bg.jpg') 0 0/100% 100% no-repeat;
-  padding: 51px 0 182px;
+  padding: 51px 0 150px;
   &__title {
-    margin: 0 0 6px 2px;
+    margin: 0 0 6px 3px;
   }
   &__text {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
     color: #fff;
+    margin: 0 0 33px 0px;
   }
   &__icon {
     width: 28px;
@@ -153,11 +159,15 @@ ul {
     line-height: 19px;
     color: #c8d2dc;
   }
+  &__name {
+    margin: 24px 0 0 0px;
+  }
   &__date {
     display: flex;
     justify-content: flex-end;
     text-align: right;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
+    margin: 0;
     span {
       margin: 0 1px;
       display: block;
@@ -166,7 +176,8 @@ ul {
   &__title {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
+    margin: 0;
   }
   &__buttons {
     display: flex;
@@ -271,8 +282,8 @@ ul {
   &__input {
     font-family: 'Manrope';
     display: block;
-    // width: 100%;
-    width: 92%;
+    width: 100%;
+    // width: 92%;
     border: 1px solid #525960;
     height: 64px;
     display: flex;

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{title: "Artist NFT"})
+
+  <body>
+    <header class="header-sidebar">
+      <div class="header-sidebar__container">
+        <div class="header-sidebar__body">
+          <a class="header-sidebar__logo-link" href="index.html"
+            ><img src="@img/logo.svg" alt="" class="header-sidebar__logo"
+          /></a>
+          <div class="header-sidebar__mobile-burger">
+            <div class="header-sidebar__icon-menu menu__icon"><span></span> <span></span></div>
+          </div>
+          <div id="logoutButtonOne" class="header-sidebar__logout-wrapper">
+            <button class="header-sidebar__logout">Log out</button>
+            <img src="@img/admin/admin-out.svg" alt="logout" />
+          </div>
+        </div>
+      </div>
+      <div class="menu__pre-scrin"></div>
+    </header>
+    <div class="wrapper">
+      <main class="content-user apanel">
+        <nav class="content-user__menu user-menu">
+          <div class="user-menu__list">
+            <a data-link="#mess" href="#" class="user-menu__link _active">
+              <span class="i-mess"></span>
+              <p>Messages</p>
+            </a>
+            <a data-link="#orders" href="#" class="user-menu__link">
+              <span class="i-bag"></span>
+              <p>Orders</p>
+            </a>
+            <a data-link="#nft" href="#" class="user-menu__link">
+              <span class="i-orders"></span>
+              <p>NFT Orders</p>
+            </a>
+            <a data-link="#workers" href="#" class="user-menu__link">
+              <span class="i-workers"></span>
+              <p>Workers</p>
+            </a>
+          </div>
+
+          <div class="user-menu__footer">
+            <a href="#" data-da=".user-menu__list, 767, 4" class="user-menu__out-link header-user__link-out">
+              <img src="../img/admin/out.svg" alt="icon" class="user-menu__out-icon" />
+              <span>Log out</span>
+            </a>
+            <p class="user-menu__copy">All rights reserved © 2022</p>
+          </div>
+        </nav>
+
+        <div id="mess" class="content-user__body content-user__body_chat _active">
+          <div class="chat__list chat-list">
+            <div class="chat-list__body">
+              <h1 class="chat-list__title">My chat list</h1>
+
+              <div class="chat-list__slider">
+                <div class="swiper-wrapper">
+                  <div class="chat-list__slide swiper-slide">
+                    <div class="chat-list__slide-image-wrap">
+                      <img
+                        loading="lazy"
+                        src="@img/admin/chat-slide_img1.jpg"
+                        alt="Image"
+                        class="chat-list__slide-image"
+                      />
+                      <div class="item-dialog__status status _online"></div>
+                    </div>
+                    <p class="chat-list__slide-name">Ivan Ivanov</p>
+                    <p class="chat-list__slide-time">10 min ago</p>
+                  </div>
+                  <div class="chat-list__slide swiper-slide">
+                    <div class="chat-list__slide-image-wrap">
+                      <img
+                        loading="lazy"
+                        src="@img/admin/chat-slide_img2.jpg"
+                        alt="Image"
+                        class="chat-list__slide-image"
+                      />
+                      <div class="item-dialog__status status _online"></div>
+                    </div>
+                    <p class="chat-list__slide-name">Ivan Ivanov</p>
+                    <p class="chat-list__slide-time">10 min ago</p>
+                  </div>
+                  <div class="chat-list__slide swiper-slide">
+                    <div class="chat-list__slide-image-wrap">
+                      <img
+                        loading="lazy"
+                        src="@img/admin/chat-slide_img3.jpg"
+                        alt="Image"
+                        class="chat-list__slide-image"
+                      />
+                      <div class="item-dialog__status status _online"></div>
+                    </div>
+                    <p class="chat-list__slide-name">Ivan Ivanov</p>
+                    <p class="chat-list__slide-time">10 min ago</p>
+                  </div>
+                  <div class="chat-list__slide swiper-slide">
+                    <div class="chat-list__slide-image-wrap">
+                      <img
+                        loading="lazy"
+                        src="@img/admin/chat-slide_img4.jpg"
+                        alt="Image"
+                        class="chat-list__slide-image"
+                      />
+                      <div class="item-dialog__status status _online"></div>
+                    </div>
+                    <p class="chat-list__slide-name">Ivan Ivanov</p>
+                    <p class="chat-list__slide-time">10 min ago</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chat-list__form">
+                <input
+                  type="text"
+                  name="Search"
+                  class="chat-list__input"
+                  aria-label="Search form"
+                  placeholder="Search"
+                />
+                <img src="@img/admin/search.svg" alt="icon" class="chat-list__search-icon" />
+              </div>
+
+              <ul class="chat-list__dialogs-list">
+                <li class="chat-list__dialog item-dialog">
+                  <div class="item-dialog__image-wrap">
+                    <img loading="lazy" src="@img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" />
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <div class="item-dialog__body">
+                    <div class="item-dialog__top">
+                      <p class="item-dialog__name">Kathryn Murphy</p>
+                      <p class="item-dialog__time">10 min ago</p>
+                    </div>
+                    <p class="item-dialog__mess">Message that have been writed...Message that have been writed...</p>
+                  </div>
+                </li>
+                <li class="chat-list__dialog item-dialog _active">
+                  <div class="item-dialog__image-wrap">
+                    <img loading="lazy" src="@img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" />
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <div class="item-dialog__body">
+                    <div class="item-dialog__top">
+                      <p class="item-dialog__name">Ivan Ivanov</p>
+                      <p class="item-dialog__time">10 min ago</p>
+                    </div>
+                    <p class="item-dialog__mess">Message that have been writed...</p>
+                  </div>
+                </li>
+                <li class="chat-list__dialog item-dialog">
+                  <div class="item-dialog__image-wrap">
+                    <img loading="lazy" src="@img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" />
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <div class="item-dialog__body">
+                    <div class="item-dialog__top">
+                      <p class="item-dialog__name">Ivan Ivanov</p>
+                      <p class="item-dialog__time">10 min ago</p>
+                    </div>
+                    <p class="item-dialog__mess">Message that have been writed...</p>
+                  </div>
+                </li>
+                <li class="chat-list__dialog item-dialog">
+                  <div class="item-dialog__image-wrap">
+                    <img loading="lazy" src="@img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" />
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <div class="item-dialog__body">
+                    <div class="item-dialog__top">
+                      <p class="item-dialog__name">Ivan Ivanov</p>
+                      <p class="item-dialog__time">10 min ago</p>
+                    </div>
+                    <p class="item-dialog__mess">Message that have been writed...</p>
+                  </div>
+                </li>
+                <li class="chat-list__dialog item-dialog">
+                  <div class="item-dialog__image-wrap">
+                    <img loading="lazy" src="@img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" />
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <div class="item-dialog__body">
+                    <div class="item-dialog__top">
+                      <p class="item-dialog__name">Ivan Ivanov</p>
+                      <p class="item-dialog__time">10 min ago</p>
+                    </div>
+                    <p class="item-dialog__mess">Message that have been writed...</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="content-user__dialog dialog">
+            <div class="dialog__header">
+              <a href="#" class="dialog__out-link">
+                <img src="@img/admin/arrow-back.svg" alt="icon" class="dialog__arrow-icon" />
+                <span>Chat with Ivan Ivanov</span>
+              </a>
+              <div class="dialog__user">
+                <div class="item-dialog__image-wrap dialog-image">
+                  <img loading="lazy" src="@img/adminchat-slide_img1.jpg" alt="Photo" class="item-dialog__image" />
+                </div>
+                <div class="dialog__user-info">
+                  <p class="dialog__name">Ivan Ivanov</p>
+                  <div data-da=".dialog-image, 767, 0" class="dialog__status-icon status _online"></div>
+                  <p class="dialog__status">Online</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="dialog__main main-dialog">
+              <div class="main-dialog__message _image">
+                <div class="main-dialog__picture-wrap">
+                  <img loading="lazy" src="@img/admin/message-img.jpg" alt="Picture" class="main-dialog__picture" />
+                </div>
+              </div>
+              <div class="main-dialog__message _outgoing">
+                <p class="main-dialog__text">Lorem ipsum dolor sit amet</p>
+                <p class="main-dialog__time">10 min ago</p>
+              </div>
+
+              <div class="main-dialog__new-messages">
+                <p class="main-dialog__text">New messages</p>
+              </div>
+
+              <div class="main-dialog__message _incoming">
+                <div class="main-dialog__avatar item-dialog__image-wrap">
+                  <img loading="lazy" src="@img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" />
+                </div>
+                <p class="main-dialog__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <p class="main-dialog__time">10 min ago</p>
+              </div>
+
+              <div class="main-dialog__message _outgoing">
+                <p class="main-dialog__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <p class="main-dialog__time">10 min ago</p>
+              </div>
+            </div>
+
+            <div class="dialog__footer">
+              <div class="dialog__input-wrap">
+                <input
+                  type="text"
+                  class="dialog__input"
+                  aria-label="Enter your message here"
+                  name="Enter Message"
+                  placeholder="Enter your message here"
+                />
+
+                <button class="dialog__btn" aria-label="Send Massage">
+                  <img src="@img/admin/send.svg" alt="Send" class="dialog__btn-icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="orders" class="content-user__body content-user__body_table">
+          <div class="table-body">@@include('./html/components/admin/orders.html',{})</div>
+        </div>
+        <div id="nft" class="content-user__body content-user__body_table">
+          <div class="table-body">@@include('./html/components/admin/NFTorders.html',{})</div>
+        </div>
+        <div id="workers" class="content-user__body content-user__body_table">
+          <div class="table-body">@@include('./html/components/admin/workers.html',{})</div>
+        </div>
+      </main>
+    </div>
+    <script>
+      // Получаем все ссылки меню и контент вкладок
+      const menuLinks = document.querySelectorAll('.user-menu__link');
+      const tabContents = document.querySelectorAll('.content-user__body');
+
+      // Обрабатываем клики на ссылках меню
+      menuLinks.forEach(link => {
+        link.addEventListener('click', event => {
+          event.preventDefault();
+
+          // Удаляем класс _active у текущей активной ссылки
+          document.querySelector('.user-menu__link._active').classList.remove('_active');
+
+          // Добавляем класс _active к выбранной ссылке
+          link.classList.add('_active');
+
+          // Получаем data-link атрибут выбранной ссылки
+          const targetTab = link.getAttribute('data-link');
+
+          // Скрываем все вкладки
+          tabContents.forEach(tab => tab.classList.remove('_active'));
+
+          // Показываем только выбранную вкладку
+          document.querySelector(targetTab).classList.add('_active');
+        });
+      });
+      // Получаем все элементы чат-диалогов
+      const chatDialogs = document.querySelectorAll('.chat-list__dialog');
+
+      // Обрабатываем клики на элементах чат-диалогов
+      chatDialogs.forEach(dialog => {
+        dialog.addEventListener('click', event => {
+          // Удаляем класс _active у текущего активного чата
+          document.querySelector('.chat-list__dialog._active').classList.remove('_active');
+
+          // Добавляем класс _active к выбранному чат-диалогу
+          dialog.classList.add('_active');
+        });
+      });
+    </script>
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>

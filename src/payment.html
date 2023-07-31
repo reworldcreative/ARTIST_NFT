@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{title: "Artist NFT"})
+
+  <body>
+    <div class="wrapper">
+      @@include('./html/header.html',{})
+
+      <section class="payment">
+        <div class="container">
+          <div class="payment__row">
+            <div class="payment__form tabs">
+              <h2 class="payment__subtitle subtitle">
+                <span>PURCHASE</span>
+              </h2>
+              <h1 class="payment__title title-small">Payment for <span> Name of NFT or art</span></h1>
+
+              <form action="#" class="form">
+                <div class="payment__tabs">
+                  <a data-tab="#card" href="#" class="payment__tab tab _active">Credit card</a>
+                  <a data-tab="#paypal" href="#" class="payment__tab tab">PayPal</a>
+                  <a data-tab="#crypto" href="#" class="payment__tab tab">Crypto</a>
+                  <div class="payment__indicator-wrap">
+                    <div class="payment__indicator tab-indicator"></div>
+                  </div>
+                </div>
+
+                <div id="card" class="payment__form-body tab-content _active">
+                  <div class="form__wrapper">
+                    <div class="form__input-wrap">
+                      <p class="form__input-title">Card number</p>
+                      <input
+                        type="text"
+                        class="form__input"
+                        name="Card number"
+                        aria-label="Card number"
+                        placeholder="0000 0000 0000 0000"
+                        tabindex="1"
+                      />
+                    </div>
+
+                    <div class="form__small-wrap">
+                      <div class="form__input-wrap">
+                        <p class="form__input-title">Date</p>
+                        <input
+                          type="number"
+                          class="form__input"
+                          name="Date"
+                          aria-label="Date"
+                          placeholder="01/01"
+                          tabindex="1"
+                        />
+                      </div>
+                      <div class="form__input-wrap">
+                        <p class="form__input-title">CCV</p>
+                        <input
+                          type="number"
+                          class="form__input"
+                          name="CCV"
+                          aria-label="CCV"
+                          placeholder="000"
+                          tabindex="2"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form__input-wrap">
+                      <p class="form__input-title">Name on card</p>
+                      <input
+                        type="text"
+                        class="form__input"
+                        name="Name on Card"
+                        aria-label="Name on card"
+                        placeholder="Ivan Ivanov"
+                        tabindex="2"
+                      />
+                    </div>
+
+                    <button class="form__btn btn btn_light" type="submit" aria-label="send-question">Purchase</button>
+
+                    <div class="form__checkbox-wrap">
+                      <input
+                        id="checkbox-card"
+                        type="checkbox"
+                        class="form__input-checkbox"
+                        name="Question"
+                        aria-label="send-question"
+                        placeholder="Your question"
+                        tabindex="3"
+                        hidden
+                      />
+                      <label for="checkbox-card" class="form__custom-check">
+                        <span
+                          >I agree with <a href="#" class="form__link">Privacy Policy</a> and
+                          <a href="#" class="form__link">Terms of use</a></span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div id="paypal" class="payment__form-body tab-content">
+                  <div class="form__wrapper">
+                    <div class="form__input-wrap">
+                      <p class="form__input-title">E-mail</p>
+                      <input
+                        type="email"
+                        class="form__input"
+                        name="Mail"
+                        aria-label="Your e-mail"
+                        placeholder="Your e-mail"
+                        tabindex="1"
+                      />
+                    </div>
+
+                    <button class="form__btn btn btn_light" type="submit" aria-label="send-question">Purchase</button>
+
+                    <div class="form__checkbox-wrap">
+                      <input
+                        id="checkbox-paypal"
+                        type="checkbox"
+                        class="form__input-checkbox"
+                        name="Question"
+                        aria-label="send-question"
+                        placeholder="Your question"
+                        tabindex="3"
+                        hidden
+                      />
+                      <label for="checkbox-paypal" class="form__custom-check">
+                        <span
+                          >I agree with <a href="#" class="form__link">Privacy Policy</a> and
+                          <a href="#" class="form__link">Terms of use</a></span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div id="crypto" class="payment__form-body tab-content">
+                  <div class="form__wrapper">
+                    <div class="form__input-wrap">
+                      <p class="form__input-title">
+                        To purchase item by crypto you have to send money to this wallet. After 5 minute result will
+                        sent in your mail
+                      </p>
+                      <p class="form__input form__input_crypto">
+                        <span class="cripto-wallet">EQBSSl0Xlo3...kkHTmFw5YVYOiWJ.</span>
+                        <img src="../img/main/file-copy.svg" alt="copy" class="form__copy-icon" />
+                      </p>
+                    </div>
+
+                    <div class="form__input-wrap">
+                      <p class="form__input-title">E-mail</p>
+                      <input
+                        type="email"
+                        class="form__input"
+                        name="Mail"
+                        aria-label="Your e-mail"
+                        placeholder="Your e-mail"
+                        tabindex="2"
+                      />
+                    </div>
+
+                    <button class="form__btn btn btn_light" type="submit" aria-label="send-question">Check</button>
+
+                    <div class="form__checkbox-wrap">
+                      <input
+                        id="checkbox-crypto"
+                        type="checkbox"
+                        class="form__input-checkbox"
+                        name="Question"
+                        aria-label="send-question"
+                        placeholder="Your question"
+                        tabindex="3"
+                        hidden
+                      />
+                      <label for="checkbox-crypto" class="form__custom-check">
+                        <span
+                          >I agree with <a href="#" class="form__link">Privacy Policy</a> and
+                          <a href="#" class="form__link">Terms of use</a></span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="payment__info pay-info">
+              <p class="pay-info__title">Name of NFT or Art placed here</p>
+              <div class="pay-info__cost">
+                <div class="pay-info__price">
+                  <h3 class="pay-info__price-title subtitle">
+                    <span>PRICE</span>
+                  </h3>
+                  <p class="pay-info__price-value">$100 322</p>
+                </div>
+                <div class="pay-info__bid">BID</div>
+              </div>
+
+              <h3 class="pay-info__block-title subtitle">
+                <span>DETAILED INFO</span>
+              </h3>
+              <ul class="pay-info__list">
+                <li class="pay-info__item">
+                  36 × 27 in<br />
+                  91.4 × 68.6 cm
+                </li>
+                <li class="pay-info__item">This work is part of a limited edition set.</li>
+              </ul>
+
+              <div class="pay-info__text-wrap">
+                <p class="pay-info__text">
+                  Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him
+                  without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel
+                  my no removed in weather. It dissimilar in up devonshire inhabiting.
+                </p>
+                <p class="pay-info__text">
+                  If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/footer.html',{})
+    </div>
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      //   $(document).ready(function () {
+      //     $('.payment__tab').click(function (e) {
+      //       e.preventDefault();
+      //       $('.payment__tab').removeClass('_active');
+      //       $(this).addClass('_active');
+      //       const tab = $(this).data('tab');
+      //       $('.payment__form-body').removeClass('_active');
+      //       $(tab).addClass('_active');
+      //     });
+      //   });
+      $(document).ready(function () {
+        $('.payment__tab').click(function (e) {
+          e.preventDefault();
+          var targetTab = $(this).attr('data-tab');
+          $('.payment__tab').removeClass('_active');
+          $(this).addClass('_active');
+          $('.payment__indicator').css('transform', 'translateX(' + $(this).index() * 100 + '%)'); // Для трех вкладок деление на 33.3333%
+          $('.tab-content').removeClass('_active');
+          $(targetTab).addClass('_active');
+        });
+      });
+      document.addEventListener('DOMContentLoaded', function () {
+        // Находим все элементы с классом form__copy-icon
+        var copyButtons = document.querySelectorAll('.form__copy-icon');
+
+        // Проходимся по каждому элементу и инициализируем Clipboard.js
+        copyButtons.forEach(function (button) {
+          new ClipboardJS(button, {
+            target: function (trigger) {
+              // Возвращаем значение атрибута data-clipboard-text из соседнего элемента с классом cripto-wallet
+              return trigger.previousElementSibling.getAttribute('data-clipboard-text');
+            }
+          });
+
+          // Добавляем обработчик события 'success', чтобы показать уведомление о копировании
+          button.addEventListener('click', function () {
+            alert('Address copied to clipboard!');
+          });
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  </body>
+</html>

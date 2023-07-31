@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.enter {
+  padding: 193px 0 50px;
+  flex: 1 1 auto;
+  width: 100%;
+  background: url('../img/enter/blur-b_full.png') -650px center no-repeat,
+    url('../img/enter/blur-b_full.png') calc(100% + 650px) center no-repeat;
+  &__body {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+  }
+  &__logo {
+    display: block;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    margin: 10px 0 11px;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 21px;
+    gap: 8px;
+  }
+  &__text {
+    color: #c8d2dc;
+  }
+  &__link {
+    color: #86a8ff;
+    &:hover {
+      text-shadow: 0 0 1px #fff;
+    }
+  }
+  &__star {
+    top: 87px;
+    right: 77.3%;
+  }
+  &__bubble {
+    top: 239px;
+    left: 79.2%;
+  }
+  & .payment {
+    &__tabs {
+      max-width: 274px;
+      margin: 0 auto 20px;
+    }
+    &__tab,
+    &__indicator {
+      width: calc(100% / 2);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .enter {
+    background: url('../img/enter/blur-b_full.png') center -750px no-repeat;
+    padding: 8px 0 50px;
+    &__logo {
+      margin: 0 auto 42px;
+    }
+    &__star {
+      top: 53px;
+      right: 77.8%;
+    }
+    &__bubble {
+      top: 92px;
+      left: 84%;
+    }
+    & .payment {
+      &__tabs {
+        max-width: 100%;
+        margin: 0 auto 25px;
+      }
+      &__tab {
+        padding: 17px 10px 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .enter {
+    background: url('../img/enter/blur-b_enter_m.png') 0 0 no-repeat;
+  }
+}

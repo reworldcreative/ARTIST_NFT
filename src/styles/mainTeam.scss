@@ -1,6 +1,53 @@
 .wrapper_arts {
   background: url(../img/main/blur-b_arts.png) 0 20px no-repeat;
 }
+.arts-hero__row {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 1130px) {
+  .arts-hero__image-wrap {
+    width: 332px;
+    height: 336px;
+  }
+}
+@media (max-width: 767px) {
+  .arts-hero__image {
+    aspect-ratio: 345/340;
+  }
+}
+@media (max-width: 767px) {
+  .arts-hero__image-wrap {
+    max-width: 375px;
+    position: relative;
+    z-index: 2;
+    align-self: center;
+  }
+}
+@media (max-width: 767px) {
+  .arts-hero__row {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media (max-width: 1130px) {
+  .arts-hero__image-wrap {
+    width: 332px;
+    height: 336px;
+  }
+}
+@media (max-width: 767px) {
+  .arts-hero__row {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .arts-hero__title {
   margin-bottom: 16px;
 }
@@ -70,6 +117,7 @@ img {
 }
 
 .mainTeam-benefits {
+  z-index: 3;
   &__subtitle,
   &__title {
     text-align: center;
