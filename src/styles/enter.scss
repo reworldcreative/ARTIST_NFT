@@ -5,16 +5,19 @@
   box-sizing: border-box;
 }
 .enter {
-  padding: 193px 0 50px;
+  // padding: 193px 0 50px;
+  align-items: center;
+  display: grid;
   flex: 1 1 auto;
   width: 100%;
-  background: url('../img/enter/blur-b_full.png') -650px center no-repeat,
-    url('../img/enter/blur-b_full.png') calc(100% + 650px) center no-repeat;
+  background: url("@img/enter/blur-b_full.png") -650px center no-repeat,
+    url("@img/enter/blur-b_full.png") calc(100% + 650px) center no-repeat;
   &__body {
     max-width: 1110px;
     margin: 0 auto;
     padding: 0 15px;
     position: relative;
+    width: inherit;
   }
   &__logo {
     display: block;
@@ -59,11 +62,27 @@
       width: calc(100% / 2);
     }
   }
+
+  .form__custom-radio {
+    &::before {
+      width: 10px;
+      height: 10px;
+    }
+    span {
+      display: contents;
+    }
+  }
+
+  .form__radio-wrap {
+    padding-top: 5px;
+    margin: 0px 0 27px;
+    gap: 26px;
+  }
 }
 
 @media (max-width: 767px) {
   .enter {
-    background: url('../img/enter/blur-b_full.png') center -750px no-repeat;
+    background: url("@img/enter/blur-b_full.png") center -750px no-repeat;
     padding: 8px 0 50px;
     &__logo {
       margin: 0 auto 42px;
@@ -90,6 +109,6 @@
 
 @media (max-width: 375px) {
   .enter {
-    background: url('../img/enter/blur-b_enter_m.png') 0 0 no-repeat;
+    background: url("@img/enter/blur-b_enter_m.png") 0 0 no-repeat;
   }
 }

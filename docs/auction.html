@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230801194211" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230801210256" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230801194211">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230801210256">
 </head>
 
-  <body>
-    <div class="wrapper wrapper_auction">
-      <nav class="burger-menu">
+<body>
+  <div class="wrapper wrapper_auction">
+    <nav class="burger-menu">
     <div class="burger-menu__header">
         <a href="index.html" class="logo ">
     <img src="img/logo.svg" alt="logo" width="145px" height="30px">
@@ -100,7 +100,7 @@
           <a href="customClothes.html" class="header-navigation__link">Pictures</a>
         </li>
         <li class="header-navigation__item">
-          <a href="#" class="header-navigation__link">Auction</a>
+          <a href="auction.html" class="header-navigation__link">Auction</a>
         </li>
         <li class="header-navigation__item">
           <a href="Pricing.html" class="header-navigation__link">Pricing</a>
@@ -121,7 +121,7 @@
         <option value="FR">FR</option>
       </select>
 
-      <a href="#" class="button main">
+      <a href="enter.html" class="button main">
     <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Authorization
@@ -130,7 +130,7 @@
     <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
 </a>
 
-      <a href="#" class="button active">
+      <a href="Pricing.html" class="button active">
     <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Premium access
@@ -182,170 +182,139 @@
   </div>
 </header>
 
-      <section class="breadcrumbs">
-        <div class="container">
-          <div class="breadcrumbs__list">
-            <a href="#" class="breadcrumbs__link">Main page</a>
-            <a href="#" class="breadcrumbs__link">Auction</a>
-          </div>
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__list">
+          <a href="index.html" class="breadcrumbs__link">Main page</a>
+          <a href="auction.html" class="breadcrumbs__link">Auction</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="auction product">
-        <div class="container">
-          <div class="auction__row product__row">
-            <div class="auction__image-wrap product__image-wrap">
-              <picture>
-                <source media="(max-width: 767)" srcset="img/product__image_m.webp" type="image/webp" />
-                <img
-                  loading="lazy"
-                  src="../img/auction/product__image.jpg"
-                  alt="Picture or NFT"
-                  class="product__image"
-                />
-              </picture>
-            </div>
-            <div class="auction__body product__body">
-              <h2 class="product__subtitle subtitle">
-                <span>AUCTION</span>
-              </h2>
-              <h1 class="auction__title title-small">What If Women Ruled the World</h1>
-              <h1 class="auction__title title-small-2">Title of picture or NFT</h1>
+    <section class="auction product">
+      <div class="container">
+        <div class="auction__row product__row">
+          <div class="auction__image-wrap product__image-wrap">
+            <picture>
+              <source media="(max-width: 767)" srcset="img/product__image_m.webp" type="image/webp" />
+              <img loading="lazy" src="img/auction/product__image.jpg" alt="Picture or NFT" class="product__image" />
+            </picture>
+          </div>
+          <div class="auction__body product__body">
+            <h2 class="product__subtitle subtitle">
+              <span>AUCTION</span>
+            </h2>
+            <h1 class="auction__title title-small">What If Women Ruled the World</h1>
+            <h1 class="auction__title title-small-2">Title of picture or NFT</h1>
 
-              <ul class="auction__list-info">
-                <li class="auction__info-item">
-                  <p class="auction__item-text">36 × 27 in</p>
-                  <p class="auction__item-text">91.4 × 68.6 cm</p>
-                </li>
-                <li class="auction__info-item">
-                  <p class="auction__item-text">Estimated value</p>
-                  <p class="auction__item-price">$6,000</p>
-                </li>
-                <li class="auction__info-item">
-                  <p class="auction__item-text">This work is part of a limited edition set.</p>
-                </li>
-              </ul>
+            <ul class="auction__list-info">
+              <li class="auction__info-item">
+                <p class="auction__item-text">36 × 27 in</p>
+                <p class="auction__item-text">91.4 × 68.6 cm</p>
+              </li>
+              <li class="auction__info-item">
+                <p class="auction__item-text">Estimated value</p>
+                <p class="auction__item-price">$6,000</p>
+              </li>
+              <li class="auction__info-item">
+                <p class="auction__item-text">This work is part of a limited edition set.</p>
+              </li>
+            </ul>
 
-              <div class="auction__bid-wrap">
-                <h3 class="auction__bid-subtitle subtitle">
-                  <span>highest price</span>
-                </h3>
-                <h3 class="auction__bid-price">$100 322</h3>
+            <div class="auction__bid-wrap">
+              <h3 class="auction__bid-subtitle subtitle">
+                <span>highest price</span>
+              </h3>
+              <h3 class="auction__bid-price">$100 322</h3>
 
-                <form action="#" class="auction__bid-form">
-                  <p class="auction__input-title">Place your bid</p>
-                  <div class="auction__input-wrap">
-                    <input type="text" aria-label="place your Bid" class="auction__input" placeholder="$100 322" />
-                    <button type="submit" class="auction__btn btn btn_light">Place bid</button>
-                  </div>
-                </form>
-
-                <div class="auction__bid-time">
-                  <span>28d</span>
-                  <span>17h</span>
-                  <span>26m</span>
-                  <span>31s</span>
+              <form action="#" class="auction__bid-form">
+                <p class="auction__input-title">Place your bid</p>
+                <div class="auction__input-wrap">
+                  <input type="text" aria-label="place your Bid" class="auction__input" placeholder="$100 322" />
+                  <button type="submit" class="auction__btn btn btn_light">Place bid</button>
                 </div>
-                <p class="auction__bid-live">Live март 5, 8:00pm</p>
-                <p class="auction__bid-text">
-                  You can purchase Art or NFT using popular system of payment. We accepting PayPal, Visa/Mastercard. Any
-                  crypto currency
-                </p>
+              </form>
+
+              <div class="auction__bid-time">
+                <span>28d</span>
+                <span>17h</span>
+                <span>26m</span>
+                <span>31s</span>
               </div>
+              <p class="auction__bid-live">Live март 5, 8:00pm</p>
+              <p class="auction__bid-text">
+                You can purchase Art or NFT using popular system of payment. We accepting PayPal, Visa/Mastercard. Any
+                crypto currency
+              </p>
             </div>
-            <img
-              loading="lazy"
-              src="../img/enter/home_hero-star.svg"
-              alt="Star"
-              class="auction__star auction__star_1 star"
-            />
-            <img
-              loading="lazy"
-              src="../img/enter/home_hero-star.svg"
-              alt="Star"
-              class="auction__star auction__star_2 star"
-            />
-
-            <div class="auction__bubble bubble"></div>
           </div>
+          <img loading="lazy" src="img/enter/home_hero-star.svg" alt="Star"
+            class="auction__star auction__star_1 star" />
+          <img loading="lazy" src="img/enter/home_hero-star.svg" alt="Star"
+            class="auction__star auction__star_2 star" />
+
+          <div class="auction__bubble bubble"></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <div class="article-auction">
-        <div class="container container_article">
-          <p class="article-auction__indicator-title">About the work</p>
-          <div class="article-auction__indicator"></div>
-          <div class="article-auction__row">
-            <article class="article-auction__article">
-              <h3 class="article-auction__title-article">100% of the proceeds of this sale are donated to LAM.</h3>
-              <div class="article-auction__text-wrap text">
-                <p class="article-auction__text">
-                  Multidisciplinary artist Judy Chicago helped pioneer the feminist art movement in the 1960s and ’70s;
-                  for decades, she has made work that celebrates the multiplicity of female identity. Chicago’s practice
-                  spans painting, textile arts, sculpture, and installation and has explored the intricacies of
-                  childbirth (as seen in her “Birth Project” series, 1980–85), the possibilities of minimalist
-                  sculpture, and the relationship between landscape and the female body. Her most famous work, an
-                  installation called The Dinner Party (1974–79), is an homage to 39 influential female figures from
-                  Eastern and Western mythology and civilization. Chicago studied at the University of California, Los
-                  Angeles. She founded a groundbreaking and widely influential feminist art program while on staff at
-                  California State University, Fresno. Her work has been exhibited in New York, London, Milan, Chicago,
-                  and San Francisco and belongs in the collections of the British Museum, Moderna Museet, the
-                  Metropolitan Museum of Art, the Los Angeles County Museum of Art, the Tate, the Art Institute of
-                  Chicago, and the National Gallery of Art in Washington, D.C.
-                </p>
-                <p class="article-auction__text">
-                  Applicable sales tax will apply to all works shipped to and within the US. Please note, your card will
-                  automatically be charged for the Total Purchase Price, buyer’s premium, shipping, and any applicable
-                  sales tax, based on your registration address. For transactions over $50,000, you will be given the
-                  option to pay via wire transfer.
-                </p>
-              </div>
+    <div class="article-auction">
+      <div class="container container_article">
+        <p class="article-auction__indicator-title">About the work</p>
+        <div class="article-auction__indicator"></div>
+        <div class="article-auction__row">
+          <article class="article-auction__article">
+            <h3 class="article-auction__title-article">100% of the proceeds of this sale are donated to LAM.</h3>
+            <div class="article-auction__text-wrap text">
+              <p class="article-auction__text">
+                Multidisciplinary artist Judy Chicago helped pioneer the feminist art movement in the 1960s and ’70s;
+                for decades, she has made work that celebrates the multiplicity of female identity. Chicago’s practice
+                spans painting, textile arts, sculpture, and installation and has explored the intricacies of
+                childbirth (as seen in her “Birth Project” series, 1980–85), the possibilities of minimalist
+                sculpture, and the relationship between landscape and the female body. Her most famous work, an
+                installation called The Dinner Party (1974–79), is an homage to 39 influential female figures from
+                Eastern and Western mythology and civilization. Chicago studied at the University of California, Los
+                Angeles. She founded a groundbreaking and widely influential feminist art program while on staff at
+                California State University, Fresno. Her work has been exhibited in New York, London, Milan, Chicago,
+                and San Francisco and belongs in the collections of the British Museum, Moderna Museet, the
+                Metropolitan Museum of Art, the Los Angeles County Museum of Art, the Tate, the Art Institute of
+                Chicago, and the National Gallery of Art in Washington, D.C.
+              </p>
+              <p class="article-auction__text">
+                Applicable sales tax will apply to all works shipped to and within the US. Please note, your card will
+                automatically be charged for the Total Purchase Price, buyer’s premium, shipping, and any applicable
+                sales tax, based on your registration address. For transactions over $50,000, you will be given the
+                option to pay via wire transfer.
+              </p>
+            </div>
 
-              <!-- <a href="#" class="article-auction__btn btn btn_dark"><span>Hide info</span></a> -->
-            </article>
-            <div class="article-auction__banner">
-              <img loading="lazy" src="../img/auction/crown-white.svg" alt="Crown" class="article-auction__icon" />
-              <h3 class="article-auction__title-banner">Liked the work?</h3>
-              <p class="article-auction__text-banner">Share with friends in social media</p>
-              <div class="article-auction__soc">
-                <a href="#" class="article-auction__soc-link">
-                  <img
-                    loading="lazy"
-                    src="../img/auction/inst-w.svg"
-                    alt="Instagram"
-                    class="article-auction__soc-icon"
-                  />
-                </a>
-                <a href="#" class="article-auction__soc-link">
-                  <img
-                    loading="lazy"
-                    src="../img/auction/twitter-w.svg"
-                    alt="Twitter"
-                    class="article-auction__soc-icon"
-                  />
-                </a>
-                <a href="#" class="article-auction__soc-link">
-                  <img
-                    loading="lazy"
-                    src="../img/auction/telegram-w.svg"
-                    alt="Telegram"
-                    class="article-auction__soc-icon"
-                  />
-                </a>
-                <a href="#" class="article-auction__soc-link">
-                  <img
-                    loading="lazy"
-                    src="../img/auction/pinterest-w.svg"
-                    alt="Pinterest"
-                    class="article-auction__soc-icon"
-                  />
-                </a>
-              </div>
+            <!-- <a href="#" class="article-auction__btn btn btn_dark"><span>Hide info</span></a> -->
+          </article>
+          <div class="article-auction__banner">
+            <img loading="lazy" src="img/auction/crown-white.svg" alt="Crown" class="article-auction__icon" />
+            <h3 class="article-auction__title-banner">Liked the work?</h3>
+            <p class="article-auction__text-banner">Share with friends in social media</p>
+            <div class="article-auction__soc">
+              <a href="#" class="article-auction__soc-link">
+                <img loading="lazy" src="img/auction/inst-w.svg" alt="Instagram" class="article-auction__soc-icon" />
+              </a>
+              <a href="#" class="article-auction__soc-link">
+                <img loading="lazy" src="img/auction/twitter-w.svg" alt="Twitter" class="article-auction__soc-icon" />
+              </a>
+              <a href="#" class="article-auction__soc-link">
+                <img loading="lazy" src="img/auction/telegram-w.svg" alt="Telegram"
+                  class="article-auction__soc-icon" />
+              </a>
+              <a href="#" class="article-auction__soc-link">
+                <img loading="lazy" src="img/auction/pinterest-w.svg" alt="Pinterest"
+                  class="article-auction__soc-icon" />
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <footer class="footer">
+    </div>
+    <footer class="footer">
   <!-- <div class="container container_big">
     <div class="footer__top">
       <a href="index.html" class="footer__logo">
@@ -453,14 +422,12 @@
     </div>
   </div>
 </footer>
-    </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230801210256"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script src="scripts/main.min.js?_v=20230801194211"></script>
-  </body>
+  <script src="scripts/main.min.js?_v=20230801210256"></script>
+</body>
+
 </html>

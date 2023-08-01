@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,163 +8,121 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230801194211" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230801210256" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230801194211">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230801210256">
 </head>
 
-  <body>
-    <div class="wrapper wrapper_enter">
-      <section class="enter">
-        <div class="enter__body tabs">
-          <img src="./img/logo.svg" alt="Logo" class="enter__logo" />
+<body>
+  <div class="wrapper wrapper_enter">
+    <section class="enter">
+      <div class="enter__body tabs">
+        <a href="index.html"><img src="img/logo.svg" alt="Logo" class="enter__logo" /></a>
 
-          <h1 class="enter__title title-small">Authorization</h1>
+        <h1 class="enter__title title-small">Authorization</h1>
 
-          <form action="#" class="enter_form form">
-            <div class="payment__tabs">
-              <a data-tab="#login" href="#" class="payment__tab tab _active">Log in</a>
-              <a data-tab="#signup" href="#" class="payment__tab tab">Sign up</a>
-              <div class="payment__indicator-wrap">
-                <div class="payment__indicator tab-indicator"></div>
+        <form action="#" class="enter_form form">
+          <div class="payment__tabs">
+            <a data-tab="#login" href="#" class="payment__tab tab _active">Log in</a>
+            <a data-tab="#signup" href="#" class="payment__tab tab">Sign up</a>
+            <div class="payment__indicator-wrap">
+              <div class="payment__indicator tab-indicator"></div>
+            </div>
+          </div>
+
+          <div id="login" class="payment__form-body tab-content _active">
+            <div class="form__wrapper">
+              <div class="form__input-wrap">
+                <p class="form__input-title">E-mail</p>
+                <input type="email" class="form__input" name="E-mail" aria-label="Your e-mail"
+                  placeholder="Your e-mail" />
+              </div>
+
+              <div class="form__input-wrap">
+                <p class="form__input-title">Passwrod</p>
+                <input type="text" class="form__input" name="Passwrod" aria-label="Your password"
+                  placeholder="Your password" />
+              </div>
+
+              <button class="form__btn btn btn_light" type="submit" aria-label="send-question">Send message</button>
+
+              <div class="enter__bottom">
+                <p class="enter__text">Don’t have account yet?</p>
+                <a href="#" class="enter__link">Sign up</a>
               </div>
             </div>
-
-            <div id="login" class="payment__form-body tab-content _active">
-              <div class="form__wrapper">
-                <div class="form__input-wrap">
-                  <p class="form__input-title">E-mail</p>
-                  <input
-                    type="email"
-                    class="form__input"
-                    name="E-mail"
-                    aria-label="Your e-mail"
-                    placeholder="Your e-mail"
-                  />
+          </div>
+          <div id="signup" class="payment__form-body tab-content">
+            <div class="form__wrapper">
+              <p class="form__input-title">Select your role</p>
+              <div class="form__radio-wrap">
+                <div class="form__checkbox-wrap">
+                  <input id="customer-radio" type="radio" class="form__input-radio" name="user"
+                    aria-label="send-question" placeholder="Your question" hidden />
+                  <label for="customer-radio" class="form__custom-radio">
+                    <span>Customer</span>
+                  </label>
                 </div>
-
-                <div class="form__input-wrap">
-                  <p class="form__input-title">Passwrod</p>
-                  <input
-                    type="text"
-                    class="form__input"
-                    name="Passwrod"
-                    aria-label="Your password"
-                    placeholder="Your password"
-                  />
+                <div class="form__checkbox-wrap">
+                  <input id="admin-radio" type="radio" class="form__input-radio" name="user" aria-label="send-question"
+                    placeholder="Your question" hidden />
+                  <label for="admin-radio" class="form__custom-radio">
+                    <span>Admin</span>
+                  </label>
                 </div>
-
-                <button class="form__btn btn btn_light" type="submit" aria-label="send-question">Send message</button>
-
-                <div class="enter__bottom">
-                  <p class="enter__text">Don’t have account yet?</p>
-                  <a href="#" class="enter__link">Sign up</a>
+                <div class="form__checkbox-wrap">
+                  <input id="artist-radio" type="radio" class="form__input-radio" name="user" aria-label="send-question"
+                    placeholder="Your question" hidden />
+                  <label for="artist-radio" class="form__custom-radio">
+                    <span>Artist</span>
+                  </label>
                 </div>
               </div>
-            </div>
-            <div id="signup" class="payment__form-body tab-content">
-              <div class="form__wrapper">
-                <div class="form__radio-wrap">
-                  <div class="form__checkbox-wrap">
-                    <input
-                      id="customer-radio"
-                      type="radio"
-                      class="form__input-radio"
-                      name="user"
-                      aria-label="send-question"
-                      placeholder="Your question"
-                      hidden
-                    />
-                    <label for="customer-radio" class="form__custom-radio">
-                      <span>Customer</span>
-                    </label>
-                  </div>
-                  <div class="form__checkbox-wrap">
-                    <input
-                      id="admin-radio"
-                      type="radio"
-                      class="form__input-radio"
-                      name="user"
-                      aria-label="send-question"
-                      placeholder="Your question"
-                      hidden
-                    />
-                    <label for="admin-radio" class="form__custom-radio">
-                      <span>Admin</span>
-                    </label>
-                  </div>
-                  <div class="form__checkbox-wrap">
-                    <input
-                      id="artist-radio"
-                      type="radio"
-                      class="form__input-radio"
-                      name="user"
-                      aria-label="send-question"
-                      placeholder="Your question"
-                      hidden
-                    />
-                    <label for="artist-radio" class="form__custom-radio">
-                      <span>Artist</span>
-                    </label>
-                  </div>
-                </div>
 
-                <div class="form__input-wrap">
-                  <p class="form__input-title">E-mail</p>
-                  <input
-                    type="email"
-                    class="form__input"
-                    name="E-mail"
-                    aria-label="Your e-mail"
-                    placeholder="Your e-mail"
-                  />
-                </div>
+              <div class="form__input-wrap">
+                <p class="form__input-title">E-mail</p>
+                <input type="email" class="form__input" name="E-mail" aria-label="Your e-mail"
+                  placeholder="Your e-mail" />
+              </div>
 
-                <div class="form__input-wrap">
-                  <p class="form__input-title">Passwrod</p>
-                  <input
-                    type="text"
-                    class="form__input"
-                    name="Passwrod"
-                    aria-label="Your password"
-                    placeholder="Your password"
-                  />
-                </div>
+              <div class="form__input-wrap">
+                <p class="form__input-title">Passwrod</p>
+                <input type="text" class="form__input" name="Passwrod" aria-label="Your password"
+                  placeholder="Your password" />
+              </div>
 
-                <button class="form__btn btn btn_light" type="submit" aria-label="send-question">Send message</button>
+              <button class="form__btn btn btn_light" type="submit" aria-label="send-question">Send message</button>
 
-                <div class="enter__bottom">
-                  <p class="enter__text">Already have accoun?</p>
-                  <a href="#" class="enter__link">Log in</a>
-                </div>
+              <div class="enter__bottom">
+                <p class="enter__text">Already have accoun?</p>
+                <a href="#" class="enter__link">Log in</a>
               </div>
             </div>
-          </form>
+          </div>
+        </form>
 
-          <div class="enter__bubble bubble"></div>
-          <img src="../img/enter/home_hero-star.svg" alt="Star" class="enter__star star" />
-        </div>
-      </section>
-    </div>
+        <div class="enter__bubble bubble"></div>
+        <img src="img/enter/home_hero-star.svg" alt="Star" class="enter__star star" />
+      </div>
+    </section>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230801210256"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script>
-      $(document).ready(function () {
-        $('.payment__tab').click(function (e) {
-          e.preventDefault();
-          var targetTab = $(this).attr('data-tab');
-          $('.payment__tab').removeClass('_active');
-          $(this).addClass('_active');
-          $('.payment__indicator').css('transform', 'translateX(' + $(this).index() * 100 + '%)');
-          $('.tab-content').removeClass('_active');
-          $(targetTab).addClass('_active');
-        });
+  <script>
+    $(document).ready(function () {
+      $('.payment__tab').click(function (e) {
+        e.preventDefault();
+        var targetTab = $(this).attr('data-tab');
+        $('.payment__tab').removeClass('_active');
+        $(this).addClass('_active');
+        $('.payment__indicator').css('transform', 'translateX(' + $(this).index() * 100 + '%)');
+        $('.tab-content').removeClass('_active');
+        $(targetTab).addClass('_active');
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
