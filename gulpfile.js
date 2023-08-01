@@ -103,6 +103,7 @@ function html() {
     .pipe(gulp.dest(paths.build.html));
 }
 
+// groupCssMediaQueries() has error on build mode
 function scss(done) {
   gulp
     .src(paths.src.styles, { sourcemaps: isDev })

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230801165400" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230801165400">
+</head>
+
+<body>
+  <nav class="burger-menu">
+    <div class="burger-menu__header">
+        <a href="index.html" class="logo ">
+    <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+</a>
+        <button class="close-button" aria-label="close menu">
+            <img src="img/Close.svg" alt="Close icon" width="18" height="18" aria-hidden="true">
+        </button>
+    </div>
+
+    <ul class="socialsLinks">
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/inst.svg" alt="instagram icon" width="24px" height="24px">
+        </a>
+    </li>
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/twitter.svg" alt="twitter icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://web.telegram.org" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/telegram.svg" alt="telegram icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="www.pinterest.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
+        </a>
+    </li>
+</ul>
+</nav>
+<header class="header">
+  <div class="header__wrapper">
+    <a href="index.html" class="logo header__logo">
+    <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+</a>
+
+    <!-- <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item">
+          <a href="index.html" class="header-navigation__link">Main page</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">
+            <img src="img/lock.svg" alt="lock icon" width="14px" height="14px" />
+            NFT
+          </a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Pictures</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="auction.html" class="header-navigation__link">Auction</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Pricing</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Contacts</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="blog.html" class="header-navigation__link">Blog</a>
+        </li>
+      </ul>
+    </nav> -->
+
+    <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item">
+          <a href="index.html" class="header-navigation__link">Main page</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="Nfts.html" class="header-navigation__link">
+            <img src="img/lock.svg" alt="lock icon" width="14px" height="14px">
+            NFT
+          </a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="customClothes.html" class="header-navigation__link">Pictures</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Auction</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="Pricing.html" class="header-navigation__link">Pricing</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="mainTeam.html" class="header-navigation__link">Contacts</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="blog.html" class="header-navigation__link">Blog</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__buttons">
+      <select class="languageSelect" name="languageSelect" id="languageSelect">
+        <option value="ENG" selected>ENG</option>
+        <option value="UA">UA</option>
+        <option value="FR">FR</option>
+      </select>
+
+      <a href="#" class="button main">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Authorization
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
+
+      <a href="#" class="button active">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Premium access
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
+    </div>
+
+    <!-- <div class="small-menu">
+      <button class="smallPemiumButton">
+    <img src="img/crown.svg" alt="crown" width="15px" height="12px">
+</button>
+
+      <button class="burger-button" aria-label="open burger menu">
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <a href="@@link" class="button main">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Authorization
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a> 
+    <a href="@@link" class="button active">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Premium access
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a> -->
+  </div>
+
+  <div class="small-menu">
+    <button class="smallPemiumButton">
+    <img src="img/crown.svg" alt="crown" width="15px" height="12px">
+</button>
+
+    <button class="burger-button" aria-label="open burger menu">
+      <span class="burger-button__line" aria-hidden="true"></span>
+      <span class="burger-button__line" aria-hidden="true"></span>
+      <span class="burger-button__line" aria-hidden="true"></span>
+    </button>
+  </div>
+  </div>
+</header>
+  <div class="wrapper wrapper_arts">
+    <section class="main-page arts-hero">
+      <div class="container">
+        <div class="arts-hero__row">
+          <div class="arts-hero__body">
+            <h1 class="arts-hero__title title">Want to be a part of our team?</h1>
+            <p class="arts-hero__text text">
+              no purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and.
+              Proposal indulged no do do sociable he throwing settling. Covered ten nor comfort offices carried. Age
+              she way earnestly the fulfilled extremely. Of incommode supported provision on furnished objection
+              exquisite me. Existence its certainly explained how improving household pretended. Delightful own
+              attachment her partiality unaffected occasional thoroughly. Adieus it no wonder spirit houses.
+            </p>
+            <a href="#" class="arts-hero__btn btn btn_light">
+              <img loading="lazy" src="img/main/bag.svg" alt="Bag icon" class="arts-hero__btn-icon" />
+              <span>Get custom now</span>
+            </a>
+          </div>
+          <div class="arts-hero__image-wrap">
+            <picture>
+              <!-- <source media="(max-width: 575px)" srcset="img/art3_image_m.webp" type="image/webp" />
+                <source media="(min-width: 576px)" srcset="img/art3_image.webp" type="image/webp" /> -->
+              <img src="img/art3_image.png" alt="NFT Image" class="arts-hero__image" />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-bg text-bg_1">BECOME A PART</p>
+      <p class="text-bg text-bg_2">OF OUR TEAM</p>
+
+      <img loading="lazy" src="img/main/home_hero-star.svg" alt="Star"
+        class="arts-hero__star arts-hero__star_1 star" />
+      <img loading="lazy" src="img/main/home_hero-star.svg" alt="Star"
+        class="arts-hero__star arts-hero__star_2 star" />
+
+      <div class="arts-hero__bubble bubble"></div>
+    </section>
+
+    <section class="main-benefits">
+      <div class="container">
+        <h2 class="main-benefits__subtitle subtitle">
+          <span>OUR BENEFITS</span>
+        </h2>
+        <h2 class="main-benefits__title title-small">Benefits from work with us</h2>
+        <ul class="main-benefits__list">
+          <li class="main-benefits__item">
+            <div class="main-benefits__icon-wrap">
+              <img src="img/main/star-gradient.svg" alt="Star" class="main-benefits__icon" />
+            </div>
+            <h3 class="main-benefits__item-title">Title of benefits</h3>
+            <p class="main-benefits__item-text">
+              No purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and
+            </p>
+          </li>
+          <li class="main-benefits__item">
+            <div class="main-benefits__icon-wrap">
+              <img src="img/main/star-gradient.svg" alt="Star" class="main-benefits__icon" />
+            </div>
+            <h3 class="main-benefits__item-title">Title of benefits</h3>
+            <p class="main-benefits__item-text">
+              No purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and
+            </p>
+          </li>
+          <li class="main-benefits__item">
+            <div class="main-benefits__icon-wrap">
+              <img src="img/main/star-gradient.svg" alt="Star" class="main-benefits__icon" />
+            </div>
+            <h3 class="main-benefits__item-title">Title of benefits</h3>
+            <p class="main-benefits__item-text">
+              No purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and
+            </p>
+          </li>
+          <li class="main-benefits__item">
+            <div class="main-benefits__icon-wrap">
+              <img src="img/main/star-gradient.svg" alt="Star" class="main-benefits__icon" />
+            </div>
+            <h3 class="main-benefits__item-title">Title of benefits</h3>
+            <p class="main-benefits__item-text">
+              No purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+    <div class="contacts__decoration">
+        <picture>
+            <source srcset="img/decoration/decoration-box.webp" type="image/webp">
+            <img class="contacts__decoration_box" data-src="img/decoration/decoration-box.png" alt="box" width="600px"
+                height="600px">
+        </picture>
+        <!-- <img class="contacts__decoration_box" data-src="img/decoration/decoration-box.png" alt="box" width="600px"
+            height="600px"> -->
+
+        <picture>
+            <source srcset="img/jewelry/jewelry_4.webp" type="image/webp">
+            <img class="contacts__decoration_jewelry-first" data-src="img/jewelry/jewelry_4.png" alt="jewelry"
+                width="350px" height="380px">
+        </picture>
+        <!-- <img class="contacts__decoration_jewelry-first" data-src="img/jewelry/jewelry_4.png" alt="jewelry"
+            width="350px" height="380px"> -->
+
+        <picture>
+            <source srcset="img/jewelry/jewelry_5.webp" type="image/webp">
+            <img class="contacts__decoration_jewelry-second" data-src="img/jewelry/jewelry_5.png" alt="jewelry"
+                width="230px" height="230px">
+        </picture>
+        <!-- <img class="contacts__decoration_jewelry-second" data-src="img/jewelry/jewelry_5.png" alt="jewelry"
+            width="230px" height="230px"> -->
+
+        <picture>
+            <source srcset="img/jewelry/jewelry_5_2.webp" type="image/webp">
+            <img class="contacts__decoration_jewelry-third" data-src="img/jewelry/jewelry_5_2.png" alt="jewelry"
+                width="170px" height="170px">
+        </picture>
+        <!-- <img class="contacts__decoration_jewelry-third" data-src="img/jewelry/jewelry_5_2.png" alt="jewelry"
+            width="170px" height="170px"> -->
+
+    </div>
+    <div class="contacts__wrapper">
+        <p class="small-title">CONTACT ME</p>
+        <h2 class="section-title">Want to apply your work or an question appeared? </h2>
+        <form action="" class="contacts__form">
+            <div class="input-container">
+                <label class="input-container__lable" for="Name">Name</label>
+                <input class="input-container__input" type="text" name="Name" id="Name" placeholder="Your name">
+            </div>
+            <div class="input-container">
+                <label class="input-container__lable" for="Email">Mail</label>
+                <input class="input-container__input" type="email" name="Email" id="Email" placeholder="Your mail">
+            </div>
+
+            <div class="input-container">
+                <label class="input-container__lable" for="Question">Your question</label>
+                <textarea class="input-container__input input-container__textarea" name="Question" id="Question"
+                    cols="30" rows="7" placeholder="Your question"></textarea>
+            </div>
+
+            <a href="#" class="button active">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Send message
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
+
+
+            <div class="contacts__agree">
+                <label class="contacts__checkbox">
+                    <input type="checkbox" id="agree" name="agree" aria-label="agree checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="contacts__agree_text input-container__lable">
+                    <span>I agree with </span>
+                    <a class="input-container__link" href="#">Privacy Policy</a>
+                    <span> and </span>
+                    <a class="input-container__link" href="#">Terms of use</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+  </div>
+  <footer class="footer">
+  <!-- <div class="container container_big">
+    <div class="footer__top">
+      <a href="index.html" class="footer__logo">
+        <img src="img/logo.svg" alt="logo" width="145px" height="30px" />
+      </a>
+
+      <div class="footer__list">
+        <a href="#" class="footer__link">Privacy policy</a>
+        <a href="#" class="footer__link">Terms of use</a>
+      </div>
+
+      <div class="footer__soc">
+        <a href="#" class="footer__soc-link">
+          <img loading="lazy" src="img/socials/inst.svg" alt="Instagram" class="footer__soc-icon" />
+        </a>
+        <a href="#" class="footer__soc-link">
+          <img loading="lazy" src="img/socials/twitter.svg" alt="Twitter" class="footer__soc-icon" />
+        </a>
+        <a href="#" class="footer_soc-link">
+          <img loading="lazy" src="img/socials/telegram.svg" alt="Telegram" class="footer__soc-icon" />
+        </a>
+        <a href="#" class="footer__soc-link">
+          <img loading="lazy" src="img/socials/pinterest.svg" alt="Pinterest" class="footer__soc-icon" />
+        </a>
+  <div class="footer__wrapper">
+    <div class="footer__container">
+      <div class="footer__top">
+        <a href="index.html" class="logo @@class">
+    <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+</a>
+        <div class="footer__links">
+          <a class="section__text" href="#">Privacy policy</a>
+          <a class="section__text" href="#">Terms of use</a>
+        </div>
+
+      </div>
+      <ul class="socialsLinks">
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/inst.svg" alt="instagram icon" width="24px" height="24px">
+        </a>
+    </li>
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/twitter.svg" alt="twitter icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://web.telegram.org" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/telegram.svg" alt="telegram icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="www.pinterest.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
+        </a>
+    </li>
+</ul>
+    </div>
+
+    <div class="footer__bottom">All rights reserved © 2022</div>
+  </div> -->
+
+  <div class="footer__wrapper">
+    <div class="footer__container">
+      <div class="footer__top">
+        <a href="index.html" class="logo @@class">
+    <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+</a>
+        <div class="footer__links">
+          <a class="section__text" href="#">Privacy policy</a>
+          <a class="section__text" href="#">Terms of use</a>
+        </div>
+      </div>
+      <ul class="socialsLinks">
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/inst.svg" alt="instagram icon" width="24px" height="24px">
+        </a>
+    </li>
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/twitter.svg" alt="twitter icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://web.telegram.org" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/telegram.svg" alt="telegram icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="www.pinterest.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
+        </a>
+    </li>
+</ul>
+    </div>
+
+    <div class="footer__bottom">
+      All rights reserved © 2022
+    </div>
+  </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230801165400"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <script src="scripts/main.min.js?_v=20230801165400"></script>
+</body>
+
+</html>

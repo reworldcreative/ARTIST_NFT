@@ -1,0 +1,199 @@
+.nft-orders__item, .nft-orders__header {
+  display: grid;
+  grid-template-columns: 1.2fr 1.6fr 1.4fr 0.7fr;
+  align-items: center;
+  gap: 10px;
+}
+.nft-orders__header {
+  margin: 0 0 20px;
+}
+.nft-orders__header .name {
+  padding: 0 0 0 16px;
+}
+.nft-orders__item-title {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 15px;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.nft-orders__item-title img {
+  width: 31.46px;
+  height: 32px;
+  border-radius: 100%;
+}
+.nft-orders__wallet-wrap {
+  background: #212426;
+  border-radius: 13px;
+  padding: 14px 50px 14px 18px;
+  font-weight: 700;
+  line-height: 20px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+.nft-orders__wallet-icon-wrap {
+  background: #212426;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nft-orders__copy-icon {
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  right: 20px;
+  top: calc(50% - 8px);
+  background: #212426;
+}
+.nft-orders__item-buy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.nft-orders__item-status {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  background: rgba(197, 255, 152, 0.1);
+  border-radius: 10px;
+  color: #c5ff98;
+  padding: 6px 22px;
+  max-width: 103px;
+  text-align: center;
+}
+.nft-orders__item-price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+.nft-orders__item-date {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #c8d2dc;
+}
+.nft-orders__item-date._mobile {
+  display: none;
+}
+
+@media (max-width: 1220px) {
+  .nft-orders__item {
+    grid-template-columns: 1.1fr 2fr 1.4fr;
+  }
+  .nft-orders__title {
+    display: block;
+  }
+  .nft-orders__header {
+    display: none;
+  }
+  .nft-orders__item-title {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 0 0 0 50px;
+    gap: 0;
+  }
+  .nft-orders__item-title img {
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 16px);
+  }
+  .nft-orders__item-date {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .nft-orders__item-date._mobile {
+    display: block;
+  }
+  .nft-orders__item-date._pc {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .nft-orders .table-item {
+    gap: 0;
+    margin: 0;
+  }
+  .nft-orders__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 13px 10px;
+  }
+  .nft-orders__item {
+    padding: 17px 19px 17px 18px;
+    grid-template-columns: 1fr;
+  }
+  .nft-orders__item-title {
+    font-weight: 600;
+    line-height: 21px;
+    font-size: 16px;
+    padding: 0 0 17px 46px;
+    position: relative;
+    border-bottom: 1px solid rgba(228, 228, 228, 0.05);
+  }
+  .nft-orders__item-title img {
+    left: 0px;
+    top: calc(50% - 26px);
+  }
+  .nft-orders__item-wallet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(228, 228, 228, 0.05);
+    padding: 10px 0 11px;
+  }
+  .nft-orders__item-wallet::before {
+    content: "Adress";
+    display: block;
+  }
+  .nft-orders__wallet-wrap {
+    width: 48.05%;
+    padding: 7px 11px 7px 11px;
+    border-radius: 8px;
+    margin: 0 5px 0 0;
+  }
+  .nft-orders__wallet-wrap .wallet {
+    max-width: 105px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .nft-orders__wallet-icon-wrap {
+    width: 35px;
+  }
+  .nft-orders__copy-icon {
+    right: 13px;
+    width: 10px;
+    height: 11px;
+  }
+  .nft-orders__item-buy {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 15px;
+  }
+  .nft-orders__item-price {
+    padding: 11px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .nft-orders__item-price::before {
+    content: "Price";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .nft-orders__item-status {
+    width: 100%;
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=nft-orders.css.map */

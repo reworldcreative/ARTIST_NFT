@@ -1,635 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.min.css">
     <title>Artist NFT</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230801165400" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230801165400">
 </head>
-  <body>
-    <header class="header-sidebar">
-      <div class="header-sidebar__container">
-        <div class="header-sidebar__body">
-          <a class="header-sidebar__logo-link" href="index.html"
-            ><img src="img/logo.svg" alt="" class="header-sidebar__logo"
-          /></a>
-          <div class="header-sidebar__mobile-burger">
-            <div class="header-sidebar__icon-menu menu__icon"><span></span> <span></span></div>
-          </div>
-          <div id="logoutButtonOne" class="header-sidebar__logout-wrapper">
-            <button class="header-sidebar__logout">Log out</button>
-            <img src="img/admin/admin-out.svg" alt="logout" />
-          </div>
+
+<body class="admin" id="clientPage">
+  <header class="header-sidebar">
+    <div class="header-sidebar__container">
+      <div class="header-sidebar__body">
+        <a class="header-sidebar__logo-link" href="index.html"><img src="img/logo.svg" alt=""
+            class="header-sidebar__logo" /></a>
+        <div class="header-sidebar__mobile-burger">
+          <div class="header-sidebar__icon-menu menu__icon"><span></span> <span></span></div>
+        </div>
+        <div id="logoutButtonOne" class="header-sidebar__logout-wrapper">
+          <button class="header-sidebar__logout">Log out</button>
+          <img src="img/admin/admin-out.svg" alt="logout" />
         </div>
       </div>
-      <div class="menu__pre-scrin"></div>
-    </header>
-    <div class="sidebar__wrapper">
-      <div class="sidebar__body">
-        <div class="user-menu__list">
-          <a data-link="#mess" href="#" class="user-menu__link _active">
-            <span class="i-mess"></span>
-            <p>Messages</p>
-          </a>
-          <a data-link="#stat" href="#" class="user-menu__link">
-            <span class="i-orders"></span>
-            <p>Statistics</p>
-          </a>
-        </div>
-        <div class="sidebar__footer">
-          <div id="logoutButtonTwo" class="header-sidebar__logout-wrapper sidebar__logout">
-            <button class="header-sidebar__logout">Log out</button>
-            <img src="img/admin/admin-out.svg" alt="logout" />
-          </div>
-          <div class="sidebar__copyright"><h4 class="sidebar__copyright-text">All rights reserved © 2022</h4></div>
-        </div>
-      </div>
-      <main class="sidebar__page">
-        <div id="mess" class="content-user__body content-user__body_chat _active">
-          <div class="chat__list chat-list">
-            <div class="chat-list__body">
-              <h1 class="chat-list__title">My chat list</h1>
-
-              <div class="chat-list__slider">
-                <div class="swiper-wrapper">
-                  <div class="chat-list__slide swiper-slide">
-                    <div class="chat-list__slide-image-wrap">
-                      <img
-                        loading="lazy"
-                        src="../img/admin/chat-slide_img1.jpg"
-                        alt="Image"
-                        class="chat-list__slide-image"
-                      />
-                      <div class="item-dialog__status status _online"></div>
-                    </div>
-                    <p class="chat-list__slide-name">Ivan Ivanov</p>
-                    <p class="chat-list__slide-time">10 min ago</p>
-                  </div>
-                  <div class="chat-list__slide swiper-slide">
-                    <div class="chat-list__slide-image-wrap">
-                      <img
-                        loading="lazy"
-                        src="../img/admin/chat-slide_img2.jpg"
-                        alt="Image"
-                        class="chat-list__slide-image"
-                      />
-                      <div class="item-dialog__status status _online"></div>
-                    </div>
-                    <p class="chat-list__slide-name">Ivan Ivanov</p>
-                    <p class="chat-list__slide-time">10 min ago</p>
-                  </div>
-                  <div class="chat-list__slide swiper-slide">
-                    <div class="chat-list__slide-image-wrap">
-                      <img
-                        loading="lazy"
-                        src="../img/admin/chat-slide_img3.jpg"
-                        alt="Image"
-                        class="chat-list__slide-image"
-                      />
-                      <div class="item-dialog__status status _online"></div>
-                    </div>
-                    <p class="chat-list__slide-name">Ivan Ivanov</p>
-                    <p class="chat-list__slide-time">10 min ago</p>
-                  </div>
-                  <div class="chat-list__slide swiper-slide">
-                    <div class="chat-list__slide-image-wrap">
-                      <img
-                        loading="lazy"
-                        src="../img/admin/chat-slide_img4.jpg"
-                        alt="Image"
-                        class="chat-list__slide-image"
-                      />
-                      <div class="item-dialog__status status _online"></div>
-                    </div>
-                    <p class="chat-list__slide-name">Ivan Ivanov</p>
-                    <p class="chat-list__slide-time">10 min ago</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="chat-list__form">
-                <input
-                  type="text"
-                  name="Search"
-                  class="chat-list__input"
-                  aria-label="Search form"
-                  placeholder="Search"
-                />
-                <img src="../img/admin/search.svg" alt="icon" class="chat-list__search-icon" />
-              </div>
-
-              <ul class="chat-list__dialogs-list">
-                <li class="chat-list__dialog item-dialog">
-                  <div class="item-dialog__image-wrap">
-                    <img
-                      loading="lazy"
-                      src="../img/admin/item-dialog_photo.jpg"
-                      alt="Photo"
-                      class="item-dialog__image"
-                    />
-                    <div class="item-dialog__status status _online"></div>
-                  </div>
-                  <div class="item-dialog__body">
-                    <div class="item-dialog__top">
-                      <p class="item-dialog__name">Kathryn Murphy</p>
-                      <p class="item-dialog__time">10 min ago</p>
-                    </div>
-                    <p class="item-dialog__mess">Message that have been writed...Message that have been writed...</p>
-                  </div>
-                </li>
-                <li class="chat-list__dialog item-dialog _active">
-                  <div class="item-dialog__image-wrap">
-                    <img
-                      loading="lazy"
-                      src="../img/admin/item-dialog_photo.jpg"
-                      alt="Photo"
-                      class="item-dialog__image"
-                    />
-                    <div class="item-dialog__status status _online"></div>
-                  </div>
-                  <div class="item-dialog__body">
-                    <div class="item-dialog__top">
-                      <p class="item-dialog__name">Ivan Ivanov</p>
-                      <p class="item-dialog__time">10 min ago</p>
-                    </div>
-                    <p class="item-dialog__mess">Message that have been writed...</p>
-                  </div>
-                </li>
-                <li class="chat-list__dialog item-dialog">
-                  <div class="item-dialog__image-wrap">
-                    <img
-                      loading="lazy"
-                      src="../img/admin/item-dialog_photo.jpg"
-                      alt="Photo"
-                      class="item-dialog__image"
-                    />
-                    <div class="item-dialog__status status _online"></div>
-                  </div>
-                  <div class="item-dialog__body">
-                    <div class="item-dialog__top">
-                      <p class="item-dialog__name">Ivan Ivanov</p>
-                      <p class="item-dialog__time">10 min ago</p>
-                    </div>
-                    <p class="item-dialog__mess">Message that have been writed...</p>
-                  </div>
-                </li>
-                <li class="chat-list__dialog item-dialog">
-                  <div class="item-dialog__image-wrap">
-                    <img
-                      loading="lazy"
-                      src="../img/admin/item-dialog_photo.jpg"
-                      alt="Photo"
-                      class="item-dialog__image"
-                    />
-                    <div class="item-dialog__status status _online"></div>
-                  </div>
-                  <div class="item-dialog__body">
-                    <div class="item-dialog__top">
-                      <p class="item-dialog__name">Ivan Ivanov</p>
-                      <p class="item-dialog__time">10 min ago</p>
-                    </div>
-                    <p class="item-dialog__mess">Message that have been writed...</p>
-                  </div>
-                </li>
-                <li class="chat-list__dialog item-dialog">
-                  <div class="item-dialog__image-wrap">
-                    <img
-                      loading="lazy"
-                      src="../img/admin/item-dialog_photo.jpg"
-                      alt="Photo"
-                      class="item-dialog__image"
-                    />
-                    <div class="item-dialog__status status _online"></div>
-                  </div>
-                  <div class="item-dialog__body">
-                    <div class="item-dialog__top">
-                      <p class="item-dialog__name">Ivan Ivanov</p>
-                      <p class="item-dialog__time">10 min ago</p>
-                    </div>
-                    <p class="item-dialog__mess">Message that have been writed...</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="content-user__dialog dialog">
-            <div class="dialog__header">
-              <a href="#" class="dialog__out-link">
-                <img src="../img/admin/arrow-back.svg" alt="icon" class="dialog__arrow-icon" />
-                <span>Chat with Ivan Ivanov</span>
-              </a>
-              <div class="dialog__user">
-                <div class="item-dialog__image-wrap dialog-image">
-                  <img
-                    loading="lazy"
-                    src="../img/admin/adminchat-slide_img1.jpg"
-                    alt="Photo"
-                    class="item-dialog__image"
-                  />
-                </div>
-                <div class="dialog__user-info">
-                  <p class="dialog__name">Ivan Ivanov</p>
-                  <div data-da=".dialog-image, 767, 0" class="dialog__status-icon status _online"></div>
-                  <p class="dialog__status">Online</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="dialog__main main-dialog">
-              <div class="main-dialog__message _image">
-                <div class="main-dialog__picture-wrap">
-                  <img loading="lazy" src="../img/admin/message-img.jpg" alt="Picture" class="main-dialog__picture" />
-                </div>
-              </div>
-              <div class="main-dialog__message _outgoing">
-                <p class="main-dialog__text">Lorem ipsum dolor sit amet</p>
-                <p class="main-dialog__time">10 min ago</p>
-              </div>
-
-              <div class="main-dialog__new-messages">
-                <p class="main-dialog__text">New messages</p>
-              </div>
-
-              <div class="main-dialog__message _incoming">
-                <div class="main-dialog__avatar item-dialog__image-wrap">
-                  <img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" />
-                </div>
-                <p class="main-dialog__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <p class="main-dialog__time">10 min ago</p>
-              </div>
-
-              <div class="main-dialog__message _outgoing">
-                <p class="main-dialog__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <p class="main-dialog__time">10 min ago</p>
-              </div>
-            </div>
-
-            <div class="dialog__footer">
-              <div class="dialog__input-wrap">
-                <input
-                  type="text"
-                  class="dialog__input"
-                  aria-label="Enter your message here"
-                  name="Enter Message"
-                  placeholder="Enter your message here"
-                />
-
-                <button class="dialog__btn" aria-label="Send Massage">
-                  <img src="../img/admin/send.svg" alt="Send" class="dialog__btn-icon" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="elements">
-          <div id="orders" class="table-responsive">
-            <table class="table">
-              <thead class="table__head">
-                <tr class="table__list">
-                  <th class="table__item column-client-1">Type of item</th>
-                  <th class="table__item column-client-2">Color</th>
-                  <th class="table__item column-client-3">E-mail</th>
-                  <th class="table__item column-client-4">Size</th>
-                  <th class="table__item column-client-5">Comment</th>
-                  <th class="table__item column-client-6">Delivery address</th>
-                  <th class="table__item column-client-7">Status</th>
-                  <th class="table__item column-client-8">Action</th>
-                </tr>
-              </thead>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-              <tbody class="table__body">
-                <tr class="table__list">
-                  <td class="table__item column-client-1 table__title">T-SHIRT</td>
-                  <td class="table__item column-client-2"><div class="color"></div></td>
-                  <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
-                  <td class="table__item column-client-4">XL (99-99-99)</td>
-                  <td class="table__item table__block column-client-5">
-                    <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item table__block column-client-6">
-                    <span>Lorem ipsum dolor</span> <button>Show more</button>
-                  </td>
-                  <td class="table__item column-client-7 table__status"><span>Success</span></td>
-                  <td class="table__item column-client-8 table__btn"><button>Message</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="admin-mobile__container">
-            <div class="admin-mobile">
-              <h4 class="admin-mobile__title">My orders</h4>
-              <div class="admin-mobile__wrapper">
-                <div class="admin-mobile__block">
-                  <div class="admin-mobile__main">
-                    <div class="order-mobile__color"></div>
-                    <div class="admin-mobile__info">
-                      <span class="admin-mobile__name">T-SHIRT</span>
-                      <span class="admin-mobile__email">emailofcustomer@gmail.com</span>
-                    </div>
-                  </div>
-                  <div class="order-mobile__size">
-                    <span class="admin-mobile__item">Size</span>
-                    <span class="order-mobile__size--naming">XL (99-99-99)</span>
-                  </div>
-                  <div class="order-mobile__size second">
-                    <span class="admin-mobile__item">Status</span> <span class="order-mobile__status">Success</span>
-                  </div>
-                  <div class="order-mobile__text">
-                    <div class="order-mobile__box">
-                      <span class="admin-mobile__item">Delivery address</span>
-                      <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="order-mobile__box">
-                      <span class="admin-mobile__item">Comment</span>
-                      <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                    </div>
-                  </div>
-                  <button type="button" class="admin-mobile__button">Message</button>
-                </div>
-                <div class="admin-mobile__block">
-                  <div class="admin-mobile__main">
-                    <div class="order-mobile__color"></div>
-                    <div class="admin-mobile__info">
-                      <span class="admin-mobile__name">T-SHIRT</span>
-                      <span class="admin-mobile__email">emailofcustomer@gmail.com</span>
-                    </div>
-                  </div>
-                  <div class="order-mobile__size">
-                    <span class="admin-mobile__item">Size</span>
-                    <span class="order-mobile__size--naming">XL (99-99-99)</span>
-                  </div>
-                  <div class="order-mobile__size second">
-                    <span class="admin-mobile__item">Status</span> <span class="order-mobile__status">Success</span>
-                  </div>
-                  <div class="order-mobile__text">
-                    <div class="order-mobile__box">
-                      <span class="admin-mobile__item">Delivery address</span>
-                      <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="order-mobile__box">
-                      <span class="admin-mobile__item">Comment</span>
-                      <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                    </div>
-                  </div>
-                  <button type="button" class="admin-mobile__button">Message</button>
-                </div>
-                <div class="admin-mobile__block">
-                  <div class="admin-mobile__main">
-                    <div class="order-mobile__color"></div>
-                    <div class="admin-mobile__info">
-                      <span class="admin-mobile__name">T-SHIRT</span>
-                      <span class="admin-mobile__email">emailofcustomer@gmail.com</span>
-                    </div>
-                  </div>
-                  <div class="order-mobile__size">
-                    <span class="admin-mobile__item">Size</span>
-                    <span class="order-mobile__size--naming">XL (99-99-99)</span>
-                  </div>
-                  <div class="order-mobile__size second">
-                    <span class="admin-mobile__item">Status</span> <span class="order-mobile__status">Success</span>
-                  </div>
-                  <div class="order-mobile__text">
-                    <div class="order-mobile__box">
-                      <span class="admin-mobile__item">Delivery address</span>
-                      <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="order-mobile__box">
-                      <span class="admin-mobile__item">Comment</span>
-                      <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                    </div>
-                  </div>
-                  <button type="button" class="admin-mobile__button">Message</button>
-                </div>
-                <div class="admin-mobile__block">
-                  <div class="admin-mobile__main">
-                    <div class="order-mobile__color"></div>
-                    <div class="admin-mobile__info">
-                      <span class="admin-mobile__name">T-SHIRT</span>
-                      <span class="admin-mobile__email">emailofcustomer@gmail.com</span>
-                    </div>
-                  </div>
-                  <div class="order-mobile__size">
-                    <span class="admin-mobile__item">Size</span>
-                    <span class="order-mobile__size--naming">XL (99-99-99)</span>
-                  </div>
-                  <div class="order-mobile__size second">
-                    <span class="admin-mobile__item">Status</span> <span class="order-mobile__status">Success</span>
-                  </div>
-                  <div class="order-mobile__text">
-                    <div class="order-mobile__box">
-                      <span class="admin-mobile__item">Delivery address</span>
-                      <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="order-mobile__box">
-                      <span class="admin-mobile__item">Comment</span>
-                      <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                    </div>
-                  </div>
-                  <button type="button" class="admin-mobile__button">Message</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
     </div>
-    <script>
-      // Получаем все ссылки меню и контент вкладок
-      const menuLinks = document.querySelectorAll('.user-menu__link');
-      const tabContents = document.querySelectorAll('.content-user__body');
+    <div class="menu__pre-scrin"></div>
+  </header>
+  <div class="sidebar__wrapper">
+    <div class="sidebar__body">
+      <div class="user-menu__list">
+        <a data-link="#mess" href="#" class="user-menu__link _active">
+          <span class="i-mess"></span>
+          <p>Messages</p>
+        </a>
+        <a data-link="#stat" href="#" class="user-menu__link">
+          <span class="i-orders"></span>
+          <p>Statistics</p>
+        </a>
+      </div>
+      <div class="sidebar__footer">
+        <div id="logoutButtonTwo" class="header-sidebar__logout-wrapper sidebar__logout">
+          <button class="header-sidebar__logout">Log out</button>
+          <img src="img/admin/admin-out.svg" alt="logout" />
+        </div>
+        <div class="sidebar__copyright">
+          <h4 class="sidebar__copyright-text">All rights reserved © 2022</h4>
+        </div>
+      </div>
+    </div>
+    <main class="sidebar__page">
+      <div id="mess" class="content-user__body content-user__body_chat _active">
+        <div class="chat__list chat-list">
+          <div class="chat-list__body">
+            <h1 class="chat-list__title">My chat list</h1>
 
-      // Обрабатываем клики на ссылках меню
-      menuLinks.forEach(link => {
-        link.addEventListener('click', event => {
-          event.preventDefault();
+            <div class="chat-list__slider">
+              <div class="swiper-wrapper">
+                <div class="chat-list__slide swiper-slide">
+                  <div class="chat-list__slide-image-wrap">
+                    <img loading="lazy" src="../img/admin/chat-slide_img1.jpg" alt="Image"
+                      class="chat-list__slide-image" />
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <p class="chat-list__slide-name">Ivan Ivanov</p>
+                  <p class="chat-list__slide-time">10 min ago</p>
+                </div>
+                <div class="chat-list__slide swiper-slide">
+                  <div class="chat-list__slide-image-wrap">
+                    <img loading="lazy" src="../img/admin/chat-slide_img2.jpg" alt="Image"
+                      class="chat-list__slide-image" />
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <p class="chat-list__slide-name">Ivan Ivanov</p>
+                  <p class="chat-list__slide-time">10 min ago</p>
+                </div>
+                <div class="chat-list__slide swiper-slide">
+                  <div class="chat-list__slide-image-wrap">
+                    <img loading="lazy" src="../img/admin/chat-slide_img3.jpg" alt="Image"
+                      class="chat-list__slide-image" />
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <p class="chat-list__slide-name">Ivan Ivanov</p>
+                  <p class="chat-list__slide-time">10 min ago</p>
+                </div>
+                <div class="chat-list__slide swiper-slide">
+                  <div class="chat-list__slide-image-wrap">
+                    <img loading="lazy" src="../img/admin/chat-slide_img4.jpg" alt="Image"
+                      class="chat-list__slide-image" />
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <p class="chat-list__slide-name">Ivan Ivanov</p>
+                  <p class="chat-list__slide-time">10 min ago</p>
+                </div>
+              </div>
+            </div>
 
-          // Удаляем класс _active у текущей активной ссылки
-          document.querySelector('.user-menu__link._active').classList.remove('_active');
+            <div class="chat-list__form">
+              <input type="text" name="Search" class="chat-list__input" aria-label="Search form" placeholder="Search" />
+              <img src="../img/admin/search.svg" alt="icon" class="chat-list__search-icon" />
+            </div>
 
-          // Добавляем класс _active к выбранной ссылке
-          link.classList.add('_active');
+            <ul class="chat-list__dialogs-list">
+              <li class="chat-list__dialog item-dialog">
+                <div class="item-dialog__image-wrap">
+                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <div class="item-dialog__status status _online"></div>
+                </div>
+                <div class="item-dialog__body">
+                  <div class="item-dialog__top">
+                    <p class="item-dialog__name">Kathryn Murphy</p>
+                    <p class="item-dialog__time">10 min ago</p>
+                  </div>
+                  <p class="item-dialog__mess">Message that have been writed...Message that have been writed...</p>
+                </div>
+              </li>
+              <li class="chat-list__dialog item-dialog _active">
+                <div class="item-dialog__image-wrap">
+                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <div class="item-dialog__status status _online"></div>
+                </div>
+                <div class="item-dialog__body">
+                  <div class="item-dialog__top">
+                    <p class="item-dialog__name">Ivan Ivanov</p>
+                    <p class="item-dialog__time">10 min ago</p>
+                  </div>
+                  <p class="item-dialog__mess">Message that have been writed...</p>
+                </div>
+              </li>
+              <li class="chat-list__dialog item-dialog">
+                <div class="item-dialog__image-wrap">
+                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <div class="item-dialog__status status _online"></div>
+                </div>
+                <div class="item-dialog__body">
+                  <div class="item-dialog__top">
+                    <p class="item-dialog__name">Ivan Ivanov</p>
+                    <p class="item-dialog__time">10 min ago</p>
+                  </div>
+                  <p class="item-dialog__mess">Message that have been writed...</p>
+                </div>
+              </li>
+              <li class="chat-list__dialog item-dialog">
+                <div class="item-dialog__image-wrap">
+                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <div class="item-dialog__status status _online"></div>
+                </div>
+                <div class="item-dialog__body">
+                  <div class="item-dialog__top">
+                    <p class="item-dialog__name">Ivan Ivanov</p>
+                    <p class="item-dialog__time">10 min ago</p>
+                  </div>
+                  <p class="item-dialog__mess">Message that have been writed...</p>
+                </div>
+              </li>
+              <li class="chat-list__dialog item-dialog">
+                <div class="item-dialog__image-wrap">
+                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <div class="item-dialog__status status _online"></div>
+                </div>
+                <div class="item-dialog__body">
+                  <div class="item-dialog__top">
+                    <p class="item-dialog__name">Ivan Ivanov</p>
+                    <p class="item-dialog__time">10 min ago</p>
+                  </div>
+                  <p class="item-dialog__mess">Message that have been writed...</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-          // Получаем data-link атрибут выбранной ссылки
-          const targetTab = link.getAttribute('data-link');
+        <div class="content-user__dialog dialog">
+          <div class="dialog__header">
+            <a href="#" class="dialog__out-link">
+              <img src="../img/admin/arrow-back.svg" alt="icon" class="dialog__arrow-icon" />
+              <span>Chat with Ivan Ivanov</span>
+            </a>
+            <div class="dialog__user">
+              <div class="item-dialog__image-wrap dialog-image">
+                <img loading="lazy" src="../img/admin/adminchat-slide_img1.jpg" alt="Photo"
+                  class="item-dialog__image" />
+              </div>
+              <div class="dialog__user-info">
+                <p class="dialog__name">Ivan Ivanov</p>
+                <div data-da=".dialog-image, 767, 0" class="dialog__status-icon status _online"></div>
+                <p class="dialog__status">Online</p>
+              </div>
+            </div>
+          </div>
 
-          // Скрываем все вкладки
-          tabContents.forEach(tab => tab.classList.remove('_active'));
+          <div class="dialog__main main-dialog">
+            <div class="main-dialog__message _image">
+              <div class="main-dialog__picture-wrap">
+                <picture><source srcset="../img/admin/message-img.webp" type="image/webp"><img loading="lazy" src="../img/admin/message-img.jpg" alt="Picture" class="main-dialog__picture" /></picture>
+              </div>
+            </div>
+            <div class="main-dialog__message _outgoing">
+              <p class="main-dialog__text">Lorem ipsum dolor sit amet</p>
+              <p class="main-dialog__time">10 min ago</p>
+            </div>
 
-          // Показываем только выбранную вкладку
-          document.querySelector(targetTab).classList.add('_active');
-        });
+            <div class="main-dialog__new-messages">
+              <p class="main-dialog__text">New messages</p>
+            </div>
+
+            <div class="main-dialog__message _incoming">
+              <div class="main-dialog__avatar item-dialog__image-wrap">
+                <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+              </div>
+              <p class="main-dialog__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+              <p class="main-dialog__time">10 min ago</p>
+            </div>
+
+            <div class="main-dialog__message _outgoing">
+              <p class="main-dialog__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+              <p class="main-dialog__time">10 min ago</p>
+            </div>
+          </div>
+
+          <div class="dialog__footer">
+            <div class="dialog__input-wrap">
+              <input type="text" class="dialog__input" aria-label="Enter your message here" name="Enter Message"
+                placeholder="Enter your message here" />
+
+              <button class="dialog__btn" aria-label="Send Massage">
+                <img src="../img/admin/send.svg" alt="Send" class="dialog__btn-icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="elements">
+        <div id="orders" class="table-responsive">
+          <table class="table">
+            <thead class="table__head">
+              <tr class="table__list">
+                <th class="table__item column-client-1">Type of item</th>
+                <th class="table__item column-client-2">Color</th>
+                <th class="table__item column-client-3">E-mail</th>
+                <th class="table__item column-client-4">Size</th>
+                <th class="table__item column-client-5">Comment</th>
+                <th class="table__item column-client-6">Delivery address</th>
+                <th class="table__item column-client-7">Status</th>
+                <th class="table__item column-client-8">Action</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+            <tbody class="table__body">
+              <tr class="table__list">
+                <td class="table__item column-client-1 table__title">T-SHIRT</td>
+                <td class="table__item column-client-2">
+                  <div class="color"></div>
+                </td>
+                <td class="table__item column-client-3 table__email">emailofcustomer@gmail.com</td>
+                <td class="table__item column-client-4">XL (99-99-99)</td>
+                <td class="table__item table__block column-client-5">
+                  <span>Lorem ipsum dolor sit amet</span> <button>Show more</button>
+                </td>
+                <td class="table__item table__block column-client-6">
+                  <span>Lorem ipsum dolor</span> <button>Show more</button>
+                </td>
+                <td class="table__item column-client-7 table__status"><span>Success</span></td>
+                <td class="table__item column-client-8 table__btn"><button>Message</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="admin-mobile__container">
+          <div class="admin-mobile">
+            <h4 class="admin-mobile__title">My orders</h4>
+            <div class="admin-mobile__wrapper">
+              <div class="admin-mobile__block">
+                <div class="admin-mobile__main">
+                  <div class="order-mobile__color"></div>
+                  <div class="admin-mobile__info">
+                    <span class="admin-mobile__name">T-SHIRT</span>
+                    <span class="admin-mobile__email">emailofcustomer@gmail.com</span>
+                  </div>
+                </div>
+                <div class="order-mobile__size">
+                  <span class="admin-mobile__item">Size</span>
+                  <span class="order-mobile__size--naming">XL (99-99-99)</span>
+                </div>
+                <div class="order-mobile__size second">
+                  <span class="admin-mobile__item">Status</span> <span class="order-mobile__status">Success</span>
+                </div>
+                <div class="order-mobile__text">
+                  <div class="order-mobile__box">
+                    <span class="admin-mobile__item">Delivery address</span>
+                    <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="order-mobile__box">
+                    <span class="admin-mobile__item">Comment</span>
+                    <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                  </div>
+                </div>
+                <button type="button" class="admin-mobile__button">Message</button>
+              </div>
+              <div class="admin-mobile__block">
+                <div class="admin-mobile__main">
+                  <div class="order-mobile__color"></div>
+                  <div class="admin-mobile__info">
+                    <span class="admin-mobile__name">T-SHIRT</span>
+                    <span class="admin-mobile__email">emailofcustomer@gmail.com</span>
+                  </div>
+                </div>
+                <div class="order-mobile__size">
+                  <span class="admin-mobile__item">Size</span>
+                  <span class="order-mobile__size--naming">XL (99-99-99)</span>
+                </div>
+                <div class="order-mobile__size second">
+                  <span class="admin-mobile__item">Status</span> <span class="order-mobile__status">Success</span>
+                </div>
+                <div class="order-mobile__text">
+                  <div class="order-mobile__box">
+                    <span class="admin-mobile__item">Delivery address</span>
+                    <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="order-mobile__box">
+                    <span class="admin-mobile__item">Comment</span>
+                    <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                  </div>
+                </div>
+                <button type="button" class="admin-mobile__button">Message</button>
+              </div>
+              <div class="admin-mobile__block">
+                <div class="admin-mobile__main">
+                  <div class="order-mobile__color"></div>
+                  <div class="admin-mobile__info">
+                    <span class="admin-mobile__name">T-SHIRT</span>
+                    <span class="admin-mobile__email">emailofcustomer@gmail.com</span>
+                  </div>
+                </div>
+                <div class="order-mobile__size">
+                  <span class="admin-mobile__item">Size</span>
+                  <span class="order-mobile__size--naming">XL (99-99-99)</span>
+                </div>
+                <div class="order-mobile__size second">
+                  <span class="admin-mobile__item">Status</span> <span class="order-mobile__status">Success</span>
+                </div>
+                <div class="order-mobile__text">
+                  <div class="order-mobile__box">
+                    <span class="admin-mobile__item">Delivery address</span>
+                    <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="order-mobile__box">
+                    <span class="admin-mobile__item">Comment</span>
+                    <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                  </div>
+                </div>
+                <button type="button" class="admin-mobile__button">Message</button>
+              </div>
+              <div class="admin-mobile__block">
+                <div class="admin-mobile__main">
+                  <div class="order-mobile__color"></div>
+                  <div class="admin-mobile__info">
+                    <span class="admin-mobile__name">T-SHIRT</span>
+                    <span class="admin-mobile__email">emailofcustomer@gmail.com</span>
+                  </div>
+                </div>
+                <div class="order-mobile__size">
+                  <span class="admin-mobile__item">Size</span>
+                  <span class="order-mobile__size--naming">XL (99-99-99)</span>
+                </div>
+                <div class="order-mobile__size second">
+                  <span class="admin-mobile__item">Status</span> <span class="order-mobile__status">Success</span>
+                </div>
+                <div class="order-mobile__text">
+                  <div class="order-mobile__box">
+                    <span class="admin-mobile__item">Delivery address</span>
+                    <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="order-mobile__box">
+                    <span class="admin-mobile__item">Comment</span>
+                    <p class="order-mobile__descr">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                  </div>
+                </div>
+                <button type="button" class="admin-mobile__button">Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    // Получаем все ссылки меню и контент вкладок
+    const menuLinks = document.querySelectorAll('.user-menu__link');
+    const tabContents = document.querySelectorAll('.content-user__body');
+
+    // Обрабатываем клики на ссылках меню
+    menuLinks.forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+
+        // Удаляем класс _active у текущей активной ссылки
+        document.querySelector('.user-menu__link._active').classList.remove('_active');
+
+        // Добавляем класс _active к выбранной ссылке
+        link.classList.add('_active');
+
+        // Получаем data-link атрибут выбранной ссылки
+        const targetTab = link.getAttribute('data-link');
+
+        // Скрываем все вкладки
+        tabContents.forEach(tab => tab.classList.remove('_active'));
+
+        // Показываем только выбранную вкладку
+        document.querySelector(targetTab).classList.add('_active');
       });
-      // Получаем все элементы чат-диалогов
-      const chatDialogs = document.querySelectorAll('.chat-list__dialog');
+    });
+    // Получаем все элементы чат-диалогов
+    const chatDialogs = document.querySelectorAll('.chat-list__dialog');
 
-      // Обрабатываем клики на элементах чат-диалогов
-      chatDialogs.forEach(dialog => {
-        dialog.addEventListener('click', event => {
-          // Удаляем класс _active у текущего активного чата
-          document.querySelector('.chat-list__dialog._active').classList.remove('_active');
+    // Обрабатываем клики на элементах чат-диалогов
+    chatDialogs.forEach(dialog => {
+      dialog.addEventListener('click', event => {
+        // Удаляем класс _active у текущего активного чата
+        document.querySelector('.chat-list__dialog._active').classList.remove('_active');
 
-          // Добавляем класс _active к выбранному чат-диалогу
-          dialog.classList.add('_active');
-        });
+        // Добавляем класс _active к выбранному чат-диалогу
+        dialog.classList.add('_active');
       });
-    </script>
-    <script src="js/app.min.js?_v=20230624141358" defer="defer"></script>
-  </body>
+    });
+  </script>
+  <script src="js/app.min.js?_v=20230624141358" defer="defer"></script>
+</body>
+
 </html>

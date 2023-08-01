@@ -8,9 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230726140927" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230801165400" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230726140927">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230801165400">
 </head>
 
 <body>
@@ -50,49 +50,77 @@
 </ul>
 </nav>
 <header class="header">
-    <div class="header__wrapper">
-
-        <a href="index.html" class="logo header__logo">
+  <div class="header__wrapper">
+    <a href="index.html" class="logo header__logo">
     <img src="img/logo.svg" alt="logo" width="145px" height="30px">
 </a>
 
-        <nav class="header-navigation">
-            <ul class="header-navigation__list">
-                <li class="header-navigation__item">
-                    <a href="index.html" class="header-navigation__link">Main page</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="Nfts.html" class="header-navigation__link">
-                        <img src="img/lock.svg" alt="lock icon" width="14px" height="14px">
-                        NFT
-                    </a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="customClothes.html" class="header-navigation__link">Pictures</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="#" class="header-navigation__link">Auction</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="Pricing.html" class="header-navigation__link">Pricing</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="mainTeam.html" class="header-navigation__link">Contacts</a>
-                </li>
-                <li class="header-navigation__item">
-                    <a href="blog.html" class="header-navigation__link">Blog</a>
-                </li>
-            </ul>
-        </nav>
+    <!-- <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item">
+          <a href="index.html" class="header-navigation__link">Main page</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">
+            <img src="img/lock.svg" alt="lock icon" width="14px" height="14px" />
+            NFT
+          </a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Pictures</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="auction.html" class="header-navigation__link">Auction</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Pricing</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Contacts</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="blog.html" class="header-navigation__link">Blog</a>
+        </li>
+      </ul>
+    </nav> -->
 
-        <div class="header__buttons">
-            <select class="languageSelect" name="languageSelect" id="languageSelect">
-                <option value="ENG" selected>ENG</option>
-                <option value="UA">UA</option>
-                <option value="FR">FR</option>
-            </select>
+    <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item">
+          <a href="index.html" class="header-navigation__link">Main page</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="Nfts.html" class="header-navigation__link">
+            <img src="img/lock.svg" alt="lock icon" width="14px" height="14px">
+            NFT
+          </a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="customClothes.html" class="header-navigation__link">Pictures</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="#" class="header-navigation__link">Auction</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="Pricing.html" class="header-navigation__link">Pricing</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="mainTeam.html" class="header-navigation__link">Contacts</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="blog.html" class="header-navigation__link">Blog</a>
+        </li>
+      </ul>
+    </nav>
 
-            <a href="#" class="button main">
+    <div class="header__buttons">
+      <select class="languageSelect" name="languageSelect" id="languageSelect">
+        <option value="ENG" selected>ENG</option>
+        <option value="UA">UA</option>
+        <option value="FR">FR</option>
+      </select>
+
+      <a href="#" class="button main">
     <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Authorization
@@ -101,7 +129,7 @@
     <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
 </a>
 
-            <a href="#" class="button active">
+      <a href="#" class="button active">
     <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Premium access
@@ -109,21 +137,50 @@
 
     <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
 </a>
-        </div>
+    </div>
 
-        <div class="small-menu">
-            <button class="smallPemiumButton">
+    <!-- <div class="small-menu">
+      <button class="smallPemiumButton">
     <img src="img/crown.svg" alt="crown" width="15px" height="12px">
 </button>
 
-            <button class="burger-button" aria-label="open burger menu">
-                <span class="burger-button__line" aria-hidden="true"></span>
-                <span class="burger-button__line" aria-hidden="true"></span>
-                <span class="burger-button__line" aria-hidden="true"></span>
-            </button>
-        </div>
-
+      <button class="burger-button" aria-label="open burger menu">
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+      </button>
     </div>
+
+    <a href="@@link" class="button main">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Authorization
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a> 
+    <a href="@@link" class="button active">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Premium access
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a> -->
+  </div>
+
+  <div class="small-menu">
+    <button class="smallPemiumButton">
+    <img src="img/crown.svg" alt="crown" width="15px" height="12px">
+</button>
+
+    <button class="burger-button" aria-label="open burger menu">
+      <span class="burger-button__line" aria-hidden="true"></span>
+      <span class="burger-button__line" aria-hidden="true"></span>
+      <span class="burger-button__line" aria-hidden="true"></span>
+    </button>
+  </div>
+  </div>
 </header>
 
     <main>
@@ -350,7 +407,6 @@
     </main>
 
     <footer class="footer">
-
   <!-- <div class="container container_big">
     <div class="footer__top">
       <a href="index.html" class="footer__logo">
@@ -375,8 +431,44 @@
         <a href="#" class="footer__soc-link">
           <img loading="lazy" src="img/socials/pinterest.svg" alt="Pinterest" class="footer__soc-icon" />
         </a>
+  <div class="footer__wrapper">
+    <div class="footer__container">
+      <div class="footer__top">
+        <a href="index.html" class="logo @@class">
+    <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+</a>
+        <div class="footer__links">
+          <a class="section__text" href="#">Privacy policy</a>
+          <a class="section__text" href="#">Terms of use</a>
+        </div>
+
       </div>
+      <ul class="socialsLinks">
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/inst.svg" alt="instagram icon" width="24px" height="24px">
+        </a>
+    </li>
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/twitter.svg" alt="twitter icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://web.telegram.org" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/telegram.svg" alt="telegram icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="www.pinterest.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
+        </a>
+    </li>
+</ul>
     </div>
+
     <div class="footer__bottom">All rights reserved © 2022</div>
   </div> -->
 
@@ -423,10 +515,10 @@
   </div>
 </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230726140927"
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230801165400"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script src="scripts/main.min.js?_v=20230726140927"></script>
+    <script src="scripts/main.min.js?_v=20230801165400"></script>
 </body>
 
 </html>

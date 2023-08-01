@@ -5,6 +5,7 @@
 // font-family: 'Manrope', sans-serif;
 @import "variables";
 
+
 .visibility-hidden {
   position: absolute;
   width: 1px;
@@ -56,13 +57,13 @@ body {
 @import 'components/nft-orders';
 @import 'components/workers';
 
-@import 'pages/style.for-client';
-@import 'pages/style.owner';
-@import 'pages/style.payment';
-@import 'pages/style.auction';
-@import 'pages/style.blog';
-@import 'pages/style.main';
-@import 'pages/style.enter';
+@import 'for-client';
+@import 'owner';
+@import 'payment';
+@import 'auction';
+// @import 'style.blog';
+// @import 'style.main';
+@import 'enter';
 $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
 
 .big-title {

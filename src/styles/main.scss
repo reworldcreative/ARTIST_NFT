@@ -21,6 +21,10 @@
     display: flex;
     gap: 12px;
     margin-top: 40px;
+
+    .button {
+      margin-top: 0px;
+    }
   }
 
   .button.active.premium {
@@ -55,7 +59,7 @@
     background-position: right top !important;
     background-size: contain !important;
     padding-top: 48px;
-    max-height: 95% !important;
+    // max-height: 95% !important;
 
     &_img {
       border-radius: 24px;
@@ -116,19 +120,29 @@
     &__image {
       width: auto;
       max-height: 40vw !important;
-      justify-content: end;
+      // justify-content: end;
       display: flex;
+      justify-content: flex-start;
+      picture {
+        max-width: -webkit-fill-available;
+      }
 
       &_img {
-        max-height: inherit;
+        // max-height: inherit;
         max-width: fit-content;
+        max-height: -webkit-fill-available;
+        max-width: -webkit-fill-available;
       }
     }
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .main-hero {
+    .section-col {
+      -webkit-box-flex: 1;
+      max-width: 100%;
+    }
     &__image {
       justify-content: center;
       background-position: center !important;
@@ -145,6 +159,7 @@
     }
 
     .section-row {
+      display: grid;
       gap: 75px;
     }
     &__decoration {
@@ -301,7 +316,8 @@
   }
 
   &__container {
-    margin-top: 12px;
+    margin-top: 12px !important;
+    align-items: flex-start !important;
     .section__text {
       margin-top: 17px;
       max-width: 560px;
@@ -545,13 +561,15 @@
   }
 
   &__container {
-    max-width: 442px;
+    max-width: 442px !important;
+    margin: 0px !important;
     display: grid;
     gap: 12px;
 
     .button {
       width: fit-content;
       padding: 18px 37px;
+      margin-top: 0px !important;
 
       &__text {
         font-size: 18px;

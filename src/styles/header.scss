@@ -3,6 +3,7 @@
 .header {
   z-index: 50;
   position: relative;
+  justify-content: center;
   &__wrapper {
     background: $Main-BG;
     padding: 8px 0px;
@@ -24,6 +25,10 @@
     gap: 8px;
     // margin-left: 74px;
     margin-left: 77px;
+
+    .button {
+      margin-top: 0px;
+    }
 
     .button__text {
       letter-spacing: 0.1px;
@@ -167,7 +172,7 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: space-around;
-      padding: 8px 0px 8px 20px;
+      padding: 8px 15px 8px 20px;
     }
 
     &-navigation {
