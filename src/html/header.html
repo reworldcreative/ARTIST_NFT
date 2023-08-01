@@ -94,16 +94,14 @@
     @@include('components/button.html',{ class:"main", text:"Authorization", }) 
     @@include('components/button.html',{
     class:"active", text:"Premium access", }) -->
-  </div>
+    <div class="small-menu">
+      @@include('components/smallPemiumButton.html',{})
 
-  <div class="small-menu">
-    @@include('components/smallPemiumButton.html',{})
-
-    <button class="burger-button" aria-label="open burger menu">
-      <span class="burger-button__line" aria-hidden="true"></span>
-      <span class="burger-button__line" aria-hidden="true"></span>
-      <span class="burger-button__line" aria-hidden="true"></span>
-    </button>
-  </div>
+      <button class="burger-button" aria-label="open burger menu">
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+      </button>
+    </div>
   </div>
 </header>
