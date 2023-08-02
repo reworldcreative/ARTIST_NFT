@@ -8,9 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230802195744" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230802204540" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230802195744">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230802204540">
 </head>
 
 <body>
@@ -107,7 +107,7 @@
     </section>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230802195744"
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230802204540"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
   <script>
@@ -125,10 +125,8 @@
 
       const form = document.querySelector(".enter_form");
       const radioButtons = document.querySelectorAll(".form__input-radio");
-
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-
         let selectedRole = "";
         for (const radioButton of radioButtons) {
           if (radioButton.checked) {

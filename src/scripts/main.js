@@ -128,10 +128,12 @@ function checkSize() {
       $(".burger-menu__header")[0].after($(".header-navigation__list")[0]);
     }
 
-    if ($('.footer__top').length > 0) {
-      $('.footer__top .logo')[0].after($('.footer__container .socialsLinks')[0]);
+    if ($(".footer__top").length > 0) {
+      $(".footer__top .logo")[0].after(
+        $(".footer__container .socialsLinks")[0]
+      );
 
-      $('.footer__container')[0].after($('.footer__links')[0]);
+      $(".footer__container")[0].after($(".footer__links")[0]);
     }
   }
 
@@ -140,10 +142,10 @@ function checkSize() {
       $(".header-navigation")[0].append($(".header-navigation__list")[0]);
     }
 
-    if ($('.footer__top').length > 0) {
-      $('.footer__top .logo')[0].after($('.footer__links')[0]);
+    if ($(".footer__top").length > 0) {
+      $(".footer__top .logo")[0].after($(".footer__links")[0]);
 
-      $('.footer__container')[0].append($('.footer .socialsLinks')[0]);
+      $(".footer__container")[0].append($(".footer .socialsLinks")[0]);
     }
   }
 
@@ -313,54 +315,62 @@ $(document).ready(function () {
       setActivePage(currentPage + 1);
     }
   });
+
+  const mobileBurger = document.querySelector(
+    ".admin .header-sidebar__mobile-burger"
+  );
+  const userMenuList = document.querySelector(".user-menu__list");
+  mobileBurger.addEventListener("click", function () {
+    userMenuList.classList.toggle("_active");
+  });
 });
 
-const listColors = document.querySelectorAll('.form__item-color');
+const listColors = document.querySelectorAll(".form__item-color");
 
 if (listColors) {
   for (let color of listColors) {
-    color.addEventListener('click', e => {
-      let currentColor = e.target.closest('.form__item-color');
+    color.addEventListener("click", (e) => {
+      let currentColor = e.target.closest(".form__item-color");
 
       for (let item of listColors) {
-        removeClass(item, '_active');
+        removeClass(item, "_active");
       }
 
-      addClass(currentColor, '_active');
+      addClass(currentColor, "_active");
     });
   }
 }
 
 //payment form
 
-const allTabs = document.querySelectorAll('.tabs');
+const allTabs = document.querySelectorAll(".tabs");
 
 if (allTabs) {
   for (let tabs of allTabs) {
-    const tabBtns = Array.from(tabs.querySelectorAll('.tab'));
-    const tabContents = Array.from(tabs.querySelectorAll('.tab-content'));
-    const tabIndicator = tabs.querySelector('.tab-indicator');
+    const tabBtns = Array.from(tabs.querySelectorAll(".tab"));
+    const tabContents = Array.from(tabs.querySelectorAll(".tab-content"));
+    const tabIndicator = tabs.querySelector(".tab-indicator");
 
     let amountTabs = tabBtns.length;
 
     for (let btn of tabBtns) {
-      btn.addEventListener('click', e => {
-        let currentBtn = e.target.closest('.tab');
-        let tabId = currentBtn.getAttribute('data-tab');
+      btn.addEventListener("click", (e) => {
+        let currentBtn = e.target.closest(".tab");
+        let tabId = currentBtn.getAttribute("data-tab");
         let currentContent = document.querySelector(tabId);
 
         for (let btn of tabBtns) {
-          removeClass(btn, '_active');
+          removeClass(btn, "_active");
         }
 
-        addClass(currentBtn, '_active');
+        addClass(currentBtn, "_active");
 
         if (currentContent) {
           for (let content of tabContents) {
-            removeClass(content, '_active');
+            removeClass(content, "_active");
           }
 
-          addClass(currentContent, '_active');
+          addClass(currentContent, "_active");
           changeIndicator(currentBtn);
         }
         e.preventDefault();
@@ -375,34 +385,34 @@ if (allTabs) {
 }
 
 // wallet copy
-const copyWallet = document.querySelector('.form__copy-icon');
+const copyWallet = document.querySelector(".form__copy-icon");
 
 if (copyWallet) {
-  let wallet = document.querySelector('.cripto-wallet');
+  let wallet = document.querySelector(".cripto-wallet");
 
-  copyWallet.addEventListener('click', e => {
+  copyWallet.addEventListener("click", (e) => {
     navigator.clipboard.writeText(wallet.innerHTML);
 
     if (navigator.clipboard.writeText(wallet.innerHTML)) {
-      addClass(copyWallet.parentElement, '_active');
+      addClass(copyWallet.parentElement, "_active");
 
       setTimeout(() => {
-        removeClass(copyWallet.parentElement, '_active');
+        removeClass(copyWallet.parentElement, "_active");
       }, 1000);
     } else {
-      console.log('Not copied');
+      console.log("Not copied");
     }
   });
 }
 
 //active premium content
-const unlockBtn = document.querySelector('.unlock-btn');
+const unlockBtn = document.querySelector(".unlock-btn");
 
 if (unlockBtn) {
-  unlockBtn.addEventListener('click', e => {
-    let premiumContent = document.querySelector('.product-content__unlocked');
+  unlockBtn.addEventListener("click", (e) => {
+    let premiumContent = document.querySelector(".product-content__unlocked");
 
-    addClass(premiumContent, '_active');
+    addClass(premiumContent, "_active");
 
     e.preventDefault();
   });
@@ -410,42 +420,42 @@ if (unlockBtn) {
 
 //Admin Header Menu
 
-const headerMenuBtn = document.querySelector('.header-btn');
-const headerMenu = document.querySelector('.user-menu__list');
+const headerMenuBtn = document.querySelector(".header-btn");
+const headerMenu = document.querySelector(".user-menu__list");
 
 if (headerMenuBtn) {
-  headerMenuBtn.addEventListener('click', e => {
-    toggleClass(headerMenu, '_active');
-    toggleClass(document.body, '_lock');
+  headerMenuBtn.addEventListener("click", (e) => {
+    toggleClass(headerMenu, "_active");
+    toggleClass(document.body, "_lock");
   });
 }
 
 //Messanger
 
-const aPanel = document.querySelector('.apanel');
+const aPanel = document.querySelector(".apanel");
 
 if (aPanel) {
-  const allLinks = Array.from(aPanel.querySelectorAll('.user-menu__link'));
-  const allContent = Array.from(aPanel.querySelectorAll('.content-user__body'));
+  const allLinks = Array.from(aPanel.querySelectorAll(".user-menu__link"));
+  const allContent = Array.from(aPanel.querySelectorAll(".content-user__body"));
 
   for (let link of allLinks) {
-    link.addEventListener('click', e => {
-      let currentLink = e.target.closest('.user-menu__link');
-      let linkId = currentLink.getAttribute('data-link');
+    link.addEventListener("click", (e) => {
+      let currentLink = e.target.closest(".user-menu__link");
+      let linkId = currentLink.getAttribute("data-link");
       let currentContent = aPanel.querySelector(linkId);
 
       for (let item of allLinks) {
-        removeClass(item, '_active');
+        removeClass(item, "_active");
       }
 
       for (let item of allContent) {
-        removeClass(item, '_active');
+        removeClass(item, "_active");
       }
 
-      addClass(currentLink, '_active');
-      addClass(currentContent, '_active');
-      removeClass(headerMenu, '_active');
-      removeClass(document.body, '_lock');
+      addClass(currentLink, "_active");
+      addClass(currentContent, "_active");
+      removeClass(headerMenu, "_active");
+      removeClass(document.body, "_lock");
 
       e.preventDefault();
     });
@@ -453,19 +463,19 @@ if (aPanel) {
 }
 
 //Show Dialog
-const itemDialog = document.querySelector('.item-dialog');
-const dialog = document.querySelector('.dialog');
+const itemDialog = document.querySelector(".item-dialog");
+const dialog = document.querySelector(".dialog");
 
 if (itemDialog) {
-  let outLink = dialog.querySelector('.dialog__out-link');
+  let outLink = dialog.querySelector(".dialog__out-link");
 
   console.log(outLink);
 
-  itemDialog.addEventListener('click', e => {
-    addClass(dialog, '_active');
+  itemDialog.addEventListener("click", (e) => {
+    addClass(dialog, "_active");
   });
 
-  outLink.addEventListener('click', e => {
-    removeClass(dialog, '_active');
+  outLink.addEventListener("click", (e) => {
+    removeClass(dialog, "_active");
   });
 }

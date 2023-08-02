@@ -114,10 +114,8 @@
 
       const form = document.querySelector(".enter_form");
       const radioButtons = document.querySelectorAll(".form__input-radio");
-
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-
         let selectedRole = "";
         for (const radioButton of radioButtons) {
           if (radioButton.checked) {
