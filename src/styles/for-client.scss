@@ -14,6 +14,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  #stat {
+    display: none;
+
+    &._active {
+      display: block;
+    }
+  }
   .icon-arrow-content-locked:before {
     content: "\e900";
   }

@@ -8,9 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230801210256" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230802142453" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css?_v=20230801210256">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230802142453">
 </head>
 
 <body class="admin" id="clientPage">
@@ -62,7 +62,23 @@
               <div class="swiper-wrapper">
                 <div class="chat-list__slide swiper-slide">
                   <div class="chat-list__slide-image-wrap">
-                    <img loading="lazy" src="../img/admin/chat-slide_img1.jpg" alt="Image"
+                    <picture><source srcset="img/admin/chat-slide_img1.webp" type="image/webp"><img src="img/admin/chat-slide_img1.jpg" alt="Image" class="chat-list__slide-image" /></picture>
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <p class="chat-list__slide-name">Ivan Ivanov</p>
+                  <p class="chat-list__slide-time">10 min ago</p>
+                </div>
+                <div class="chat-list__slide swiper-slide">
+                  <div class="chat-list__slide-image-wrap">
+                    <picture><source srcset="img/admin/chat-slide_img2.webp" type="image/webp"><img src="img/admin/chat-slide_img2.jpg" alt="Image" class="chat-list__slide-image" /></picture>
+                    <div class="item-dialog__status status _online"></div>
+                  </div>
+                  <p class="chat-list__slide-name">Ivan Ivanov</p>
+                  <p class="chat-list__slide-time">10 min ago</p>
+                </div>
+                <div class="chat-list__slide swiper-slide">
+                  <div class="chat-list__slide-image-wrap">
+                    <img loading="lazy" src="img/admin/chat-slide_img3.jpg" alt="Image"
                       class="chat-list__slide-image" />
                     <div class="item-dialog__status status _online"></div>
                   </div>
@@ -71,25 +87,7 @@
                 </div>
                 <div class="chat-list__slide swiper-slide">
                   <div class="chat-list__slide-image-wrap">
-                    <img loading="lazy" src="../img/admin/chat-slide_img2.jpg" alt="Image"
-                      class="chat-list__slide-image" />
-                    <div class="item-dialog__status status _online"></div>
-                  </div>
-                  <p class="chat-list__slide-name">Ivan Ivanov</p>
-                  <p class="chat-list__slide-time">10 min ago</p>
-                </div>
-                <div class="chat-list__slide swiper-slide">
-                  <div class="chat-list__slide-image-wrap">
-                    <img loading="lazy" src="../img/admin/chat-slide_img3.jpg" alt="Image"
-                      class="chat-list__slide-image" />
-                    <div class="item-dialog__status status _online"></div>
-                  </div>
-                  <p class="chat-list__slide-name">Ivan Ivanov</p>
-                  <p class="chat-list__slide-time">10 min ago</p>
-                </div>
-                <div class="chat-list__slide swiper-slide">
-                  <div class="chat-list__slide-image-wrap">
-                    <img loading="lazy" src="../img/admin/chat-slide_img4.jpg" alt="Image"
+                    <img loading="lazy" src="img/admin/chat-slide_img4.jpg" alt="Image"
                       class="chat-list__slide-image" />
                     <div class="item-dialog__status status _online"></div>
                   </div>
@@ -101,13 +99,13 @@
 
             <div class="chat-list__form">
               <input type="text" name="Search" class="chat-list__input" aria-label="Search form" placeholder="Search" />
-              <img src="../img/admin/search.svg" alt="icon" class="chat-list__search-icon" />
+              <img src="img/admin/search.svg" alt="icon" class="chat-list__search-icon" />
             </div>
 
             <ul class="chat-list__dialogs-list">
               <li class="chat-list__dialog item-dialog">
                 <div class="item-dialog__image-wrap">
-                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <picture><source srcset="img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
                   <div class="item-dialog__status status _online"></div>
                 </div>
                 <div class="item-dialog__body">
@@ -120,7 +118,7 @@
               </li>
               <li class="chat-list__dialog item-dialog _active">
                 <div class="item-dialog__image-wrap">
-                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <picture><source srcset="img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
                   <div class="item-dialog__status status _online"></div>
                 </div>
                 <div class="item-dialog__body">
@@ -133,7 +131,7 @@
               </li>
               <li class="chat-list__dialog item-dialog">
                 <div class="item-dialog__image-wrap">
-                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <picture><source srcset="img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
                   <div class="item-dialog__status status _online"></div>
                 </div>
                 <div class="item-dialog__body">
@@ -146,7 +144,7 @@
               </li>
               <li class="chat-list__dialog item-dialog">
                 <div class="item-dialog__image-wrap">
-                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <picture><source srcset="img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
                   <div class="item-dialog__status status _online"></div>
                 </div>
                 <div class="item-dialog__body">
@@ -159,7 +157,7 @@
               </li>
               <li class="chat-list__dialog item-dialog">
                 <div class="item-dialog__image-wrap">
-                  <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                  <picture><source srcset="img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
                   <div class="item-dialog__status status _online"></div>
                 </div>
                 <div class="item-dialog__body">
@@ -177,13 +175,12 @@
         <div class="content-user__dialog dialog">
           <div class="dialog__header">
             <a href="#" class="dialog__out-link">
-              <img src="../img/admin/arrow-back.svg" alt="icon" class="dialog__arrow-icon" />
+              <img src="img/admin/arrow-back.svg" alt="icon" class="dialog__arrow-icon" />
               <span>Chat with Ivan Ivanov</span>
             </a>
             <div class="dialog__user">
               <div class="item-dialog__image-wrap dialog-image">
-                <img loading="lazy" src="../img/admin/adminchat-slide_img1.jpg" alt="Photo"
-                  class="item-dialog__image" />
+                <picture><source srcset="img/admin/chat-slide_img1.webp" type="image/webp"><img src="img/admin/chat-slide_img1.jpg" alt="Photo" class="item-dialog__image" /></picture>
               </div>
               <div class="dialog__user-info">
                 <p class="dialog__name">Ivan Ivanov</p>
@@ -196,7 +193,7 @@
           <div class="dialog__main main-dialog">
             <div class="main-dialog__message _image">
               <div class="main-dialog__picture-wrap">
-                <picture><source srcset="../img/admin/message-img.webp" type="image/webp"><img loading="lazy" src="../img/admin/message-img.jpg" alt="Picture" class="main-dialog__picture" /></picture>
+                <picture><source srcset="img/admin/message-img.webp" type="image/webp"><img loading="lazy" src="img/admin/message-img.jpg" alt="Picture" class="main-dialog__picture" /></picture>
               </div>
             </div>
             <div class="main-dialog__message _outgoing">
@@ -210,7 +207,7 @@
 
             <div class="main-dialog__message _incoming">
               <div class="main-dialog__avatar item-dialog__image-wrap">
-                <picture><source srcset="../img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="../img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
+                <picture><source srcset="img/admin/item-dialog_photo.webp" type="image/webp"><img loading="lazy" src="img/admin/item-dialog_photo.jpg" alt="Photo" class="item-dialog__image" /></picture>
               </div>
               <p class="main-dialog__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -234,13 +231,13 @@
                 placeholder="Enter your message here" />
 
               <button class="dialog__btn" aria-label="Send Massage">
-                <img src="../img/admin/send.svg" alt="Send" class="dialog__btn-icon" />
+                <img src="img/admin/send.svg" alt="Send" class="dialog__btn-icon" />
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="elements">
+      <div id="stat" class="content-user__body elements">
         <div id="orders" class="table-responsive">
           <table class="table">
             <thead class="table__head">
