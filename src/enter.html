@@ -10,7 +10,7 @@
 
         <h1 class="enter__title title-small">Authorization</h1>
 
-        <form action="client.html" class="enter_form form">
+        <form action="#" class="enter_form form">
           <div class="payment__tabs">
             <a data-tab="#login" href="#" class="payment__tab tab _active">Log in</a>
             <a data-tab="#signup" href="#" class="payment__tab tab">Sign up</a>
@@ -47,21 +47,21 @@
               <div class="form__radio-wrap">
                 <div class="form__checkbox-wrap">
                   <input id="customer-radio" type="radio" class="form__input-radio" name="user"
-                    aria-label="send-question" placeholder="Your question" hidden />
+                    aria-label="send-question" placeholder="Your question" value="customer" hidden />
                   <label for="customer-radio" class="form__custom-radio">
                     <span>Customer</span>
                   </label>
                 </div>
                 <div class="form__checkbox-wrap">
                   <input id="admin-radio" type="radio" class="form__input-radio" name="user" aria-label="send-question"
-                    placeholder="Your question" hidden />
+                    placeholder="Your question" value="admin" hidden />
                   <label for="admin-radio" class="form__custom-radio">
                     <span>Admin</span>
                   </label>
                 </div>
                 <div class="form__checkbox-wrap">
                   <input id="artist-radio" type="radio" class="form__input-radio" name="user" aria-label="send-question"
-                    placeholder="Your question" hidden />
+                    placeholder="Your question" value="artist" hidden />
                   <label for="artist-radio" class="form__custom-radio">
                     <span>Artist</span>
                   </label>
@@ -109,6 +109,37 @@
         $('.payment__indicator').css('transform', 'translateX(' + $(this).index() * 100 + '%)');
         $('.tab-content').removeClass('_active');
         $(targetTab).addClass('_active');
+      });
+
+
+      const form = document.querySelector(".enter_form");
+      const radioButtons = document.querySelectorAll(".form__input-radio");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        let selectedRole = "";
+        for (const radioButton of radioButtons) {
+          if (radioButton.checked) {
+            selectedRole = radioButton.value;
+            break;
+          }
+        }
+
+        switch (selectedRole) {
+          case "customer":
+            window.location.href = "client.html";
+            break;
+          case "admin":
+            window.location.href = "owner.html";
+            break;
+          case "artist":
+            window.location.href = "worker.html";
+            break;
+          default:
+            window.location.href = "client.html";
+            break;
+        }
       });
     });
   </script>
