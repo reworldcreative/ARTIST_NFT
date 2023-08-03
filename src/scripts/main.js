@@ -48,6 +48,12 @@ window.addEventListener("DOMContentLoaded", function () {
       });
     }
 
+    if ($(".chat-list__slider").length > 0) {
+      const chatSlider = new Swiper(".chat-list__slider", {
+        slidesPerView: "auto",
+      });
+    }
+
     if ($(".NFT-slider").length > 0) {
       const NFTslider = new Swiper(".NFT-slider", {
         // slidesPerView: 4,

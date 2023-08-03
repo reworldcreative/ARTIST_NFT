@@ -1,14 +1,14 @@
-@import 'fonts';
-@import 'rfs/scss.scss';
-@import 'normalize';
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@import "fonts";
+@import "rfs/scss.scss";
+@import "normalize";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 // font-family: 'Manrope', sans-serif;
-@import 'variables';
+@import "variables";
 
-[class^='i-'],
-[class*=' i-'] {
+[class^="i-"],
+[class*=" i-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'iconfonts' !important;
+  font-family: "iconfonts" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -24,27 +24,27 @@ a {
   text-decoration: none;
 }
 .i-out:before {
-  content: '\e900';
+  content: "\e900";
 }
 .i-bag:before {
-  content: '\e901';
+  content: "\e901";
   color: #525960;
 }
 .i-orders:before {
-  content: '\e902';
+  content: "\e902";
   color: #525960;
 }
 .i-workers:before {
-  content: '\e903';
+  content: "\e903";
   color: #525960;
 }
 .i-mess:before {
-  content: '\e904';
+  content: "\e904";
   color: #525960;
   font-size: 17px;
 }
 .i-stat:before {
-  content: '\e905';
+  content: "\e905";
   color: #525960;
 }
 
@@ -122,7 +122,11 @@ a {
       transform: translateY(-50%);
     }
     &:hover {
-      background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+      background: linear-gradient(
+        94.78deg,
+        rgba(104, 201, 255, 0.1) 9.27%,
+        rgba(209, 181, 255, 0.1) 84.06%
+      );
     }
     &._active {
       color: #fcffff;
@@ -253,7 +257,11 @@ a {
     overflow: hidden;
   }
   &._active {
-    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    background: linear-gradient(
+      94.78deg,
+      rgba(104, 201, 255, 0.1) 9.27%,
+      rgba(209, 181, 255, 0.1) 84.06%
+    );
     & .item-dialog__name {
       background: linear-gradient(94.78deg, #68c9ff 9.27%, #d1b5ff 84.06%);
       background-clip: text;
@@ -487,7 +495,11 @@ a {
     width: 32px;
     height: 32px;
     border-radius: 9px;
-    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    background: linear-gradient(
+      94.78deg,
+      rgba(104, 201, 255, 0.1) 9.27%,
+      rgba(209, 181, 255, 0.1) 84.06%
+    );
     padding: 10px 9px;
     &__icon {
       width: 14px;
@@ -553,7 +565,7 @@ a {
     &__link {
       padding: 15px 15px 15px 46px;
       &._active::before {
-        content: '';
+        content: "";
         width: 7px;
         height: 7px;
         position: absolute;
@@ -563,13 +575,17 @@ a {
         border-radius: 100%;
       }
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: calc(100% - 30px);
         height: 1px;
         left: 15px;
         bottom: 0;
-        background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+        background: linear-gradient(
+          94.78deg,
+          rgba(104, 201, 255, 0.1) 9.27%,
+          rgba(209, 181, 255, 0.1) 84.06%
+        );
       }
       span {
         top: 50%;
@@ -772,5 +788,12 @@ a {
     &__new-messages {
       margin: 0px 0 22px;
     }
+  }
+}
+@media (max-width: 280px) {
+  .chat-list__dialog {
+    // display: flex;
+    // flex-wrap: wrap;
+    max-width: 90vw;
   }
 }
