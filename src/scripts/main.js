@@ -98,6 +98,11 @@ window.addEventListener("DOMContentLoaded", function () {
             spaceBetween: 30,
             centeredSlides: true,
           },
+          1500: {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            centeredSlides: true,
+          },
         },
       });
     }
