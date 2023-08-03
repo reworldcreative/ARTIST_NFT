@@ -239,7 +239,7 @@ $(document).ready(function () {
 
   if ($("#play-btn").length > 0) {
     $("#play-btn").click(function (event) {
-      console.log("click");
+      // console.log("click");
       loadAndPlayVideo();
     });
   }
@@ -320,8 +320,10 @@ $(document).ready(function () {
     ".admin .header-sidebar__mobile-burger"
   );
   const userMenuList = document.querySelector(".user-menu__list");
+  const sidebarBody = document.querySelector(".sidebar__body");
   mobileBurger.addEventListener("click", function () {
     userMenuList.classList.toggle("_active");
+    sidebarBody.classList.toggle("_active");
   });
 });
 
@@ -469,7 +471,7 @@ const dialog = document.querySelector(".dialog");
 if (itemDialog) {
   let outLink = dialog.querySelector(".dialog__out-link");
 
-  console.log(outLink);
+  // console.log(outLink);
 
   itemDialog.addEventListener("click", (e) => {
     addClass(dialog, "_active");

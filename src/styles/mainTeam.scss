@@ -194,6 +194,35 @@ img {
   }
 }
 
+@media (max-width: 1000px) {
+  .mainTeam-page {
+    .arts-hero {
+      &__row {
+        display: grid;
+        justify-content: center;
+      }
+
+      &__body {
+        max-width: 100%;
+      }
+
+      &__image-wrap {
+        height: fit-content;
+        justify-content: center;
+        display: flex;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .mainTeam-benefits__icon-wrap {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 767px) {
   .mainTeam-page {
     padding: 126px 0 20px;
@@ -212,31 +241,37 @@ img {
         margin-bottom: 33px;
       }
       &__image-wrap {
+        // max-width: 345px;
+      }
+
+      &__image {
         max-width: 345px;
       }
       &__star_1 {
-        bottom: 51%;
-        left: 1px;
+        bottom: 51% !important;
+        left: 1px !important;
       }
       &__star_2 {
-        right: 38px;
-        top: 44.1%;
+        right: 38px !important;
+        top: 44.1% !important;
       }
       &__bubble {
-        left: 27.8%;
-        bottom: 49.6%;
+        left: 27.8% !important;
+        bottom: 49.6% !important;
       }
     }
     & .text-bg_1 {
       display: block;
-      top: 69px;
-      left: 81px;
+      top: 69px !important;
+      left: 81px !important;
+      font-size: 43px;
+      line-height: 43px;
     }
     & .text-bg_2 {
       display: block;
-      top: 586px;
-      bottom: auto;
-      left: -21%;
+      top: 586px !important;
+      bottom: auto !important;
+      left: -21% !important;
     }
   }
 
@@ -278,6 +313,16 @@ img {
     }
   }
 }
+
+@media (max-width: 360px) {
+  .mainTeam-page {
+    & .arts-hero {
+      &__image {
+        max-width: 90vw;
+      }
+    }
+  }
+}
 .arts-hero__btn {
   font-size: 18px;
   line-height: 26px;
@@ -296,12 +341,12 @@ img {
   -webkit-text-stroke: 1px rgba(252, 255, 255, 0.2);
 }
 .mainTeam-page .text-bg_1 {
-  top: 40px;
+  top: 150px;
   left: -105px;
 }
 .mainTeam-page .text-bg_2 {
   //   bottom: 21px;
-  bottom: 500px;
+  bottom: -240px;
   left: 32.2%;
 }
 .star {

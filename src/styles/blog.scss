@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'Proxima Nova';
+  font-family: "Proxima Nova";
   background: #1d1f21;
   color: #fcffff;
   height: 100%;
@@ -38,7 +38,7 @@ ul {
   padding: 0 15px;
 }
 .forum {
-  background: url('../img/blog/forum_bg.jpg') 0 0/100% 100% no-repeat;
+  background: url("../img/blog/forum_bg.jpg") 0 0/100% 100% no-repeat;
   padding: 51px 0 150px;
   &__title {
     margin: 0 0 6px 3px;
@@ -155,7 +155,7 @@ ul {
   }
   &__date,
   &__name {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     line-height: 19px;
     color: #c8d2dc;
   }
@@ -225,7 +225,11 @@ ul {
     -webkit-text-fill-color: transparent;
   }
   &_dark {
-    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    background: linear-gradient(
+      94.78deg,
+      rgba(104, 201, 255, 0.1) 9.27%,
+      rgba(209, 181, 255, 0.1) 84.06%
+    );
   }
   &_black {
     background: #1d1f21;
@@ -280,7 +284,7 @@ ul {
     margin-bottom: 16px;
   }
   &__input {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     display: block;
     width: 100%;
     // width: 92%;
@@ -387,7 +391,7 @@ ul {
     max-width: 522px;
   }
   &__input {
-    font-family: 'ProximaNova';
+    font-family: "ProximaNova";
     border: 0;
     background: #2c2f33;
     border-radius: 9px;
@@ -418,7 +422,7 @@ button {
   margin-bottom: 7px;
 }
 .item-blog__input {
-  font-family: 'ProximaNova';
+  font-family: "ProximaNova";
   border: 0;
   background: #2c2f33;
   border-radius: 9px;
@@ -436,7 +440,7 @@ button {
     border-radius: 9px;
   }
   &__title {
-    font-family: 'ProximaNova';
+    font-family: "ProximaNova";
     font-weight: 700;
     font-size: 26px;
     line-height: 34px;
@@ -468,7 +472,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    background: linear-gradient(
+      94.78deg,
+      rgba(104, 201, 255, 0.1) 9.27%,
+      rgba(209, 181, 255, 0.1) 84.06%
+    );
     border-radius: 12px;
   }
   &__list {
@@ -644,6 +652,7 @@ button {
       margin-bottom: 23px;
     }
     &__input-title,
+    .blog__search-wrap,
     & .questions__search-wrap {
       display: none;
     }

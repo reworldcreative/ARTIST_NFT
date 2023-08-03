@@ -110,5 +110,9 @@
 @media (max-width: 375px) {
   .enter {
     background: url("@img/enter/blur-b_enter_m.png") 0 0 no-repeat;
+
+    .form__radio-wrap {
+      justify-content: space-between;
+    }
   }
 }
