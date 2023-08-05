@@ -32,7 +32,9 @@
   }
   &__header {
     display: grid;
-    grid-template-columns: minmax(342px, 2fr) minmax(100px, 1fr) minmax(350px, 2fr) minmax(80px, 147px);
+    grid-template-columns:
+      minmax(342px, 2fr) minmax(100px, 1fr) minmax(350px, 2fr)
+      minmax(80px, 147px);
     gap: 15px;
     padding: 0 5px;
     margin: 0 0 20px 0;
@@ -41,7 +43,9 @@
 
 .item-order {
   display: grid;
-  grid-template-columns: minmax(342px, 2fr) minmax(100px, 1fr) minmax(350px, 2fr) minmax(80px, 147px);
+  grid-template-columns:
+    minmax(342px, 2fr) minmax(100px, 1fr) minmax(350px, 2fr)
+    minmax(80px, 147px);
   align-items: center;
   justify-content: space-between;
   gap: 15px;
@@ -147,7 +151,7 @@
         padding: 0;
       }
       &-color {
-        position: absolute;
+        position: relative;
         left: 0;
         top: calc(50% - 16px);
       }
@@ -172,7 +176,7 @@
 
 @media (max-width: 991px) {
   .table-body {
-    padding: 30px 15px 40px;
+    padding: 30px 15px 40px !important;
   }
 
   .table-item {
@@ -191,7 +195,7 @@
   }
 
   .item-order {
-    padding: 19px 19px 17px 18px;
+    padding: 19px 19px 17px 18px !important;
     grid-template-columns: 1fr;
     gap: 0;
     margin: 0;
@@ -216,7 +220,7 @@
       padding: 11px 0 15px;
       border-bottom: 1px solid rgba(228, 228, 228, 0.05);
       &::before {
-        content: 'Size';
+        content: "Size";
         display: block;
         line-height: 15px;
         font-weight: 400;
@@ -250,10 +254,21 @@
 
 @media (max-width: 767px) {
   .table-body {
-    padding: 83px 15px 40px;
+    padding: 83px 15px 40px !important;
     background: #1d1f21;
   }
 }
 .orange {
   background: #eb8032;
+}
+
+@media (max-width: 280px) {
+  .table-item {
+    max-width: 90vw;
+    display: block;
+  }
+
+  .item-order__header {
+    padding: 0 0 17px 0px;
+  }
 }

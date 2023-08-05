@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title":"Main page" })
+
+<body>
+  @@include('html/header.html',{})
+  <div class="wrapper wrapper_arts">
+    <section class="mainTeam-page arts-hero">
+      <div class="container">
+        <div class="arts-hero__row">
+          <div class="arts-hero__body">
+            <h1 class="arts-hero__title title">Want to be a part of our team?</h1>
+            <p class="arts-hero__text text">
+              no purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and.
+              Proposal indulged no do do sociable he throwing settling. Covered ten nor comfort offices carried. Age
+              she way earnestly the fulfilled extremely. Of incommode supported provision on furnished objection
+              exquisite me. Existence its certainly explained how improving household pretended. Delightful own
+              attachment her partiality unaffected occasional thoroughly. Adieus it no wonder spirit houses.
+            </p>
+            <a href="#" class="arts-hero__btn btn btn_light">
+              <img loading="lazy" src="@img/main/bag.svg" alt="Bag icon" class="arts-hero__btn-icon" />
+              <span>Get custom now</span>
+            </a>
+          </div>
+          <div class="arts-hero__image-wrap">
+            <picture>
+              <!-- <source media="(max-width: 575px)" srcset="@img/art3_image_m.webp" type="image/webp" />
+                <source media="(min-width: 576px)" srcset="@img/art3_image.webp" type="image/webp" /> -->
+              <img src="@img/art3_image.png" alt="NFT Image" class="arts-hero__image" />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-bg text-bg_1">BECOME A PART</p>
+      <p class="text-bg text-bg_2">OF OUR TEAM</p>
+
+      <img loading="lazy" src="@img/main/home_hero-star.svg" alt="Star"
+        class="arts-hero__star arts-hero__star_1 star" />
+      <img loading="lazy" src="@img/main/home_hero-star.svg" alt="Star"
+        class="arts-hero__star arts-hero__star_2 star" />
+
+      <div class="arts-hero__bubble bubble"></div>
+    </section>
+
+    <section class="mainTeam-benefits">
+      <div class="container">
+        <h2 class="mainTeam-benefits__subtitle subtitle">
+          <span>OUR BENEFITS</span>
+        </h2>
+        <h2 class="mainTeam-benefits__title title-small">Benefits from work with us</h2>
+        <ul class="mainTeam-benefits__list">
+          <li class="mainTeam-benefits__item">
+            <div class="mainTeam-benefits__icon-wrap">
+              <img src="@img/main/star-gradient.svg" alt="Star" class="mainTeam-benefits__icon" />
+            </div>
+            <h3 class="mainTeam-benefits__item-title">Title of benefits</h3>
+            <p class="mainTeam-benefits__item-text">
+              No purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and
+            </p>
+          </li>
+          <li class="mainTeam-benefits__item">
+            <div class="mainTeam-benefits__icon-wrap">
+              <img src="@img/main/star-gradient.svg" alt="Star" class="mainTeam-benefits__icon" />
+            </div>
+            <h3 class="mainTeam-benefits__item-title">Title of benefits</h3>
+            <p class="mainTeam-benefits__item-text">
+              No purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and
+            </p>
+          </li>
+          <li class="mainTeam-benefits__item">
+            <div class="mainTeam-benefits__icon-wrap">
+              <img src="@img/main/star-gradient.svg" alt="Star" class="mainTeam-benefits__icon" />
+            </div>
+            <h3 class="mainTeam-benefits__item-title">Title of benefits</h3>
+            <p class="mainTeam-benefits__item-text">
+              No purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and
+            </p>
+          </li>
+          <li class="mainTeam-benefits__item">
+            <div class="mainTeam-benefits__icon-wrap">
+              <img src="@img/main/star-gradient.svg" alt="Star" class="mainTeam-benefits__icon" />
+            </div>
+            <h3 class="mainTeam-benefits__item-title">Title of benefits</h3>
+            <p class="mainTeam-benefits__item-text">
+              No purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    @@include('html/components/contactSection.html',{})
+  </div>
+  @@include('html/footer.html',{})
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

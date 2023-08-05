@@ -1,40 +1,101 @@
 @font-face {
-  font-family: Proxima Nova;
+  font-family: iconfonts;
   font-display: swap;
-  src: url("../fonts/ProximaNova-Extrabld.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+  src: url("../fonts/iconfonts.woff2") format("woff2"),
+    url("../fonts/iconfonts.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Proxima Nova;
   font-display: swap;
-  src: url("../fonts/ProximaNova-BoldIt.woff2") format("woff2"),
-    url("../fonts/ProximaNova-BoldIt.woff") format("woff");
+  src: url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Extrabld.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Proxima Nova;
   font-display: swap;
-  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Light.woff") format("woff");
+  src: url('../fonts/ProximaNova-BoldIt.woff2') format('woff2'), url('../fonts/ProximaNova-BoldIt.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Proxima Nova;
+  font-display: swap;
+  src: url('../fonts/ProximaNova-Light.woff2') format('woff2'), url('../fonts/ProximaNova-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: Proxima Nova;
   font-display: swap;
-  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Regular.woff") format("woff");
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Proxima Nova;
   font-display: swap;
-  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Semibold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'iconfonts';
+  src: url('../fonts/iconfonts.eot?wj2bbs');
+  src: url('../fonts/iconfonts.eot?wj2bbs#iefix') format('embedded-opentype'),
+    url('../fonts/iconfonts.ttf?wj2bbs') format('truetype'), url('../fonts/iconfonts.woff?wj2bbs') format('woff'),
+    url('../fonts/iconfonts.svg?wj2bbs#iconfonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^='i-'],
+[class*=' i-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconfonts' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-out:before {
+  content: '\e900';
+}
+
+.i-bag:before {
+  content: '\e901';
+  color: #525960;
+}
+
+.i-orders:before {
+  content: '\e902';
+  color: #525960;
+}
+
+.i-workers:before {
+  content: '\e903';
+  color: #525960;
+}
+
+.i-mess:before {
+  content: '\e904';
+  color: #525960;
+  font-size: 17px;
+}
+
+.i-stat:before {
+  content: '\e905';
+  color: #525960;
 }

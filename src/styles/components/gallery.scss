@@ -1,0 +1,382 @@
+.gallery-Item {
+  position: relative;
+  border-radius: 12px;
+
+  width: 351px;
+
+  &__image {
+    overflow: hidden;
+    border-radius: inherit;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    picture {
+      width: 100%;
+      border-radius: inherit;
+    }
+
+    &_img {
+      // width: 100%;
+      width: -webkit-fill-available;
+      border-radius: inherit;
+    }
+  }
+
+  &.wide {
+    width: 730px;
+    .gallery-Item {
+      &__image_img {
+        height: 205%;
+        width: -webkit-fill-available;
+      }
+
+      &__text {
+        max-width: 257px;
+        margin-top: 8px;
+      }
+
+      &__price {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: none;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: absolute;
+    // padding: 94px 187px;
+    // padding: 12.9% 0px;
+    // padding: 6em 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: inherit;
+    background: linear-gradient(
+      177deg,
+      rgba(104, 128, 255, 0.9) 0%,
+      rgba(60, 167, 244, 0.9) 55.2%,
+      rgba(140, 69, 255, 0.9) 100%
+    );
+  }
+
+  &.noPremium {
+    &:hover {
+      .gallery-Item__image {
+        filter: blur(11px);
+        opacity: 0.17;
+      }
+      .gallery-Item__NoPremium {
+        display: flex;
+      }
+    }
+  }
+
+  &:not(.noPremium):hover {
+    .gallery-Item__wrapper {
+      display: flex;
+    }
+    cursor: pointer;
+  }
+
+  .section-title {
+    margin: 0px auto;
+    width: max-content;
+
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__text {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: $Text;
+    max-width: 85%;
+    margin: 0px auto;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__price {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128.846%;
+    color: $Text;
+    margin-top: 17px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 12px;
+    max-width: 268px;
+    margin: 26px auto 0px;
+
+    .button {
+      justify-content: center;
+      padding: 18px 0px;
+
+      &__text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26.5px;
+      }
+
+      &:first-child {
+        width: 91%;
+      }
+
+      &:last-child {
+        width: -webkit-fill-available;
+      }
+    }
+  }
+
+  &__NoPremium {
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: absolute;
+    border-radius: inherit;
+    border: 1px solid $stroke;
+    text-align: center;
+    // padding: 20% 0px;
+    // padding: 8.35em 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    display: none;
+
+    .button {
+      margin: 19px auto 0px;
+      padding: 18px 14px 19px 30px;
+
+      &__text {
+        font-size: 18px;
+        line-height: 26.5px;
+      }
+    }
+
+    .small-title {
+      letter-spacing: 1.8px;
+    }
+  }
+
+  &__locked {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 16px;
+
+    &_text {
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 128.846%;
+      color: $Text;
+      margin: 0px;
+    }
+  }
+}
+
+.gallery {
+  margin-bottom: 76px;
+  &__list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px auto;
+    display: flex;
+    gap: 24px 30px;
+    flex-wrap: wrap;
+
+    max-width: 1113px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-Item {
+    width: 285px;
+
+    &__wrapper {
+      padding: 0px 5px;
+    }
+
+    &__buttons {
+      .button:first-child {
+        flex: 1;
+        width: auto;
+      }
+      .button:last-child {
+        width: auto;
+        flex: 1;
+      }
+    }
+
+    &.wide {
+      width: 600px;
+
+      .gallery-Item__image_img {
+        // height: auto;
+        height: -webkit-fill-available;
+      }
+    }
+
+    &__image {
+      height: 380px;
+      picture {
+        height: inherit;
+      }
+
+      &_img {
+        height: inherit;
+        width: auto;
+      }
+    }
+
+    &__NoPremium {
+      // padding: 20% 10px;
+    }
+
+    &__locked_text {
+      @include font-size(19px);
+    }
+  }
+  .gallery {
+    padding: 0px 15px;
+    &__list {
+      justify-content: center;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .gallery-Item {
+    width: 250px;
+    &__image {
+      height: 320px;
+    }
+    &.wide {
+      width: 530px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery-Item {
+    width: 100%;
+    height: 412px;
+    &.wide {
+      width: 100%;
+      height: 240px;
+    }
+
+    &__image {
+      height: 100%;
+      picture {
+        height: inherit;
+      }
+      &_img {
+        height: inherit;
+        width: -webkit-fill-available;
+      }
+    }
+  }
+
+  .gallery {
+    &__item {
+      width: 100%;
+    }
+
+    margin-bottom: 38px;
+
+    &__list {
+      gap: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gallery-Item {
+    &.wide {
+      height: 199px;
+    }
+
+    &__buttons {
+      margin: 20px auto 0px;
+      .button {
+        padding: 10px 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .gallery-Item {
+    height: 350px;
+
+    &__locked {
+      gap: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .gallery-Item {
+    &__locked {
+      align-items: center;
+      &_icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      &_text {
+        @include font-size(17px);
+      }
+    }
+
+    .small-title {
+      line-height: 15px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 230px) {
+  .gallery-Item {
+    &__locked {
+      &_text {
+        @include font-size(15px);
+      }
+    }
+
+    .small-title {
+      line-height: 14px;
+    }
+
+    .button {
+      padding: 8px 15px;
+    }
+  }
+}

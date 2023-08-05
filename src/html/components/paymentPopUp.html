@@ -1,0 +1,35 @@
+<div class="paymentPopUp">
+    <div class="paymentPopUp__wrapper">
+        <h2 class="section-title">Payment success. Now tell us where to bring</h2>
+        <p class="section__text">Write correct country, adress, zip code</p>
+
+        <form action="" class="contacts__form send-form">
+            <div class="input-container">
+                <label class="input-container__lable" for="Country">Country</label>
+                <input class="input-container__input" type="text" name="Country" id="Country"
+                    placeholder="Your country">
+            </div>
+            <div class="input-container">
+                <label class="input-container__lable" for="City">City</label>
+                <input class="input-container__input" type="text" name="City" id="City" placeholder="Your city">
+            </div>
+            <div class="input-container">
+                <label class="input-container__lable" for="Adress">Adress</label>
+                <input class="input-container__input" type="text" name="Adress" id="Adress" placeholder="Your adress">
+            </div>
+            <div class="input-container">
+                <label class="input-container__lable" for="Zip">Zip code</label>
+                <input class="input-container__input" type="text" name="Zip" id="Zip" placeholder="Your zip code">
+            </div>
+            <div class="input-container">
+                <label class="input-container__lable" for="Email">Mail</label>
+                <input class="input-container__input" type="email" name="Email" id="Email" placeholder="Your mail">
+            </div>
+
+            @@include('button.html',{
+            class:"active",
+            text:"Send",
+            })
+        </form>
+    </div>
+</div>

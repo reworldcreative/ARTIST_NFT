@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< Updated upstream
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.min.css">
     <title>Main page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230803203722" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230803203722">
+=======
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/icons/favicon-32.png" type="image/png" />
+  <link type="image/png" sizes="16x16" rel="icon" href="./img/favicon.png" />
+  <link rel="stylesheet" href="styles/style.min.css" />
+  <title>Main page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="styles/style.min.css" />
+>>>>>>> Stashed changes
 </head>
+
 
 <body>
     <nav class="burger-menu">
@@ -44,7 +61,7 @@
     </li>
 
     <li class="socialsLinks__item">
-        <a class="socialsLinks__link" href="www.pinterest.com" target="_blank" rel="noopener noreferrer">
+        <a class="socialsLinks__link" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
             <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
         </a>
     </li>
@@ -56,7 +73,7 @@
     <img src="img/logo.svg" alt="logo" width="145px" height="30px">
 </a>
 
-    <nav class="header-navigation">
+    <!-- <nav class="header-navigation">
       <ul class="header-navigation__list">
         <li class="header-navigation__item">
           <a href="index.html" class="header-navigation__link">Main page</a>
@@ -83,6 +100,35 @@
           <a href="blog.html" class="header-navigation__link">Blog</a>
         </li>
       </ul>
+    </nav> -->
+
+    <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item">
+          <a href="index.html" class="header-navigation__link">Main page</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="Nfts.html" class="header-navigation__link">
+            <img src="img/lock.svg" alt="lock icon" width="14px" height="14px">
+            NFT
+          </a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="customClothes.html" class="header-navigation__link">Pictures</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="auction.html" class="header-navigation__link">Auction</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="Pricing.html" class="header-navigation__link">Pricing</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="mainTeam.html" class="header-navigation__link">Contacts</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="blog.html" class="header-navigation__link">Blog</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="header__buttons">
@@ -92,23 +138,57 @@
         <option value="FR">FR</option>
       </select>
 
-      <button class="button main">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+      <a href="enter.html" class="button main">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Authorization
     </span>
-</button> <button class="button active">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
+
+      <a href="Pricing.html" class="button active">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Premium access
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
     </div>
 
-    <div class="small-menu">
-      <button class="smallPemiumButton">
+    <!-- <div class="small-menu">
+      <a href="enter.html" class="smallPemiumButton">
     <img src="img/crown.svg" alt="crown" width="15px" height="12px">
-</button>
+</a>
+
+      <button class="burger-button" aria-label="open burger menu">
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <a href="@@link" class="button main">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Authorization
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a> 
+    <a href="@@link" class="button active">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Premium access
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a> -->
+    <div class="small-menu">
+      <a href="enter.html" class="smallPemiumButton">
+    <img src="img/crown.svg" alt="crown" width="15px" height="12px">
+</a>
 
       <button class="burger-button" aria-label="open burger menu">
         <span class="burger-button__line" aria-hidden="true"></span>
@@ -119,25 +199,30 @@
   </div>
 </header>
 
-
     <main>
         <section class="main-hero">
             <div class="main-hero__decoration">
-                <img class="main-hero__decoration_text-first" src="img/decoration/MAKE ART.svg" alt="MAKE ART"
+                <img class="main-hero__decoration_text-first" data-src="img/decoration/MAKE ART.svg" alt="MAKE ART"
                     aria-hidden="true" width="375px" height="97px">
-                <img class="main-hero__decoration_text-second" src="img/decoration/NOT WAR.svg" alt="NOT WAR"
+                <img class="main-hero__decoration_text-second" data-src="img/decoration/NOT WAR.svg" alt="NOT WAR"
                     aria-hidden="true" width="360px" height="97px">
 
-                <img class="main-hero__decoration_star" src="img/decoration/star.svg" alt="star" aria-hidden="true"
-                    width="46px" height="62px">
+                <img class="main-hero__decoration_star" data-src="img/decoration/star.svg" alt="star"
+                    aria-hidden="true" width="46px" height="62px">
 
-                <img class="main-hero__decoration_circle-first" src="img/decoration/circle.svg" alt="star"
-                    aria-hidden="circle" width="25px" height="25px">
-                <img class="main-hero__decoration_circle-second" src="img/decoration/circle.svg" alt="star"
-                    aria-hidden="circle" width="10px" height="10px">
+                <img class="main-hero__decoration_circle-first" data-src="img/decoration/circle.svg" alt="circle"
+                    aria-hidden="true" width="25px" height="25px">
+                <img class="main-hero__decoration_circle-second" data-src="img/decoration/circle.svg" alt="circle"
+                    aria-hidden="true" width="10px" height="10px">
 
-                <img class="main-hero__decoration_blur" src="img/blurSpots/blur_1.png" alt="blue" aria-hidden="true"
-                    width="360px" height="700px">
+                <picture>
+                    <source srcset="img/blurSpots/blur_1.webp" type="image/webp">
+                    <img class="main-hero__decoration_blur" data-src="img/blurSpots/blur_1.png" alt="blue"
+                        aria-hidden="true" width="360px" height="700px">
+                </picture>
+
+                <!-- <img class="main-hero__decoration_blur" data-src="img/blurSpots/blur_1.png" alt="blue"
+                    aria-hidden="true" width="360px" height="700px"> -->
             </div>
             <div class="main-hero__wrapper">
                 <div class="section-row">
@@ -161,7 +246,7 @@
     </li>
 
     <li class="socialsLinks__item">
-        <a class="socialsLinks__link" href="www.pinterest.com" target="_blank" rel="noopener noreferrer">
+        <a class="socialsLinks__link" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
             <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
         </a>
     </li>
@@ -173,41 +258,53 @@
                         </div>
 
                         <div class="main-hero__buttons">
-                            <button class="button active premium">
+                            <a href="Pricing.html" class="button active premium">
     <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
     <span class="button__text">
         Premium access
     </span>
-</button>
-                            <button class="button main">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
+                            <a href="inspire.html" class="button main">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Discover
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
                         </div>
                     </div>
                     <div class="section-col">
                         <div class="main-hero__image">
-                            <img class="main-hero__image_img" src="img/main-hero.png" alt="woman with paint"
-                                width="662px" height="585px">
+                            <picture>
+                                <source srcset="img/main-hero.webp" type="image/webp">
+                                <img class="main-hero__image_img" src="img/main-hero.png" width="662px" height="585px"
+                                    alt="woman with paint">
+                            </picture>
+                            <!-- <img class="main-hero__image_img" src="img/main-hero.png" width="662px" height="585px"
+                                alt="woman with paint"> -->
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section class="biography">
             <div class="biography__decoration">
-                <img class="biography__decoration_blur" src="img/blurSpots/blur_1.png" alt="blue" aria-hidden="true"
-                    width="360px" height="700px">
+                <picture>
+                    <source srcset="img/blurSpots/blur_1.webp" type="image/webp">
+                    <img class="biography__decoration_blur" data-src="img/blurSpots/blur_1.png" alt="blue"
+                        aria-hidden="true" width="360px" height="700px">
+                </picture>
+                <!-- <img class="biography__decoration_blur" data-src="img/blurSpots/blur_1.png" alt="blur"
+                    aria-hidden="true" width="360px" height="700px"> -->
+                <img class="biography__decoration_star" data-src="img/decoration/star.svg" alt="star"
+                    aria-hidden="true" width="46px" height="62px">
 
-                <img class="biography__decoration_star" src="img/decoration/star.svg" alt="star" aria-hidden="true"
-                    width="46px" height="62px">
-
-                <img class="biography__decoration_circle" src="img/decoration/circle.svg" alt="star"
-                    aria-hidden="circle" width="25px" height="25px">
+                <img class="biography__decoration_circle" data-src="img/decoration/circle.svg" alt="circle"
+                    aria-hidden="true" width="25px" height="25px">
             </div>
             <div class="biography__wrapper">
                 <div class="section-row">
@@ -215,20 +312,39 @@
                         <div class="biography__slider card__slider swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="img/BIOGRAPHY/BIOGRAPHY_1.jpg" alt="fasion woman" width="445px"
-                                        height="570px">
+                                    <picture>
+                                        <source srcset="img/BIOGRAPHY/BIOGRAPHY_1.webp" type="image/webp">
+                                        <source srcset="img/BIOGRAPHY/BIOGRAPHY_1_small.webp"
+                                            media="(max-width: 380px)" type="image/webp">
+                                        <img src="img/BIOGRAPHY/BIOGRAPHY_1.jpg" width="445px" height="570px"
+                                            alt="fasion woman">
+                                    </picture>
+                                    <!-- <img src="img/BIOGRAPHY/BIOGRAPHY_1.jpg" width="445px" height="570px"
+                                        alt="fasion woman"> -->
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/BIOGRAPHY/BIOGRAPHY_2.jpg" alt="fasion woman" width="445px"
-                                        height="570px">
+                                    <picture>
+                                        <source srcset="img/BIOGRAPHY/BIOGRAPHY_2.webp" type="image/webp">
+                                        <source srcset="img/BIOGRAPHY/BIOGRAPHY_2_small.webp"
+                                            media="(max-width: 1000px)" type="image/webp">
+                                        <img src="img/BIOGRAPHY/BIOGRAPHY_2.jpg" width="445px" height="570px"
+                                            alt="fasion woman">
+                                    </picture>
+                                    <!-- <img src="img/BIOGRAPHY/BIOGRAPHY_2.jpg" width="445px" height="570px"
+                                        alt="fasion woman"> -->
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/BIOGRAPHY/BIOGRAPHY_3.jpg" alt="fasion woman" width="445px"
-                                        height="570px">
+                                    <picture>
+                                        <source srcset="img/BIOGRAPHY/BIOGRAPHY_3.webp" type="image/webp">
+                                        <source srcset="img/BIOGRAPHY/BIOGRAPHY_3_small.webp"
+                                            media="(max-width: 1000px)" type="image/webp">
+                                        <img src="img/BIOGRAPHY/BIOGRAPHY_3.jpg" width="445px" height="570px"
+                                            alt="fasion woman">
+                                    </picture>
+                                    <!-- <img src="img/BIOGRAPHY/BIOGRAPHY_3.jpg" width="445px" height="570px"
+                                        alt="fasion woman"> -->
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
 
@@ -290,29 +406,46 @@
         <section class="premium-banner">
             <div class="premium-banner__wrapper">
                 <div class="premium-banner__container">
-                    <img class="premium-banner__crown" src="img/crown.svg" alt="crown" width="45px" height="45px">
+                    <img class="premium-banner__crown" data-src="img/crown.svg" alt="crown" width="45px" height="45px">
                     <h2 class="section-title">Get the premium access</h2>
                     <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam</p>
 
-                    <button class="button main">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+                    <a href="Pricing.html" class="button main">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Go to plans
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
                 </div>
 
                 <div class="premium-banner__jewelry">
-                    <img class="premium-banner__jewelry_ellipse" src="img/jewelry/Ellipse_2.svg" alt="Ellipse"
+                    <img class="premium-banner__jewelry_ellipse" data-src="img/jewelry/Ellipse_2.svg" alt="Ellipse"
                         width="512px" height="505px">
-                    <img class="premium-banner__jewelry_main" src="img/jewelry/jewelry_1.png" alt="jewelry"
-                        width="350px" height="275px">
-                    <img class="premium-banner__jewelry_first" src="img/jewelry/jewelry_2.png" alt="jewelry"
-                        width="270px" height="200px">
-                    <img class="premium-banner__jewelry_second" src="img/jewelry/jewelry_3.png" alt="jewelry"
-                        width="180px" height="130px">
+                    <picture>
+                        <source srcset="img/jewelry/jewelry_1.webp" type="image/webp">
+                        <img class="premium-banner__jewelry_main" src="img/jewelry/jewelry_1.png" width="350px"
+                            height="275px" alt="jewelry">
+                    </picture>
+                    <!-- <img class="premium-banner__jewelry_main" src="img/jewelry/jewelry_1.png" width="350px"
+                        height="275px" alt="jewelry"> -->
+                    <picture>
+                        <source srcset="img/jewelry/jewelry_2.webp" type="image/webp">
+                        <img class="premium-banner__jewelry_first" data-src="img/jewelry/jewelry_2.png" width="270px"
+                            height="200px" alt="jewelry">
+                    </picture>
+                    <!-- <img class="premium-banner__jewelry_first" src="img/jewelry/jewelry_2.png" width="270px"
+                        height="200px" alt="jewelry"> -->
+                    <picture>
+                        <source srcset="img/jewelry/jewelry_3.webp" type="image/webp">
+                        <img class="premium-banner__jewelry_second" data-src="img/jewelry/jewelry_3.png" alt="jewelry"
+                            width="180px" height="130px">
+                    </picture>
+                    <!-- <img class="premium-banner__jewelry_second" src="img/jewelry/jewelry_3.png" alt="jewelry"
+                        width="180px" height="130px"> -->
                 </div>
             </div>
         </section>
@@ -325,8 +458,8 @@
                             <article class="NFT-Card">
     <p class="NFT-Card__top small-title">NFT</p>
     <div class="NFT-Card__image purple">
-        <img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px">
-        <img class="NFT-Card__image_ellipse" src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
+        <picture><source srcset="img/nft-item.webp" type="image/webp"><img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px"></picture>
+        <img class="NFT-Card__image_ellipse" data-src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
             height="505px">
     </div>
 
@@ -337,12 +470,14 @@
         <div class="NFT-Card__bottom">
             <p class="NFT-Card__price">$100 322</p>
 
-            <button class="button active buyButton">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+            <a href="productPage.html" class="button active buyButton">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Buy now
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
         </div>
     </div>
 
@@ -354,8 +489,8 @@
                             <article class="NFT-Card">
     <p class="NFT-Card__top small-title">NFT</p>
     <div class="NFT-Card__image yellow">
-        <img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px">
-        <img class="NFT-Card__image_ellipse" src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
+        <picture><source srcset="img/nft-item.webp" type="image/webp"><img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px"></picture>
+        <img class="NFT-Card__image_ellipse" data-src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
             height="505px">
     </div>
 
@@ -366,12 +501,14 @@
         <div class="NFT-Card__bottom">
             <p class="NFT-Card__price">$100 322</p>
 
-            <button class="button active buyButton">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+            <a href="productPage.html" class="button active buyButton">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Buy now
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
         </div>
     </div>
 
@@ -382,8 +519,8 @@
                             <article class="NFT-Card">
     <p class="NFT-Card__top small-title">NFT</p>
     <div class="NFT-Card__image blue">
-        <img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px">
-        <img class="NFT-Card__image_ellipse" src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
+        <picture><source srcset="img/nft-item.webp" type="image/webp"><img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px"></picture>
+        <img class="NFT-Card__image_ellipse" data-src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
             height="505px">
     </div>
 
@@ -394,12 +531,14 @@
         <div class="NFT-Card__bottom">
             <p class="NFT-Card__price">$100 322</p>
 
-            <button class="button active buyButton">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+            <a href="productPage.html" class="button active buyButton">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Buy now
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
         </div>
     </div>
 
@@ -410,8 +549,8 @@
                             <article class="NFT-Card">
     <p class="NFT-Card__top small-title">NFT</p>
     <div class="NFT-Card__image purple">
-        <img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px">
-        <img class="NFT-Card__image_ellipse" src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
+        <picture><source srcset="img/nft-item.webp" type="image/webp"><img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px"></picture>
+        <img class="NFT-Card__image_ellipse" data-src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
             height="505px">
     </div>
 
@@ -422,12 +561,14 @@
         <div class="NFT-Card__bottom">
             <p class="NFT-Card__price">$100 322</p>
 
-            <button class="button active buyButton">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+            <a href="productPage.html" class="button active buyButton">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Buy now
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
         </div>
     </div>
 
@@ -438,8 +579,8 @@
                             <article class="NFT-Card">
     <p class="NFT-Card__top small-title">NFT</p>
     <div class="NFT-Card__image yellow">
-        <img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px">
-        <img class="NFT-Card__image_ellipse" src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
+        <picture><source srcset="img/nft-item.webp" type="image/webp"><img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px"></picture>
+        <img class="NFT-Card__image_ellipse" data-src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
             height="505px">
     </div>
 
@@ -450,12 +591,14 @@
         <div class="NFT-Card__bottom">
             <p class="NFT-Card__price">$100 322</p>
 
-            <button class="button active buyButton">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+            <a href="productPage.html" class="button active buyButton">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Buy now
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
         </div>
     </div>
 
@@ -466,8 +609,8 @@
                             <article class="NFT-Card">
     <p class="NFT-Card__top small-title">NFT</p>
     <div class="NFT-Card__image purple">
-        <img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px">
-        <img class="NFT-Card__image_ellipse" src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
+        <picture><source srcset="img/nft-item.webp" type="image/webp"><img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px"></picture>
+        <img class="NFT-Card__image_ellipse" data-src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
             height="505px">
     </div>
 
@@ -478,12 +621,14 @@
         <div class="NFT-Card__bottom">
             <p class="NFT-Card__price">$100 322</p>
 
-            <button class="button active buyButton">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+            <a href="productPage.html" class="button active buyButton">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Buy now
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
         </div>
     </div>
 
@@ -494,8 +639,8 @@
                             <article class="NFT-Card">
     <p class="NFT-Card__top small-title">NFT</p>
     <div class="NFT-Card__image yellow">
-        <img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px">
-        <img class="NFT-Card__image_ellipse" src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
+        <picture><source srcset="img/nft-item.webp" type="image/webp"><img class="NFT-Card__image_img" src="img/nft-item.png" alt="NFT image" width="254px" height="334px"></picture>
+        <img class="NFT-Card__image_ellipse" data-src="img/jewelry/Ellipse_2.svg" alt="Ellipse" width="375px"
             height="505px">
     </div>
 
@@ -506,12 +651,14 @@
         <div class="NFT-Card__bottom">
             <p class="NFT-Card__price">$100 322</p>
 
-            <button class="button active buyButton">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+            <a href="productPage.html" class="button active buyButton">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Buy now
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
         </div>
     </div>
 
@@ -526,15 +673,38 @@
 
         <section class="contacts">
     <div class="contacts__decoration">
-        <img class="contacts__decoration_box" src="img/decoration/decoration-box.png" alt="box" width="600px"
-            height="600px">
+        <picture>
+            <source srcset="img/decoration/decoration-box.webp" type="image/webp">
+            <img class="contacts__decoration_box" data-src="img/decoration/decoration-box.png" alt="box" width="600px"
+                height="600px">
+        </picture>
+        <!-- <img class="contacts__decoration_box" data-src="img/decoration/decoration-box.png" alt="box" width="600px"
+            height="600px"> -->
 
-        <img class="contacts__decoration_jewelry-first" src="img/jewelry/jewelry_4.png" alt="jewelry" width="350px"
-            height="380px">
-        <img class="contacts__decoration_jewelry-second" src="img/jewelry/jewelry_5.png" alt="jewelry" width="230px"
-            height="230px">
-        <img class="contacts__decoration_jewelry-third" src="img/jewelry/jewelry_5_2.png" alt="jewelry" width="170px"
-            height="170px">
+        <picture>
+            <source srcset="img/jewelry/jewelry_4.webp" type="image/webp">
+            <img class="contacts__decoration_jewelry-first" data-src="img/jewelry/jewelry_4.png" alt="jewelry"
+                width="350px" height="380px">
+        </picture>
+        <!-- <img class="contacts__decoration_jewelry-first" data-src="img/jewelry/jewelry_4.png" alt="jewelry"
+            width="350px" height="380px"> -->
+
+        <picture>
+            <source srcset="img/jewelry/jewelry_5.webp" type="image/webp">
+            <img class="contacts__decoration_jewelry-second" data-src="img/jewelry/jewelry_5.png" alt="jewelry"
+                width="230px" height="230px">
+        </picture>
+        <!-- <img class="contacts__decoration_jewelry-second" data-src="img/jewelry/jewelry_5.png" alt="jewelry"
+            width="230px" height="230px"> -->
+
+        <picture>
+            <source srcset="img/jewelry/jewelry_5_2.webp" type="image/webp">
+            <img class="contacts__decoration_jewelry-third" data-src="img/jewelry/jewelry_5_2.png" alt="jewelry"
+                width="170px" height="170px">
+        </picture>
+        <!-- <img class="contacts__decoration_jewelry-third" data-src="img/jewelry/jewelry_5_2.png" alt="jewelry"
+            width="170px" height="170px"> -->
+
     </div>
     <div class="contacts__wrapper">
         <p class="small-title">CONTACT ME</p>
@@ -555,17 +725,19 @@
                     cols="30" rows="7" placeholder="Your question"></textarea>
             </div>
 
-            <button class="button active">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+            <a href="#" class="button active">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Send message
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
 
 
             <div class="contacts__agree">
                 <label class="contacts__checkbox">
-                    <input type="checkbox" id="agree" name="agree">
+                    <input type="checkbox" id="agree" name="agree" aria-label="agree checkbox">
                     <span class="checkmark"></span>
                 </label>
                 <div class="contacts__agree_text input-container__lable">
@@ -581,6 +753,71 @@
     </main>
 
     <footer class="footer">
+  <!-- <div class="container container_big">
+    <div class="footer__top">
+      <a href="index.html" class="footer__logo">
+        <img src="img/logo.svg" alt="logo" width="145px" height="30px" />
+      </a>
+
+      <div class="footer__list">
+        <a href="#" class="footer__link">Privacy policy</a>
+        <a href="#" class="footer__link">Terms of use</a>
+      </div>
+
+      <div class="footer__soc">
+        <a href="#" class="footer__soc-link">
+          <img loading="lazy" src="img/socials/inst.svg" alt="Instagram" class="footer__soc-icon" />
+        </a>
+        <a href="#" class="footer__soc-link">
+          <img loading="lazy" src="img/socials/twitter.svg" alt="Twitter" class="footer__soc-icon" />
+        </a>
+        <a href="#" class="footer_soc-link">
+          <img loading="lazy" src="img/socials/telegram.svg" alt="Telegram" class="footer__soc-icon" />
+        </a>
+        <a href="#" class="footer__soc-link">
+          <img loading="lazy" src="img/socials/pinterest.svg" alt="Pinterest" class="footer__soc-icon" />
+        </a>
+  <div class="footer__wrapper">
+    <div class="footer__container">
+      <div class="footer__top">
+        <a href="index.html" class="logo @@class">
+    <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+</a>
+        <div class="footer__links">
+          <a class="section__text" href="#">Privacy policy</a>
+          <a class="section__text" href="#">Terms of use</a>
+        </div>
+
+      </div>
+      <ul class="socialsLinks">
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/inst.svg" alt="instagram icon" width="24px" height="24px">
+        </a>
+    </li>
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/twitter.svg" alt="twitter icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://web.telegram.org" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/telegram.svg" alt="telegram icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
+        </a>
+    </li>
+</ul>
+    </div>
+
+    <div class="footer__bottom">All rights reserved © 2022</div>
+  </div> -->
+
   <div class="footer__wrapper">
     <div class="footer__container">
       <div class="footer__top">
@@ -611,22 +848,23 @@
     </li>
 
     <li class="socialsLinks__item">
-        <a class="socialsLinks__link" href="www.pinterest.com" target="_blank" rel="noopener noreferrer">
+        <a class="socialsLinks__link" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
             <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
         </a>
     </li>
 </ul>
     </div>
 
-    <div class="footer__bottom">All rights reserved © 2022</div>
+    <div class="footer__bottom">
+      All rights reserved © 2022
+    </div>
   </div>
 </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230803203722"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script src="scripts/main.min.js"></script>
+    <script src="scripts/main.min.js?_v=20230803203722"></script>
 </body>
 
 </html>

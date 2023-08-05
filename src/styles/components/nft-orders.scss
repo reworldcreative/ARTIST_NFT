@@ -133,7 +133,7 @@
       gap: 13px 10px;
     }
     &__item {
-      padding: 17px 19px 17px 18px;
+      padding: 17px 19px 17px 18px !important;
       grid-template-columns: 1fr;
     }
     &__item-title {
@@ -146,6 +146,7 @@
       img {
         left: 0px;
         top: calc(50% - 26px);
+        position: relative;
       }
     }
     &__item-wallet {
@@ -155,13 +156,13 @@
       border-bottom: 1px solid rgba(228, 228, 228, 0.05);
       padding: 10px 0 11px;
       &::before {
-        content: 'Adress';
+        content: "Adress";
         display: block;
       }
     }
     &__wallet-wrap {
       width: 48.05%;
-      padding: 7px 11px 7px 11px;
+      padding: 7px 11px 7px 11px !important;
       border-radius: 8px;
       margin: 0 5px 0 0;
       & .wallet {
@@ -194,7 +195,7 @@
       align-items: center;
       width: 100%;
       &::before {
-        content: 'Price';
+        content: "Price";
         font-weight: 400;
         font-size: 14px;
         line-height: 15px;
@@ -204,5 +205,16 @@
       width: 100%;
       max-width: 100%;
     }
+  }
+}
+
+@media (max-width: 280px) {
+  .table-item {
+    max-width: 90vw;
+    display: block;
+  }
+
+  .item-order__header {
+    padding: 0 0 17px 0px;
   }
 }

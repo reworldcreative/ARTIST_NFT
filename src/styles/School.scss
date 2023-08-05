@@ -1,0 +1,813 @@
+.School-hero {
+  position: relative;
+  overflow-x: clip;
+  &__wrapper {
+    // margin: 23px auto 173px;
+    margin: 23px auto 235px;
+    width: 1107px;
+
+    .button {
+      display: block;
+      margin-top: 40px;
+      padding: 18px 73px;
+
+      &__text {
+        font-size: 18px;
+        line-height: 147.222%;
+      }
+    }
+
+    .section__text {
+      width: 60%;
+    }
+
+    .section-text__container {
+      margin-top: 0px;
+    }
+  }
+
+  &__first-col {
+    margin-top: 150px;
+    max-width: 40%;
+
+    .big-title {
+      font-size: 64px;
+    }
+  }
+
+  &__second-col {
+    max-width: 60%;
+  }
+
+  &__image {
+    position: relative;
+
+    border-radius: 24px;
+    height: 100%;
+    width: 100%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background: url("../img/main-hero-bg.png");
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      height: 116%;
+      width: 84%;
+      top: 28px;
+      left: 69px;
+      border-radius: 24px;
+      transform: rotate(-6deg);
+    }
+
+    &_img {
+      position: absolute;
+      top: 75px;
+      left: -71px;
+    }
+  }
+
+  &__decoration {
+    img {
+      position: absolute;
+      z-index: 0;
+    }
+
+    &_text-first {
+      top: 74px;
+      left: -98px;
+    }
+
+    &_text-second {
+      bottom: -175px;
+      left: 26.5%;
+    }
+
+    &_star {
+      left: 44.5%;
+      top: 73.7%;
+      transform: rotate(12deg);
+    }
+
+    &_star-second {
+      right: 110px;
+      left: auto;
+      top: 46%;
+      transform: rotate(-17deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .School-hero {
+    &__wrapper {
+      margin: 23px auto 230px;
+      width: auto;
+      padding: 0px 15px;
+    }
+
+    &__image {
+      right: 15px;
+
+      &_img {
+        top: 30%;
+        left: -20%;
+        width: -webkit-fill-available;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .School-hero {
+    &__wrapper {
+      margin: 23px auto 150px;
+    }
+    &__image {
+      &::before {
+        height: 85%;
+        width: 85%;
+        top: 5%;
+        left: 70px;
+      }
+
+      &_img {
+        top: 15%;
+      }
+    }
+
+    &__first-col {
+      margin-top: 100px;
+    }
+
+    &__decoration {
+      &_text-first {
+        top: 5%;
+      }
+
+      &_text-second {
+        bottom: -65px;
+        left: 12.5%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .School-hero {
+    .section-col {
+      max-width: 100%;
+      width: 100%;
+      flex: auto;
+    }
+
+    &__second-col {
+      height: 500px;
+    }
+
+    .section-text__container {
+      max-width: fit-content;
+    }
+
+    &__image {
+      &_img {
+        width: -webkit-fill-available;
+        height: auto;
+        left: auto;
+        top: 10%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .School-hero {
+    &__second-col {
+      height: 450px;
+    }
+
+    .big-title {
+      line-height: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .School-hero {
+    &__wrapper {
+      margin: 23px auto 135px;
+    }
+
+    .button {
+      margin-top: 23px;
+      padding: 12px 70px;
+
+      &__text {
+        font-size: 15px;
+        line-height: 26.5px;
+      }
+    }
+
+    .section__text {
+      width: 80%;
+    }
+
+    &__first-col {
+      margin-top: 72px;
+      width: 90% !important;
+    }
+
+    &__first-col {
+      margin-top: 42px;
+    }
+
+    &__second-col {
+      height: 309px;
+    }
+
+    &__decoration {
+      &_text-first {
+        top: -7px;
+        height: 35px;
+        width: 535px;
+        left: -146px;
+      }
+
+      &_text-second {
+        bottom: -90px;
+        left: 7.5%;
+        width: 422px;
+        height: 37px;
+      }
+
+      &_star {
+        left: 0.5%;
+        top: 80%;
+      }
+
+      &_star-second {
+        right: 10px;
+      }
+    }
+
+    .big-title {
+      font-size: 36px;
+      line-height: 40px;
+      letter-spacing: 0px;
+    }
+
+    &__image {
+      &::before {
+        height: 100%;
+        width: 90%;
+        top: 5%;
+        left: 39px;
+      }
+
+      &_img {
+        width: auto;
+        height: 269px;
+        left: -17px;
+        top: 16%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .School-hero {
+    &__image_img {
+      width: -webkit-fill-available;
+      height: auto;
+      left: 0px;
+      top: 20%;
+    }
+
+    &__first-col {
+      width: 100% !important;
+    }
+
+    .big-title {
+      max-width: 100%;
+    }
+
+    &__second-col {
+      height: 240px;
+    }
+
+    .section__text {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .School-hero {
+    &__second-col {
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .School-hero {
+    .button {
+      padding: 12px 0px;
+      width: 100%;
+      text-align: center;
+    }
+    &__second-col {
+      height: 150px;
+    }
+  }
+}
+
+.School-benefits {
+  .subtitle {
+    margin: 0px;
+  }
+
+  .title-small {
+    margin: 0px;
+  }
+
+  .mainTeam-benefits {
+    &__list {
+      max-width: 1110px;
+      margin: 32px auto 73px;
+    }
+
+    &__icon-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 24px;
+    }
+
+    &__item {
+      padding: 18px 21px 32px 16px;
+    }
+
+    &__item-title {
+      margin: 0px;
+      margin-bottom: 7px;
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+    }
+
+    &__item-text {
+      margin: 0px;
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .School-benefits {
+    padding: 0px 15px;
+    .mainTeam-benefits {
+      &__list {
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .School-benefits {
+    .mainTeam-benefits {
+      &__subtitle {
+        font-size: 14px;
+        letter-spacing: 1.4px;
+      }
+
+      &__icon-wrap {
+        padding: 9px;
+      }
+
+      &__title {
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: 1.2px;
+      }
+
+      &__list {
+        margin: 30px auto 73px;
+        gap: 16px 11px;
+      }
+
+      &__item {
+        padding: 9px 21px 15px 10px;
+      }
+
+      &__item-title {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0px;
+      }
+
+      &__item-text {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .School-benefits {
+    .mainTeam-benefits {
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+    }
+  }
+}
+
+.School-fees {
+  position: relative;
+  overflow-x: clip;
+  &__wrapper {
+  }
+
+  &__top {
+    margin: 0px auto;
+    display: grid;
+    gap: 16px;
+    max-width: 410px;
+    text-align: center;
+  }
+
+  &__tad-middle {
+    .tarifItem {
+      &__term {
+        margin-left: -23px;
+      }
+      &__image {
+        top: 14%;
+        left: 14%;
+      }
+    }
+  }
+
+  &__tarifs-list {
+    .Pricing-section__wrapper {
+      margin: 90px auto 50px;
+    }
+
+    .tarifItem.active .tarifItem__image {
+      top: 14%;
+      left: 14%;
+    }
+    .tarifItem {
+      &__image {
+        top: 14%;
+        left: 14%;
+      }
+
+      &__priceContainer {
+        padding: 12px 37px 18px 26px;
+        .button {
+          padding: 14px 58px;
+        }
+      }
+    }
+  }
+
+  &__decoration {
+    img {
+      position: absolute;
+      z-index: -1;
+    }
+    &_text-first {
+      top: 20px;
+      left: -32px;
+    }
+
+    &_text-second {
+      top: 20px;
+      right: -24px;
+    }
+
+    &_star {
+      left: 27%;
+      top: -12px;
+    }
+
+    &_circle {
+      right: 24.4%;
+      top: 15.3%;
+    }
+
+    &_jewelry-first {
+      left: -125px;
+      top: 65px;
+    }
+
+    &_jewelry-second {
+      top: -21px;
+      right: 20%;
+      left: auto;
+    }
+
+    &_jewelry-third {
+      right: -100px;
+      top: 80px;
+    }
+
+    &_blur {
+      left: 0px;
+      top: -100px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .School-fees {
+    &__decoration {
+      &_star {
+        top: -75px;
+        left: 10px;
+        height: 65px;
+        width: 65px;
+      }
+
+      &_jewelry-second {
+        top: 40px;
+        right: 10%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .School-fees {
+    &__top {
+      text-align: left;
+      padding: 0px 14px;
+      gap: 5px;
+    }
+
+    &__tad-middle .tarifItem__term {
+      margin-left: -10px;
+      // font-size: 70px;
+      @include font-size(170px);
+    }
+
+    .tarifItem {
+      &__benefit {
+        gap: 16px;
+      }
+
+      &__priceContainer {
+        padding: 12px 29px 18px 26px;
+      }
+    }
+
+    &__tarifs-list .Pricing-section__wrapper {
+      margin: 87px auto 50px;
+    }
+
+    .tab-header {
+      margin-bottom: 23px;
+    }
+
+    &__wrapper {
+      margin-top: 121px;
+    }
+
+    &__decoration {
+      &_text-first {
+        top: 113px;
+        left: -35px;
+        height: 34px;
+        width: 285px;
+      }
+
+      &_text-second {
+        top: -54px;
+        right: -33px;
+        height: 35px;
+        width: 293px;
+      }
+
+      &_star {
+        top: -75px;
+        left: 10px;
+        height: 65px;
+        width: 65px;
+      }
+
+      &_circle {
+        display: none;
+      }
+
+      &_jewelry-first {
+        display: none;
+      }
+
+      &_jewelry-second {
+        top: 40px;
+        right: -7%;
+      }
+
+      &_jewelry-third {
+        display: none;
+      }
+
+      &_blur {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .School-fees {
+    &__tarifs-list .tarifItem.active .tarifItem__image {
+      top: 25px;
+      left: 14%;
+    }
+  }
+}
+
+.School-contacts {
+  .contacts {
+    .srction-title {
+      letter-spacing: 0.1px;
+    }
+    &__wrapper {
+      margin: 19px auto 75px;
+    }
+
+    &__form {
+      margin-top: 20px;
+      gap: 8px;
+      background: $Main-BG;
+
+      .tab-header {
+        display: flex;
+        gap: 24px;
+        background: $Main-BG;
+        padding: 0px;
+        margin-bottom: 35px;
+
+        button {
+          border-radius: 9px;
+          padding: 18px 0px;
+          font-size: 18px;
+          line-height: 26.5px;
+          background: $frames;
+
+          .button-text {
+            background: -moz-linear-gradient(
+              to bottom right,
+              #68c9ff 0%,
+              #d1b5ff 80%
+            );
+            background: linear-gradient(
+              to bottom right,
+              #68c9ff 0%,
+              #d1b5ff 80%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          &.active {
+            background: -moz-linear-gradient(
+              90deg,
+              rgba(104, 201, 255, 1) 0%,
+              rgba(209, 181, 255, 1) 50%
+            );
+            background: linear-gradient(
+              90deg,
+              rgba(104, 201, 255, 1) 0%,
+              rgba(209, 181, 255, 1) 50%
+            );
+
+            .button-text {
+              -webkit-text-fill-color: unset;
+            }
+          }
+        }
+      }
+    }
+
+    &__agree {
+      margin-top: 14px;
+    }
+
+    &__checkbox {
+      margin-right: 12px;
+    }
+  }
+
+  .input-container__textarea {
+    height: 120px;
+  }
+
+  &__tooken {
+    display: flex;
+    border-radius: 12px;
+    color: $Main-BG;
+    max-width: 191px;
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(104, 201, 255, 1) 0%,
+      rgba(209, 181, 255, 1) 20%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(104, 201, 255, 1) 0%,
+      rgba(209, 181, 255, 1) 20%
+    );
+
+    padding: 5px 21px;
+    box-sizing: border-box;
+
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 5px auto 0px;
+
+    &_numbers {
+      font-weight: 800;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .School-contacts {
+    .contacts {
+      &__wrapper {
+        margin: 53px auto 33px;
+
+        .button {
+          padding: 14px 0px;
+        }
+      }
+
+      &__agree {
+        margin-top: 11px;
+      }
+
+      &__checkbox {
+        margin-right: 10px;
+      }
+
+      &__form {
+        .tab-header {
+          gap: 9px;
+          margin-bottom: 18px;
+          button {
+            border-radius: 9px;
+            padding: 11px 0px;
+            font-size: 18px;
+            margin-top: -5px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+
+    &__tooken {
+      margin: 8px 0px 0px;
+      padding: 5px 20px 5px 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .School-contacts {
+    .contacts {
+      &__form {
+        .tab-header {
+          flex-wrap: wrap;
+
+          button {
+            padding: 10px;
+          }
+        }
+      }
+
+      &__checkbox {
+        margin-right: 16px;
+      }
+    }
+  }
+}

@@ -1,14 +1,37 @@
 <section class="contacts">
     <div class="contacts__decoration">
-        <img class="contacts__decoration_box" src="@img/decoration/decoration-box.png" alt="box" width="600px"
-            height="600px">
+        <picture>
+            <source srcset="@img/decoration/decoration-box.webp" type="image/webp">
+            <img class="contacts__decoration_box" data-src="@img/decoration/decoration-box.png" alt="box" width="600px"
+                height="600px">
+        </picture>
+        <!-- <img class="contacts__decoration_box" data-src="@img/decoration/decoration-box.png" alt="box" width="600px"
+            height="600px"> -->
 
-        <img class="contacts__decoration_jewelry-first" src="@img/jewelry/jewelry_4.png" alt="jewelry" width="350px"
-            height="380px">
-        <img class="contacts__decoration_jewelry-second" src="@img/jewelry/jewelry_5.png" alt="jewelry" width="230px"
-            height="230px">
-        <img class="contacts__decoration_jewelry-third" src="@img/jewelry/jewelry_5_2.png" alt="jewelry" width="170px"
-            height="170px">
+        <picture>
+            <source srcset="@img/jewelry/jewelry_4.webp" type="image/webp">
+            <img class="contacts__decoration_jewelry-first" data-src="@img/jewelry/jewelry_4.png" alt="jewelry"
+                width="350px" height="380px">
+        </picture>
+        <!-- <img class="contacts__decoration_jewelry-first" data-src="@img/jewelry/jewelry_4.png" alt="jewelry"
+            width="350px" height="380px"> -->
+
+        <picture>
+            <source srcset="@img/jewelry/jewelry_5.webp" type="image/webp">
+            <img class="contacts__decoration_jewelry-second" data-src="@img/jewelry/jewelry_5.png" alt="jewelry"
+                width="230px" height="230px">
+        </picture>
+        <!-- <img class="contacts__decoration_jewelry-second" data-src="@img/jewelry/jewelry_5.png" alt="jewelry"
+            width="230px" height="230px"> -->
+
+        <picture>
+            <source srcset="@img/jewelry/jewelry_5_2.webp" type="image/webp">
+            <img class="contacts__decoration_jewelry-third" data-src="@img/jewelry/jewelry_5_2.png" alt="jewelry"
+                width="170px" height="170px">
+        </picture>
+        <!-- <img class="contacts__decoration_jewelry-third" data-src="@img/jewelry/jewelry_5_2.png" alt="jewelry"
+            width="170px" height="170px"> -->
+
     </div>
     <div class="contacts__wrapper">
         <p class="small-title">CONTACT ME</p>
@@ -32,12 +55,13 @@
             @@include('button.html',{
             class:"active",
             text:"Send message",
+            link:"#",
             })
 
 
             <div class="contacts__agree">
                 <label class="contacts__checkbox">
-                    <input type="checkbox" id="agree" name="agree">
+                    <input type="checkbox" id="agree" name="agree" aria-label="agree checkbox">
                     <span class="checkmark"></span>
                 </label>
                 <div class="contacts__agree_text input-container__lable">

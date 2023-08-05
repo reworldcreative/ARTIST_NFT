@@ -1,6 +1,9 @@
 @import "./components/burger";
 @import "./components/smallPemiumButton";
 .header {
+  z-index: 50;
+  position: relative;
+  justify-content: center;
   &__wrapper {
     background: $Main-BG;
     padding: 8px 0px;
@@ -10,15 +13,26 @@
   }
 
   &__logo {
-    margin-left: 10px;
-    margin-right: 34px;
+    // margin-left: 10px;
+    // margin-right: 34px;
+    margin-left: 8px;
+    margin-right: 33px;
   }
 
   &__buttons {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-left: 74px;
+    // margin-left: 74px;
+    margin-left: 77px;
+
+    .button {
+      margin-top: 0px;
+    }
+
+    .button__text {
+      letter-spacing: 0.1px;
+    }
   }
 
   &-navigation {
@@ -26,7 +40,8 @@
       display: flex;
       align-items: center;
       list-style: none;
-      gap: 26px;
+      // gap: 26px;
+      gap: 26.4px;
       margin: 0px;
       padding: 0px;
       height: fit-content;
@@ -110,7 +125,7 @@
 }
 
 .languageSelect {
-  padding: 8px 12px;
+  padding: 8px 13px;
   width: 74px;
   height: 35px;
   background: $frames;
@@ -124,12 +139,12 @@
   font-weight: 400;
   line-height: 19px;
 
-  // background-image: url("@img/down-arrow.svg");
-  // appearance: none;
-  // background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-  // background-repeat: no-repeat;
-  // background-position: right 1rem center;
-  // background-size: 1em;
+  appearance: none;
+  background-image: url("../img/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 1.1rem top 50%;
+  background-size: 0.6rem auto;
+
   option {
     background: $frames;
     color: $Secondary;
@@ -143,17 +158,21 @@
   &:after {
     top: 0px !important;
   }
+
+  &:focus {
+    outline: 1px solid #68c9ff;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .header {
-    width: fit-content;
+    // width: fit-content;
     margin: 0px auto;
     &__wrapper {
       flex-wrap: wrap;
       gap: 20px;
       justify-content: space-around;
-      padding: 8px 0px 8px 20px;
+      padding: 8px 15px 8px 20px;
     }
 
     &-navigation {
@@ -204,6 +223,19 @@
         flex-wrap: wrap;
         gap: 10px 15px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .header {
+    &__wrapper {
+      justify-content: center;
+    }
+
+    .small-menu {
+      width: 100%;
+      justify-content: space-between;
     }
   }
 }

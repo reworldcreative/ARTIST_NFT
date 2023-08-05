@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"School"
+})
+
+<body>
+    @@include('html/header.html',{})
+
+    <main>
+
+        <section class="School-hero">
+            <div class="School-hero__decoration">
+                <picture>
+                    <source srcset="@img/decoration/CUTOM BY YOUR OWN.webp" type="image/webp">
+                    <img class="School-hero__decoration_text-first" data-src="@img/decoration/CUTOM BY YOUR OWN.png"
+                        aria-hidden="true" alt="CUTOM BY YOUR OWN" width="850px" height="55px">
+                </picture>
+                <!-- <img class="School-hero__decoration_text-first" data-src="@img/decoration/CUTOM BY YOUR OWN.png"
+                    aria-hidden="true" alt="CUTOM BY YOUR OWN" width="850px" height="55px"> -->
+
+                <picture>
+                    <source srcset="@img/decoration/UNIQUE CLOTHES.webp" type="image/webp">
+                    <img class="School-hero__decoration_text-second" data-src="@img/decoration/UNIQUE CLOTHES.png"
+                        aria-hidden="true" alt="UNIQUE CLOTHES" width="673px" height="60px">
+                </picture>
+                <!-- <img class="School-hero__decoration_text-second" data-src="@img/decoration/UNIQUE CLOTHES.png"
+                    aria-hidden="true" alt="UNIQUE CLOTHES" width="673px" height="60px"> -->
+
+                <img class="School-hero__decoration_star" data-src="@img/decoration/star.svg" alt="star"
+                    aria-hidden="true" width="46px" height="62px">
+                <img class="School-hero__decoration_star-second" data-src="@img/decoration/star.svg" alt="star"
+                    aria-hidden="true" width="33px" height="44px">
+            </div>
+
+            <div class="School-hero__wrapper">
+                <div class="section-row">
+                    <div class="section-col School-hero__first-col">
+                        <div class="section-text__container">
+                            <h1 class="big-title">Register to be a designer</h1>
+                            <p class="section__text">Indulgence announcing uncommonly met she continuing two unpleasing
+                                terminated</p>
+                        </div>
+                        @@include('html/components/button.html',{
+                        class:"active",
+                        text:"Sign up",
+                        link:"",
+                        })
+                    </div>
+                    <div class="section-col School-hero__second-col">
+                        <div class="School-hero__image">
+                            <picture>
+                                <source srcset="@img/live-education.webp" type="image/webp">
+                                <img class="School-hero__image_img" src="@img/live-education.png" width="713px"
+                                    height="451px" alt="live education">
+                            </picture>
+                            <!-- <img class="School-hero__image_img" src="@img/live-education.png" width="713px"
+                                height="451px" alt="live education"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="School-benefits mainTeam-benefits">
+            <div class="container">
+                <p class="mainTeam-benefits__subtitle subtitle">
+                    <span>OUR BENEFITS</span>
+                </p>
+                <h2 class="mainTeam-benefits__title title-small">Benefits of an art school</h2>
+                <ul class="mainTeam-benefits__list">
+                    <li class="mainTeam-benefits__item">
+                        <div class="mainTeam-benefits__icon-wrap">
+                            <img src="@img/main/star-gradient.svg" alt="Star" class="mainTeam-benefits__icon" />
+                        </div>
+                        <h3 class="mainTeam-benefits__item-title">Title of benefits</h3>
+                        <p class="mainTeam-benefits__item-text">
+                            May indulgence difficulty ham can put especially. Bringing remember for supplied her why was
+                            confined.
+                        </p>
+                    </li>
+                    <li class="mainTeam-benefits__item">
+                        <div class="mainTeam-benefits__icon-wrap">
+                            <img src="@img/main/star-gradient.svg" alt="Star" class="mainTeam-benefits__icon" />
+                        </div>
+                        <h3 class="mainTeam-benefits__item-title">Title of benefits</h3>
+                        <p class="mainTeam-benefits__item-text">
+                            May indulgence difficulty ham can put especially. Bringing remember for supplied her why was
+                            confined.
+                        </p>
+                    </li>
+                    <li class="mainTeam-benefits__item">
+                        <div class="mainTeam-benefits__icon-wrap">
+                            <img src="@img/main/star-gradient.svg" alt="Star" class="mainTeam-benefits__icon" />
+                        </div>
+                        <h3 class="mainTeam-benefits__item-title">Title of benefits</h3>
+                        <p class="mainTeam-benefits__item-text">
+                            May indulgence difficulty ham can put especially. Bringing remember for supplied her why was
+                            confined.
+                        </p>
+                    </li>
+                    <li class="mainTeam-benefits__item">
+                        <div class="mainTeam-benefits__icon-wrap">
+                            <img src="@img/main/star-gradient.svg" alt="Star" class="mainTeam-benefits__icon" />
+                        </div>
+                        <h3 class="mainTeam-benefits__item-title">Title of benefits</h3>
+                        <p class="mainTeam-benefits__item-text">
+                            May indulgence difficulty ham can put especially. Bringing remember for supplied her why was
+                            confined.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="School-fees">
+            <div class="School-fees__decoration">
+                <img class="School-fees__decoration_text-first" data-src="@img/decoration/MAKE ART.svg" alt="MAKE ART"
+                    aria-hidden="true" width="385px" height="97px">
+                <img class="School-fees__decoration_text-second" data-src="@img/decoration/NOT WAR.svg" alt="NOT WAR"
+                    aria-hidden="true" width="355px" height="97px">
+
+                <img class="School-fees__decoration_star" data-src="@img/decoration/star.svg" alt="star"
+                    aria-hidden="true" width="46px" height="62px">
+
+                <img class="School-fees__decoration_circle" data-src="@img/decoration/circle.svg" alt="circle"
+                    aria-hidden="true" width="25px" height="25px">
+
+
+                <picture>
+                    <source srcset="@img/blurSpots/blur_1.webp" type="image/webp">
+                    <img class="School-fees__decoration_blur" data-src="@img/blurSpots/blur_1.png" alt="blur"
+                        aria-hidden="true" width="360px" height="700px">
+                </picture>
+
+                <!-- <img class="School-fees__decoration_blur" data-src="@img/blurSpots/blur_1.png" alt="blur"
+                    aria-hidden="true" width="360px" height="700px"> -->
+                <picture>
+                    <source srcset="@img/jewelry/jewelry_4.webp" type="image/webp">
+                    <img class="School-fees__decoration_jewelry-first" data-src="@img/jewelry/jewelry_4.png"
+                        alt="jewelry" width="375px" height="400px">
+                </picture>
+                <!-- <img class="School-fees__decoration_jewelry-first" data-src="img/jewelry/jewelry_4.png" alt="jewelry"
+                    width="375px" height="400px"> -->
+                <picture>
+                    <source srcset="@img/jewelry/jewelry_5.webp" type="image/webp">
+                    <img class="School-fees__decoration_jewelry-second" data-src="@img/jewelry/jewelry_5.png"
+                        alt="jewelry" width="180px" height="180px">
+                </picture>
+                <!-- <img class="School-fees__decoration_jewelry-second" data-src="img/jewelry/jewelry_5.png" alt="jewelry"
+                    width="180px" height="180px"> -->
+                <picture>
+                    <source srcset="@img/jewelry/jewelry_6.webp" type="image/webp">
+                    <img class="School-fees__decoration_jewelry-third" data-src="@img/jewelry/jewelry_6.png"
+                        alt="jewelry" width="310px" height="300px">
+                </picture>
+                <!-- <img class="School-fees__decoration_jewelry-third" data-src="img/jewelry/jewelry_6.png" alt="jewelry"
+                    width="310px" height="300px"> -->
+            </div>
+
+            <div class="School-fees__wrapper">
+                <div class="School-fees__top">
+                    <h2 class="section-title">Artist School Fees</h2>
+                    <p class="section__text">Indulgence announcing uncommonly met she continuing two unpleasing
+                        terminated</p>
+                </div>
+
+                <div class="Pricing-section School-fees__tarifs-list">
+                    <div class="Pricing-section__wrapper tab-container">
+                        <div class="tab-header">
+                            <button class="tab-button" data-tab="WEEK">One week</button>
+                            <button class="tab-button" data-tab="MONTH">Month</button>
+                            <button class="tab-button active" data-tab="Individual">Individual</button>
+                        </div>
+                        <ul class="Pricing-section__list">
+                            <li class="tab-content " id="WEEK">
+                                @@include('html/components/tarifItem.html',{
+                                term:"week",
+                                termText:"1 WEEK",
+                                price:"$250.99",
+                                class:"",
+                                classBtn:"active",
+                                buttonText:"Choose",
+                                image:"@img/Pricing/SchoolPricing1.png",
+                                })
+                            </li>
+                            <li class="tab-content active School-fees__tad-middle" id="Individual">
+                                <!-- @@include('html/components/tarifItem.html',{
+                                term:"Individual",
+                                termText:"Individual",
+                                price:"$250.99",
+                                class:"active",
+                                classBtn:"main",
+                                image:"@img/Pricing/SchoolPricing2.png",
+                                }) -->
+
+                                <article class="tarifItem active">
+                                    <div class="tarifItem__wrapper">
+                                        <p class="tarifItem__term">Individual</p>
+                                        <picture>
+                                            <source srcset="@img/Pricing/SchoolPricing2.webp" type="image/webp">
+                                            <img class="tarifItem__image" data-src="@img/Pricing/SchoolPricing2.png"
+                                                alt="stalagmite" aria-hidden="true" width="130px" height="167px">
+                                        </picture>
+                                        <!-- <img class="tarifItem__image" src="@img/Pricing/SchoolPricing2.png"
+                                            alt="stalagmite" aria-hidden="true" width="130px" height="167px"> -->
+
+                                        <div class="tarifItem__termBanner">
+                                            <h2 class="tarifItem__termBanner_termin">Individual lesson</h2>
+                                            <p class="tarifItem__termBanner_text">Purchasing this access you get</p>
+                                        </div>
+
+                                        <ul class="tarifItem__list">
+                                            <li class="tarifItem__benefit">
+                                                <img src="@img/Diamond.svg" alt="Diamond" aria-hidden="true"
+                                                    width="24px" height="24px">
+                                                <p class="tarifItem__text">To purchase item by crypto you have to send
+                                                    money to this wallet. After 5
+                                                    minute result will sent in
+                                                    your mail</p>
+                                            </li>
+                                            <li class="tarifItem__benefit">
+                                                <img src="@img/Diamond.svg" alt="Diamond" aria-hidden="true"
+                                                    width="24px" height="24px">
+                                                <p class="tarifItem__text">To purchase item by crypto you have to send
+                                                    money</p>
+                                            </li>
+                                            <li class="tarifItem__benefit">
+                                                <img src="@img/Diamond.svg" alt="Diamond" aria-hidden="true"
+                                                    width="24px" height="24px">
+                                                <p class="tarifItem__text">To purchase item by crypto you have to send
+                                                    money to this wallet. After 5
+                                                    minute result will sent in
+                                                    your mail</p>
+                                            </li>
+                                            <li class="tarifItem__benefit">
+                                                <img src="@img/Diamond.svg" alt="Diamond" aria-hidden="true"
+                                                    width="24px" height="24px">
+                                                <p class="tarifItem__text">To purchase item by crypto you have to send
+                                                    money</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tarifItem__priceContainer">
+                                        @@include('html/components/button.html',{
+                                        class:"main",
+                                        text:"Choose",
+                                        link:"#",
+                                        })
+                                        <div class="tarifItem__price">
+                                            $250.99
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="tab-content" id="MONTH">
+                                @@include('html/components/tarifItem.html',{
+                                term:"month",
+                                termText:"MONTH",
+                                price:"$250.99",
+                                class:"",
+                                classBtn:"active",
+                                buttonText:"Choose",
+                                image:"@img/Pricing/SchoolPricing3.png",
+                                })
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts School-contacts">
+            <div class="contacts__decoration">
+                <picture>
+                    <source srcset="@img/decoration/decoration-box.webp" type="image/webp">
+                    <img class="contacts__decoration_box" data-src="@img/decoration/decoration-box.png" alt="box"
+                        width="600px" height="600px">
+                </picture>
+                <!-- <img class="contacts__decoration_box" data-src="@img/decoration/decoration-box.png" alt="box"
+                    width="600px" height="600px"> -->
+
+                <picture>
+                    <source srcset="@img/jewelry/jewelry_4.webp" type="image/webp">
+                    <img class="contacts__decoration_jewelry-first" data-src="@img/jewelry/jewelry_4.png" alt="jewelry"
+                        width="350px" height="380px">
+                </picture>
+                <!-- <img class="contacts__decoration_jewelry-first" data-src="@img/jewelry/jewelry_4.png" alt="jewelry"
+                    width="350px" height="380px"> -->
+
+                <picture>
+                    <source srcset="@img/jewelry/jewelry_5.webp" type="image/webp">
+                    <img class="contacts__decoration_jewelry-second" data-src="@img/jewelry/jewelry_5.png" alt="jewelry"
+                        width="230px" height="230px">
+                </picture>
+                <!-- <img class="contacts__decoration_jewelry-second" data-src="@img/jewelry/jewelry_5.png" alt="jewelry"
+                    width="230px" height="230px"> -->
+
+                <picture>
+                    <source srcset="@img/jewelry/jewelry_5_2.webp" type="image/webp">
+                    <img class="contacts__decoration_jewelry-third" data-src="@img/jewelry/jewelry_5_2.png"
+                        alt="jewelry" width="170px" height="170px">
+                </picture>
+                <!-- <img class="contacts__decoration_jewelry-third" data-src="@img/jewelry/jewelry_5_2.png" alt="jewelry"
+                    width="170px" height="170px"> -->
+
+            </div>
+            <div class="contacts__wrapper">
+                <h2 class="section-title">Register to be a designer</h2>
+                <div class="School-contacts__tooken">
+                    <div class="School-contacts__tooken_numbers">
+                        5/10&nbsp
+                    </div>
+                    already tooken!
+                </div>
+                <form action="" class="contacts__form">
+                    <div class="input-container">
+                        <label class="input-container__lable" for="Name">Name</label>
+                        <input class="input-container__input" type="text" name="Name" id="Name" placeholder="Your name">
+                    </div>
+                    <div class="input-container">
+                        <label class="input-container__lable" for="Email">Mail</label>
+                        <input class="input-container__input" type="email" name="Email" id="Email"
+                            placeholder="Your mail">
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-container__lable" for="Question">Design preferences</label>
+                        <textarea class="input-container__input input-container__textarea" name="Question" id="Question"
+                            cols="30" rows="7" placeholder="Your question"></textarea>
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-container__lable" for="plan">Choose your plan</label>
+                        <div class="tab-header">
+                            <button type="button" class="tab-button" data-tab="WEEK">
+                                <div class="button-text">One week</div>
+                            </button>
+                            <button type="button" class="tab-button active" data-tab="Individual">
+                                <div class="button-text">Individual</div>
+                            </button>
+                            <button type="button" class="tab-button" data-tab="MONTH">
+                                <div class="button-text">One Month</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    @@include('html/components/button.html',{
+                    class:"active",
+                    text:"Sign up",
+                    link:"",
+                    })
+
+
+                    <div class="contacts__agree">
+                        <label class="contacts__checkbox">
+                            <input type="checkbox" id="agree" name="agree">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="contacts__agree_text input-container__lable">
+                            <span>I agree with </span>
+                            <a class="input-container__link" href="#">Privacy Policy</a>
+                            <span> and </span>
+                            <a class="input-container__link" href="#">Terms of use</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    @@include('html/footer.html',{})
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

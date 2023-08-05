@@ -1,0 +1,509 @@
+.custom-hero {
+  position: relative;
+  overflow-x: clip;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 65px 0px 67px;
+  }
+
+  .section-row {
+    max-width: 1109px;
+    align-items: center;
+  }
+
+  &__buttons {
+    margin-top: 40px;
+    .button {
+      font-size: 18px;
+      line-height: 147.222%;
+      padding: 18px 22px 19px;
+    }
+  }
+
+  .button.premium .button__image {
+    filter: invert(0%) sepia(200%) saturate(140%) hue-rotate(169deg)
+      brightness(50%) contrast(90%);
+  }
+
+  &__first-col {
+    max-width: 49.5%;
+  }
+
+  &__second-col {
+    max-width: 50.5%;
+  }
+
+  .section-text__container {
+    // margin-top: 55px;
+    margin-top: 10%;
+  }
+
+  .section__text {
+    max-width: 60%;
+  }
+
+  //  vertical - вертикальна зміна слайдів
+  // &__slider {
+  //   max-height: 570px;
+  // }
+
+  // .swiper-slide {
+  //   height: auto !important;
+  //   width: fit-content;
+  // }
+  // ////////
+
+  &__slide {
+    border-radius: 24px;
+    &_image {
+      border-radius: 24px;
+    }
+  }
+
+  &__decoration {
+    img {
+      position: absolute;
+      z-index: 0;
+    }
+    &_text-first {
+      top: 34px;
+      left: -98px;
+      opacity: 0.2;
+    }
+
+    &_text-second {
+      opacity: 0.2;
+      bottom: -54px;
+      left: 26.5%;
+    }
+
+    &_star {
+      left: 44.4%;
+      bottom: 32.7%;
+      transform: rotate(14deg);
+    }
+
+    &_circle-first {
+      bottom: 22%;
+      left: 44%;
+    }
+
+    &_star-second {
+      right: 7.8%;
+      top: 32%;
+      transform: rotate(-15deg);
+    }
+
+    &_blur {
+      top: -20%;
+      left: 0px;
+      z-index: -2;
+      opacity: 0.7;
+    }
+  }
+
+  &__gallery {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .custom-hero {
+    &__wrapper {
+      width: auto;
+      margin: 60px 15px 47.7px;
+    }
+
+    .section-row {
+      max-width: fit-content;
+      width: 100%;
+    }
+
+    .section-text__container {
+      margin-top: 0%;
+    }
+
+    .section__text {
+      max-width: 100%;
+    }
+
+    &__slider {
+      max-width: 90%;
+    }
+
+    &__slide_image {
+      width: -webkit-fill-available;
+      height: auto;
+    }
+
+    &__decoration {
+      &_text-first {
+        display: none;
+      }
+
+      &_circle-first {
+        display: none;
+      }
+
+      &_star {
+        top: 37%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .custom-hero {
+    .section-col {
+      max-width: 100vw;
+    }
+
+    &__slider {
+      max-width: 70vw;
+    }
+
+    .section-text__container {
+      max-width: 100%;
+
+      .big-title {
+        line-height: 55px;
+      }
+    }
+
+    &__slide_image {
+      max-height: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .custom-hero {
+    &__slide_image {
+      max-height: fit-content;
+    }
+
+    .big-title {
+      max-width: 100%;
+    }
+
+    &__decoration {
+      &_text-second {
+        top: -47px;
+        left: auto;
+        right: -133px;
+        opacity: 0.2;
+        width: 425px;
+        height: 40px;
+      }
+    }
+
+    &__buttons {
+      margin-top: 22px;
+      .button {
+        padding: 12px 28px;
+      }
+    }
+
+    &__slider {
+      max-width: 80vw;
+      margin-top: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .custom-hero {
+    .big-title {
+      font-size: 36px !important;
+      line-height: 40px !important;
+      letter-spacing: 0.3px;
+    }
+
+    .section-text__container {
+      max-width: 75%;
+    }
+
+    &__slider {
+      .swiper-wrapper {
+        margin-left: 11px;
+      }
+    }
+
+    &__slide {
+      width: auto !important;
+      &_image {
+        width: 309px;
+      }
+    }
+
+    &__decoration {
+      &_star {
+        top: 48%;
+        left: 0px;
+        transform: rotate(0deg);
+        width: 30px;
+        height: 41px;
+      }
+
+      &_star-second {
+        width: 36px;
+        height: 48px;
+        top: 46.5%;
+        right: 10%;
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .custom-hero {
+    &__slider {
+      .swiper-wrapper {
+        margin-left: 0px;
+      }
+    }
+
+    &__slide {
+      &_image {
+        width: auto;
+        max-width: 80vw;
+      }
+    }
+
+    .section-text__container {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .custom-hero {
+    &__wrapper {
+      margin: 15px 15px 40px;
+    }
+  }
+}
+
+.input-container__lable {
+  width: auto;
+}
+
+.customClothes__customizer {
+  .contacts__wrapper {
+    margin: 65px auto 38px;
+  }
+
+  .contacts__agree {
+    margin-top: -6px;
+  }
+
+  &_select {
+    padding: 20px 20px 20px 32px;
+    width: auto;
+    height: 64px;
+    background: $frames;
+    border: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+
+    color: $Text;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+
+    appearance: none;
+    background-image: url("../img/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 1.8rem top 50%;
+    background-size: 0.9rem auto;
+
+    option {
+      color: $Text;
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 21px;
+    }
+
+    &:after {
+      top: 0px !important;
+    }
+
+    &:focus {
+      outline: 1px solid #68c9ff;
+    }
+  }
+
+  &_form {
+    margin-top: 30px;
+    gap: 26px;
+
+    .input-container__textarea {
+      height: 170px;
+    }
+
+    .button {
+      margin-top: 1px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+#customClothes {
+  .footer {
+    .socialsLinks {
+      margin-right: 18px;
+    }
+
+    .logo {
+      margin-left: 5px;
+    }
+  }
+}
+
+$colors: (
+  red: #ca3838,
+  orange: #eb8032,
+  yellow: #ffda57,
+  green: #79ce60,
+  downy: #60ceb4,
+  blue: #41d4f4,
+  ultramarine: #4153f4,
+  purple: #6541f4,
+  baffodil: #b041f4,
+  pink: #c45297,
+  marron: #a14051,
+  white: #fff,
+  grey: #cfcfcf,
+  cafe: #4a3221,
+  black: #000,
+);
+
+input[type="radio"] {
+  display: none;
+  &:checked + label {
+    span {
+      transform: scale(1.25);
+    }
+    @each $name, $value in $colors {
+      .#{"" + $name} {
+        border: 2px solid darken($value, 25%);
+      }
+    }
+  }
+}
+
+label {
+  display: inline-block;
+  width: 30.5px;
+  height: 30px;
+  margin-right: -10.2px;
+
+  cursor: pointer;
+  &:hover {
+    span {
+      border: none;
+      transform: scale(1.25);
+    }
+  }
+  span {
+    border-radius: 50px;
+    border: 5px solid $Main-BG;
+    display: block;
+    // width: 100%;
+    // height: 100%;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease-in-out;
+    @each $name, $value in $colors {
+      &.#{"" + $name} {
+        background: $value;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .customClothes {
+    &__customizer {
+      .contacts__agree {
+        margin-top: 0px;
+      }
+      .contacts__wrapper {
+        margin: 22px auto 25px;
+      }
+
+      &_form {
+        margin-top: 15px;
+        gap: 15px;
+
+        .input-container {
+          &__textarea {
+            height: 188px;
+          }
+          &:nth-child(2) {
+            order: 3;
+          }
+
+          &:nth-child(4) {
+            order: 4;
+          }
+        }
+
+        .button {
+          order: 5;
+          margin-top: -7px;
+        }
+
+        .contacts__agree {
+          order: 6;
+        }
+      }
+    }
+  }
+
+  #customClothes__customizer_colors {
+    // width: 80%;
+    display: inline-flex;
+    gap: 15px 0px;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin-top: -3px;
+    margin-bottom: 3px;
+
+    label {
+      display: inline-flex;
+      width: 39px;
+      height: 40px;
+
+      margin-right: -15.2px;
+
+      span {
+        width: inherit;
+        height: initial;
+      }
+    }
+  }
+
+  #customClothes {
+    .footer {
+      .logo {
+        margin-left: 8px;
+      }
+      .socialsLinks {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #customClothes__customizer_colors {
+    max-width: 95%;
+  }
+}

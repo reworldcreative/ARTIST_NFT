@@ -1,9 +1,10 @@
-@import 'fonts';
-@import 'rfs/scss.scss';
-@import 'normalize';
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@import "fonts";
+@import "rfs/scss.scss";
+@import "normalize";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 // font-family: 'Manrope', sans-serif;
-@import 'variables';
+@import "variables";
+
 
 .visibility-hidden {
   position: absolute;
@@ -27,7 +28,6 @@
 body {
   background: $Main-BG;
 }
-
 @import 'header';
 @import 'components/button';
 @import 'components/socialsLinks';
@@ -36,24 +36,40 @@ body {
 @import 'footer';
 @import 'components/NFT-card';
 @import 'components/contactSection';
+
+@import "components/breadcrumb";
+@import "inspire";
+@import "components/gallery";
+@import "customClothes";
+@import "productPage";
+@import "components/paymentPopUp";
+@import "Pricing";
+@import "components/tarifItem";
+@import "Nfts";
+
+@import "mainTeam";
+@import "blog";
+@import "School";
+
 @import 'components/registration';
 @import 'components/product';
 @import 'components/orders';
 @import 'components/nft-orders';
 @import 'components/workers';
 
-@import 'pages/style.for-client';
-@import 'pages/style.owner';
-@import 'pages/style.payment';
-@import 'pages/style.auction';
-@import 'pages/style.blog';
-@import 'pages/style.main';
-@import 'pages/style.enter';
+@import 'for-client';
+@import 'owner';
+@import 'payment';
+@import 'auction';
+// @import 'style.blog';
+// @import 'style.main';
+@import 'enter';
 $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+
 .big-title {
-  font-family: 'Proxima Nova', sans-serif;
-  // font-size: 64px;
-  @include font-size(64px);
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 64px;
+  // @include font-size(64px);
   font-style: normal;
   font-weight: 700;
   line-height: 65px;
@@ -63,15 +79,23 @@ $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(20
 }
 
 .small-title {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 26.5px;
   letter-spacing: 2px;
   margin: 0px;
-  background: -moz-linear-gradient(90deg, rgba(104, 201, 255, 1) 0%, rgba(209, 181, 255, 1) 20%);
-  background: linear-gradient(90deg, rgba(104, 201, 255, 1) 0%, rgba(209, 181, 255, 1) 20%);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(104, 201, 255, 1) 0%,
+    rgba(209, 181, 255, 1) 20%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(104, 201, 255, 1) 0%,
+    rgba(209, 181, 255, 1) 20%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -83,7 +107,7 @@ $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(20
 }
 
 .section-title {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -104,13 +128,55 @@ $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(20
     flex: 1;
   }
   &__text {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
     color: $Text;
     margin: 0px;
+  }
+}
+
+.input-container {
+  display: grid;
+  gap: 7px;
+  &__lable {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: $Secondary;
+    height: auto;
+  }
+
+  &__input {
+    border-radius: 9px;
+    background: $frames;
+    padding: 21px 32px 22px;
+    border: none;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 131.25%;
+    color: $Secondary;
+    resize: none;
+
+    &::placeholder {
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 131.25%;
+      color: $Secondary;
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline: 1px solid #68c9ff;
+    }
   }
 }
 
@@ -123,6 +189,10 @@ $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(20
     &__text {
       max-width: fit-content;
     }
+  }
+
+  .big-title {
+    @include font-size(64px);
   }
 }
 
@@ -147,8 +217,9 @@ $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(20
 @media screen and (max-width: 600px) {
   .big-title {
     line-height: 40px;
-    letter-spacing: 0px;
+    // letter-spacing: 0px;
     max-width: 80%;
+    letter-spacing: 1.2px;
   }
 
   .small-title {
@@ -175,6 +246,18 @@ $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(20
 @media screen and (max-width: 370px) {
   .section-text__container {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .section-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .big-title {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 .form {
@@ -493,4 +576,112 @@ $gradientDark: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(20
     font-size: 36px;
     line-height: 40px;
   }
+}
+@mixin iconFonts {
+  @font-face {
+    font-family: 'iconfonts';
+    src: url('../fonts/iconfonts.eot?wj2bbs');
+    src: url('../fonts/iconfonts.eot?wj2bbs#iefix') format('embedded-opentype'),
+      url('../fonts/iconfonts.ttf?wj2bbs') format('truetype'), url('../fonts/iconfonts.woff?wj2bbs') format('woff'),
+      url('../fonts/iconfonts.svg?wj2bbs#iconfonts') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^='i-'],
+  [class*=' i-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'iconfonts' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .i-out:before {
+    content: '\e900';
+  }
+  .i-bag:before {
+    content: '\e901';
+    color: #525960;
+  }
+  .i-orders:before {
+    content: '\e902';
+    color: #525960;
+  }
+  .i-workers:before {
+    content: '\e903';
+    color: #525960;
+  }
+  .i-mess:before {
+    content: '\e904';
+    color: #525960;
+    font-size: 17px;
+  }
+  .i-stat:before {
+    content: '\e905';
+    color: #525960;
+  }
+}
+
+@font-face {
+  font-family: 'iconfonts';
+  src: url('../fonts/iconfonts.eot?wj2bbs');
+  src: url('../fonts/iconfonts.eot?wj2bbs#iefix') format('embedded-opentype'),
+    url('../fonts/iconfonts.ttf?wj2bbs') format('truetype'), url('../fonts/iconfonts.woff?wj2bbs') format('woff'),
+    url('../fonts/iconfonts.svg?wj2bbs#iconfonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^='i-'],
+[class*=' i-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconfonts' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-out:before {
+  content: '\e900';
+}
+
+.i-bag:before {
+  content: '\e901';
+  color: #525960;
+}
+
+.i-orders:before {
+  content: '\e902';
+  color: #525960;
+}
+
+.i-workers:before {
+  content: '\e903';
+  color: #525960;
+}
+
+.i-mess:before {
+  content: '\e904';
+  color: #525960;
+  font-size: 17px;
+}
+
+.i-stat:before {
+  content: '\e905';
+  color: #525960;
 }

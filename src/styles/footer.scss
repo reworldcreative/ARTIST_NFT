@@ -1,18 +1,78 @@
+// .footer {
+//   background: #212426;
+
+//   &__logo {
+//     margin: 0 14px 0 0;
+//     @media (max-width: 767px) {
+//       order: 1;
+//       width: 30%;
+//       margin: 0;
+//     }
+//     @media (max-width: 375px) {
+//       margin-bottom: 10px;
+//     }
+//   }
+//   &__top,
+//   &__list {
+//     display: flex;
+//     align-items: center;
+//   }
+//   &__top {
+//     padding: 11px 15px 12px 0;
+//     border-bottom: 1px solid rgb(252, 255, 255, 0.05);
+//   }
+//   &__list,
+//   &__soc {
+//     padding: 6px 0 0;
+//   }
+//   &__link {
+//     color: rgba(200, 210, 220, 0.6);
+//     margin: 0 30px 0 0;
+//     font-size: 16px;
+//     line-height: 21px;
+//     &:last-child {
+//       margin: 0;
+//     }
+//     &:hover {
+//       text-shadow: 0 0 1px #fff;
+//     }
+//   }
+//   &__soc {
+//     flex: 1 1 auto;
+//     margin: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//     // margin: 0 0 27px 0;
+//     gap: 18px;
+//     transform: scale(1);
+//   }
+//   &__bottom {
+//     text-align: center;
+//     padding: 10px 0 9px;
+//     font-size: 12px;
+//     line-height: 20px;
+//     color: #c8d2dc;
+//   }
+// }
 .footer {
   background: $frames;
+  z-index: 30;
   &__wrapper {
     width: 1140px;
-    padding: 19px 0px 9px;
+    padding: 17px 0px 9px;
     margin: 0px auto;
   }
 
   .logo {
     margin-left: 8px;
+    margin-bottom: 8px;
   }
 
   &__top {
     display: flex;
     align-items: center;
+    padding: 0px !important;
   }
 
   .section__text {
@@ -30,8 +90,8 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    padding-bottom: 15px;
+    align-items: center;
+    padding-bottom: 10px !important;
   }
 
   .socialsLinks {
@@ -42,7 +102,7 @@
     border-top: 1px solid rgba(252, 255, 255, 0.05);
     padding-top: 10px;
     text-align: center;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -56,6 +116,10 @@
     &__wrapper {
       width: auto;
       padding: 29px 15px 25px;
+    }
+
+    .logo {
+      margin-bottom: 0px;
     }
   }
 }
@@ -74,7 +138,7 @@
 
     &__links {
       margin: 0px;
-      margin-top: 25px;
+      margin-top: 19px;
       display: grid;
       gap: 0px;
 
@@ -103,6 +167,15 @@
       background: $Main-BG;
       border-radius: 8px;
       font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer {
+    &__top {
+      flex-wrap: wrap;
+      gap: 15px;
     }
   }
 }

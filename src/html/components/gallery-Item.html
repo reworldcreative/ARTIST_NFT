@@ -1,0 +1,48 @@
+<article class="gallery-Item @@class">
+    <div class="gallery-Item__image ">
+        <img class="gallery-Item__image_img" src="@@image" alt="item" width="500px" height="420px">
+    </div>
+
+    <div class="gallery-Item__wrapper">
+        <div>
+            <div class="gallery-Item__container">
+                <h2 class="section-title gallery-Item__title">@@text</h2>
+                <p class="gallery-Item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum
+                    dolor
+                </p>
+                <div class="gallery-Item__price">
+                    $100 322
+                </div>
+            </div>
+
+            <div class="gallery-Item__buttons">
+                @@include('button.html',{
+                class:"main",
+                text:"Buy",
+                link:"Pricing.html",
+                })
+
+                @@include('button.html',{
+                class:"main arrow",
+                text:"View",
+                link:"productPage.html",
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-Item__NoPremium">
+        <div>
+            <p class="gallery-Item__premium small-title">avalaible for premium</p>
+            <div class="gallery-Item__locked">
+                <img class="gallery-Item__locked_icon" src="@img/lock.svg" alt="lock icon" width="40px" height="40px">
+                <h2 class="gallery-Item__locked_text">CONTENT LOCKED</h2>
+            </div>
+            @@include('button.html',{
+            class:"main arrow",
+            text:"Unlock",
+            link:"Pricing.html",
+            })
+        </div>
+    </div>
+</article>

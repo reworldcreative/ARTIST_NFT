@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<<<<<<< Updated upstream
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.min.css">
     <title>Main page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230803203722" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230803203722">
+=======
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/icons/favicon-32.png" type="image/png" />
+  <link type="image/png" sizes="16x16" rel="icon" href="./img/favicon.png" />
+  <link rel="stylesheet" href="styles/style.min.css" />
+  <title>Main page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="styles/style.min.css" />
+>>>>>>> Stashed changes
 </head>
+
 
   <body>
     <nav class="burger-menu">
@@ -44,7 +61,7 @@
     </li>
 
     <li class="socialsLinks__item">
-        <a class="socialsLinks__link" href="www.pinterest.com" target="_blank" rel="noopener noreferrer">
+        <a class="socialsLinks__link" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
             <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
         </a>
     </li>
@@ -56,7 +73,7 @@
     <img src="img/logo.svg" alt="logo" width="145px" height="30px">
 </a>
 
-    <nav class="header-navigation">
+    <!-- <nav class="header-navigation">
       <ul class="header-navigation__list">
         <li class="header-navigation__item">
           <a href="index.html" class="header-navigation__link">Main page</a>
@@ -83,6 +100,35 @@
           <a href="blog.html" class="header-navigation__link">Blog</a>
         </li>
       </ul>
+    </nav> -->
+
+    <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item">
+          <a href="index.html" class="header-navigation__link">Main page</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="Nfts.html" class="header-navigation__link">
+            <img src="img/lock.svg" alt="lock icon" width="14px" height="14px">
+            NFT
+          </a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="customClothes.html" class="header-navigation__link">Pictures</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="auction.html" class="header-navigation__link">Auction</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="Pricing.html" class="header-navigation__link">Pricing</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="mainTeam.html" class="header-navigation__link">Contacts</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="blog.html" class="header-navigation__link">Blog</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="header__buttons">
@@ -92,23 +138,57 @@
         <option value="FR">FR</option>
       </select>
 
-      <button class="button main">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+      <a href="enter.html" class="button main">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Authorization
     </span>
-</button> <button class="button active">
-    <img class="button__image" src="img/crown.svg" alt="crown" width="24px" height="24px">
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
+
+      <a href="Pricing.html" class="button active">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
     <span class="button__text">
         Premium access
     </span>
-</button>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a>
     </div>
 
-    <div class="small-menu">
-      <button class="smallPemiumButton">
+    <!-- <div class="small-menu">
+      <a href="enter.html" class="smallPemiumButton">
     <img src="img/crown.svg" alt="crown" width="15px" height="12px">
-</button>
+</a>
+
+      <button class="burger-button" aria-label="open burger menu">
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+        <span class="burger-button__line" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <a href="@@link" class="button main">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Authorization
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a> 
+    <a href="@@link" class="button active">
+    <picture><source srcset="@@image" type="image/webp"><img class="button__image" src="@@image" alt="crown" width="24px" height="24px"></picture>
+    <span class="button__text">
+        Premium access
+    </span>
+
+    <img class="button__arrow" src="img/arrow.svg" alt="arrow" width="12px" height="12px">
+</a> -->
+    <div class="small-menu">
+      <a href="enter.html" class="smallPemiumButton">
+    <img src="img/crown.svg" alt="crown" width="15px" height="12px">
+</a>
 
       <button class="burger-button" aria-label="open burger menu">
         <span class="burger-button__line" aria-hidden="true"></span>
@@ -118,7 +198,6 @@
     </div>
   </div>
 </header>
-
     <div class="wrapper">
       <section class="forum">
         <div class="container">
@@ -142,7 +221,7 @@
                     class="slide-forum__image slide-forum__image_1"
                   />
                   <div class="slide-forum__avatar-wrap">
-                    <img src="img/blog/forum_avatar.jpg" alt="Avatar" class="slide-forum__avatar" />
+                    <picture><source srcset="img/blog/forum_avatar.webp" type="image/webp"><img src="img/blog/forum_avatar.jpg" alt="Avatar" class="slide-forum__avatar" /></picture>
                   </div>
                 </div>
                 <div class="slide-forum__body">
@@ -168,7 +247,7 @@
                     class="slide-forum__image slide-forum__image_1"
                   />
                   <div class="slide-forum__avatar-wrap">
-                    <img src="img/blog/forum_avatar.jpg" alt="Avatar" class="slide-forum__avatar" />
+                    <picture><source srcset="img/blog/forum_avatar.webp" type="image/webp"><img src="img/blog/forum_avatar.jpg" alt="Avatar" class="slide-forum__avatar" /></picture>
                   </div>
                 </div>
                 <div class="slide-forum__body">
@@ -194,7 +273,7 @@
                     class="slide-forum__image slide-forum__image_1"
                   />
                   <div class="slide-forum__avatar-wrap">
-                    <img src="img/blog/forum_avatar.jpg" alt="Avatar" class="slide-forum__avatar" />
+                    <picture><source srcset="img/blog/forum_avatar.webp" type="image/webp"><img src="img/blog/forum_avatar.jpg" alt="Avatar" class="slide-forum__avatar" /></picture>
                   </div>
                 </div>
                 <div class="slide-forum__body">
@@ -436,6 +515,71 @@
         </div>
       </section>
       <footer class="footer">
+  <!-- <div class="container container_big">
+    <div class="footer__top">
+      <a href="index.html" class="footer__logo">
+        <img src="img/logo.svg" alt="logo" width="145px" height="30px" />
+      </a>
+
+      <div class="footer__list">
+        <a href="#" class="footer__link">Privacy policy</a>
+        <a href="#" class="footer__link">Terms of use</a>
+      </div>
+
+      <div class="footer__soc">
+        <a href="#" class="footer__soc-link">
+          <img loading="lazy" src="img/socials/inst.svg" alt="Instagram" class="footer__soc-icon" />
+        </a>
+        <a href="#" class="footer__soc-link">
+          <img loading="lazy" src="img/socials/twitter.svg" alt="Twitter" class="footer__soc-icon" />
+        </a>
+        <a href="#" class="footer_soc-link">
+          <img loading="lazy" src="img/socials/telegram.svg" alt="Telegram" class="footer__soc-icon" />
+        </a>
+        <a href="#" class="footer__soc-link">
+          <img loading="lazy" src="img/socials/pinterest.svg" alt="Pinterest" class="footer__soc-icon" />
+        </a>
+  <div class="footer__wrapper">
+    <div class="footer__container">
+      <div class="footer__top">
+        <a href="index.html" class="logo @@class">
+    <img src="img/logo.svg" alt="logo" width="145px" height="30px">
+</a>
+        <div class="footer__links">
+          <a class="section__text" href="#">Privacy policy</a>
+          <a class="section__text" href="#">Terms of use</a>
+        </div>
+
+      </div>
+      <ul class="socialsLinks">
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/inst.svg" alt="instagram icon" width="24px" height="24px">
+        </a>
+    </li>
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/twitter.svg" alt="twitter icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://web.telegram.org" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/telegram.svg" alt="telegram icon" width="24px" height="24px">
+        </a>
+    </li>
+
+    <li class="socialsLinks__item">
+        <a class="socialsLinks__link" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
+        </a>
+    </li>
+</ul>
+    </div>
+
+    <div class="footer__bottom">All rights reserved © 2022</div>
+  </div> -->
+
   <div class="footer__wrapper">
     <div class="footer__container">
       <div class="footer__top">
@@ -466,17 +610,18 @@
     </li>
 
     <li class="socialsLinks__item">
-        <a class="socialsLinks__link" href="www.pinterest.com" target="_blank" rel="noopener noreferrer">
+        <a class="socialsLinks__link" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
             <img src="img/socials/pinterest.svg" alt="pinterest icon" width="24px" height="24px">
         </a>
     </li>
 </ul>
     </div>
 
-    <div class="footer__bottom">All rights reserved © 2022</div>
+    <div class="footer__bottom">
+      All rights reserved © 2022
+    </div>
   </div>
 </footer>
-
     </div>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -484,6 +629,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="scripts/main.min.js"></script>
+    <script src="scripts/main.min.js?_v=20230803203722"></script>
   </body>
 </html>
