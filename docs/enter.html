@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> main
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap&_v=20230803203722" rel="stylesheet"> -->
+<<<<<<< HEAD
 
     <link rel="stylesheet" href="styles/style.min.css?_v=20230803203722">
 </head>
@@ -44,6 +48,17 @@
         <div class="enter__body tabs">
           <img src="./img/logo.svg" alt="Logo" class="enter__logo" />
 >>>>>>> Stashed changes
+=======
+
+    <link rel="stylesheet" href="styles/style.min.css?_v=20230803203722">
+</head>
+
+<body>
+  <div class="wrapper wrapper_enter">
+    <section class="enter">
+      <div class="enter__body tabs">
+        <a href="index.html"><img src="img/logo.svg" alt="Logo" class="enter__logo" /></a>
+>>>>>>> main
 
         <h1 class="enter__title title-small">Authorization</h1>
 
@@ -146,6 +161,7 @@
         $('.payment__indicator').css('transform', 'translateX(' + $(this).index() * 100 + '%)');
         $('.tab-content').removeClass('_active');
         $(targetTab).addClass('_active');
+<<<<<<< HEAD
       });
 
 
@@ -176,6 +192,38 @@
             break;
         }
       });
+=======
+      });
+
+
+      const form = document.querySelector(".enter_form");
+      const radioButtons = document.querySelectorAll(".form__input-radio");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        let selectedRole = "";
+        for (const radioButton of radioButtons) {
+          if (radioButton.checked) {
+            selectedRole = radioButton.value;
+            break;
+          }
+        }
+
+        switch (selectedRole) {
+          case "customer":
+            window.location.href = "client.html";
+            break;
+          case "admin":
+            window.location.href = "owner.html";
+            break;
+          case "artist":
+            window.location.href = "worker.html";
+            break;
+          default:
+            window.location.href = "client.html";
+            break;
+        }
+      });
+>>>>>>> main
     });
   </script>
 </body>
