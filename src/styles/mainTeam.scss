@@ -1,6 +1,14 @@
 .wrapper_arts {
   background: url(../img/main/blur-b_arts.png) 0 20px no-repeat;
 }
+.contacts__wrapper {
+  margin: 0px auto 92px;
+}
+.contacts .section-title {
+  max-width: 540px;
+  text-align: center;
+  margin: 0px auto 0;
+}
 .arts-hero__row {
   display: flex;
   align-items: center;
@@ -75,13 +83,13 @@ img {
       align-items: flex-start;
     }
     &__body {
-      margin: 45px 29px 0 0;
+      margin: 3px 29px 0 0;
       width: 100%;
       max-width: 540px;
       flex-shrink: 1;
     }
     &__title {
-      max-width: 495px;
+      max-width: 486px;
     }
     &__text {
       max-width: 100%;
@@ -137,15 +145,11 @@ img {
     padding: 18px 23px 32px 19px;
   }
   &__icon-wrap {
-    background: linear-gradient(
-      94.78deg,
-      rgba(104, 201, 255, 0.1) 9.27%,
-      rgba(209, 181, 255, 0.1) 84.06%
-    );
+    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
     // padding: 12.3px 12.3px 13.4px;
     padding: 12px 0px 0px 10px;
     border-radius: 12px;
-    margin-bottom: 9px;
+    margin-bottom: 22px;
     // width: 48px;
     // height: 48px;
     width: 35px;
