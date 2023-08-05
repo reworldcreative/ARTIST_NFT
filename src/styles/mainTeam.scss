@@ -145,7 +145,11 @@ img {
     padding: 18px 23px 32px 19px;
   }
   &__icon-wrap {
-    background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+    background: linear-gradient(
+      94.78deg,
+      rgba(104, 201, 255, 0.1) 9.27%,
+      rgba(209, 181, 255, 0.1) 84.06%
+    );
     // padding: 12.3px 12.3px 13.4px;
     padding: 12px 0px 0px 10px;
     border-radius: 12px;
